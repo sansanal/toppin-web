@@ -18,11 +18,19 @@ const Index = () => {
       <main>
         <HeroSection />
         <PhoneShowcase />
-        <FeaturesSection />
-        <GameSection />
-        <TestimonialsSection />
+        <section id="features">
+          <FeaturesSection />
+        </section>
+        <section id="game">
+          <GameSection />
+        </section>
+        <section id="testimonials">
+          <TestimonialsSection />
+        </section>
         <ActionButtons />
-        <CallToAction />
+        <section id="download">
+          <CallToAction />
+        </section>
       </main>
       
       <Footer />
