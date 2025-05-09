@@ -4,7 +4,7 @@ import React from 'react';
 const CallToAction = () => {
   return (
     <section className="py-16 md:py-24 relative bg-black">
-      <div className="container px-4 md:px-6 text-center">
+      <div className="container px-4 md:px-6 text-center mx-auto max-w-4xl">
         <h2 className="text-3xl md:text-5xl font-bold mb-16 text-toppin-pink">
           ¿Toppiteamos?
         </h2>
@@ -26,7 +26,7 @@ const CallToAction = () => {
           </a>
         </div>
         
-        <div className="relative w-full bg-black">
+        <div className="relative w-full bg-black mx-auto">
           <img 
             src="/lovable-uploads/bbaf8d18-1dc9-4f3f-8c6c-78f5e872e60a.png"
             alt="Pareja usando Toppin" 
