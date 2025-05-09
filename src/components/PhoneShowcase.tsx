@@ -51,7 +51,7 @@ const PhoneShowcase = () => {
       {/* Section divider image without gradients */}
       <div className="relative w-full mt-16">
         <img 
-          src="/lovable-uploads/97bf59f7-3690-4164-a6e5-ef49d6cecf05.png" 
+          src="/lovable-uploads/3b958ffc-8660-43dd-a3e9-c04efb789dd8.png" 
           alt="Toppin app screenshots" 
           className="w-full object-cover"
         />
