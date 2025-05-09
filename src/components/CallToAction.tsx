@@ -1,3 +1,4 @@
+
 import React from 'react';
 const CallToAction = () => {
   return <section className="py-16 md:py-24 relative bg-black">
@@ -14,10 +15,11 @@ const CallToAction = () => {
             <img src="/lovable-uploads/299d0c95-7c5c-43a0-8f1a-4f0d06208293.png" alt="Descargar en Google Play" className="h-12" />
           </a>
         </div>
-        
-        <div className="relative w-full bg-black mx-auto">
-          <img alt="Pareja usando Toppin" src="/lovable-uploads/62699fe5-dca8-42df-b095-80342f162b85.png" className="w-full mx-auto object-contain" />
-        </div>
+      </div>
+      
+      {/* Full width image container */}
+      <div className="w-full">
+        <img alt="Pareja usando Toppin" src="/lovable-uploads/62699fe5-dca8-42df-b095-80342f162b85.png" className="w-full object-contain" />
       </div>
     </section>;
 };
