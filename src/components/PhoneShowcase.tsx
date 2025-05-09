@@ -47,6 +47,15 @@ const PhoneShowcase = () => {
           </div>
         </div>
       </div>
+      
+      {/* Section divider image */}
+      <div className="w-full flex justify-center mt-16">
+        <img 
+          src="public/lovable-uploads/97bf59f7-3690-4164-a6e5-ef49d6cecf05.png" 
+          alt="Toppin app screenshots" 
+          className="w-full max-w-4xl mx-auto"
+        />
+      </div>
     </section>
   );
 };
