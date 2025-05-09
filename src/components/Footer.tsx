@@ -10,7 +10,7 @@ const Footer = () => {
           <img 
             src="public/lovable-uploads/75748513-d0d1-497c-90ad-fa97070f24a4.png" 
             alt="Toppin Logo" 
-            className="h-16 md:h-20"
+            className="w-[200px] object-contain"
           />
           <div className="flex space-x-4 mt-4 md:mt-0">
             <a href="#" className="text-gray-400 hover:text-white">
