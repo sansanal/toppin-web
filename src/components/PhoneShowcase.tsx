@@ -51,7 +51,7 @@ const PhoneShowcase = () => {
       {/* Section divider image with gradient overlays for smooth transition */}
       <div className="relative w-full mt-16">
         {/* Top gradient fade from black to transparent */}
-        <div className="absolute top-0 left-0 w-full h-20 bg-gradient-to-b from-black to-transparent z-20"></div>
+        <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-black via-black/90 to-transparent z-20"></div>
         
         {/* Dark overlay */}
         <div className="absolute inset-0 bg-black/60 z-10"></div>
@@ -63,7 +63,7 @@ const PhoneShowcase = () => {
         />
         
         {/* Bottom gradient fade from transparent to black */}
-        <div className="absolute bottom-0 left-0 w-full h-20 bg-gradient-to-t from-black to-transparent z-20"></div>
+        <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-black via-black/90 to-transparent z-20"></div>
       </div>
     </section>
   );
