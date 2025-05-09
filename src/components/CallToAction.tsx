@@ -17,8 +17,8 @@ const CallToAction = () => {
         </div>
       </div>
       
-      {/* Full width image container */}
-      <div className="w-full">
+      {/* Full width image container - no bottom margin to connect with footer line */}
+      <div className="w-full mb-0">
         <img alt="Pareja usando Toppin" src="/lovable-uploads/62699fe5-dca8-42df-b095-80342f162b85.png" className="w-full object-contain" />
       </div>
     </section>;

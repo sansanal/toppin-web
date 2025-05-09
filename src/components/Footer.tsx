@@ -2,11 +2,17 @@
 import React from 'react';
 import { Instagram, Facebook, Youtube } from 'lucide-react';
 import Logo from './Logo';
+import { Separator } from './ui/separator';
 
 const Footer = () => {
   return (
-    <footer className="py-16 border-t border-gray-800">
-      <div className="container px-4 md:px-6">
+    <footer className="border-t-0 py-16">
+      {/* Custom separator that connects with the image */}
+      <div className="w-full relative -mt-1">
+        <Separator className="bg-toppin-blue h-[1.5px]" />
+      </div>
+      
+      <div className="container px-4 md:px-6 pt-8">
         <div className="flex justify-start mb-10">
           <div className="mb-6">
             <Logo />
