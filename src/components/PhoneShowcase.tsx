@@ -48,12 +48,13 @@ const PhoneShowcase = () => {
         </div>
       </div>
       
-      {/* Section divider image */}
-      <div className="w-full flex justify-center mt-16">
+      {/* Section divider image - darkened and full width */}
+      <div className="relative w-full mt-16">
+        <div className="absolute inset-0 bg-black/60 z-10"></div>
         <img 
           src="public/lovable-uploads/97bf59f7-3690-4164-a6e5-ef49d6cecf05.png" 
           alt="Toppin app screenshots" 
-          className="w-full max-w-4xl mx-auto"
+          className="w-full object-cover"
         />
       </div>
     </section>
