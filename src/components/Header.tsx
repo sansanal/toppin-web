@@ -1,16 +1,24 @@
+
 import React, { useState } from 'react';
 import { Menu, X, ChevronDown, Globe } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+
   return <header className="w-full py-0">
       <div className="container mx-auto flex justify-between items-center px-4">
         {/* Logo */}
         <div className="flex items-center h-16">
-          <img alt="Toppin Logo" className="h-12 object-contain" src="/lovable-uploads/0e235d4b-f937-42ee-b3cb-0c9c3150c732.png" />
+          <img 
+            alt="Toppin Logo" 
+            className="h-16 object-contain" 
+            src="/lovable-uploads/0e235d4b-f937-42ee-b3cb-0c9c3150c732.png" 
+          />
         </div>
         
         {/* Desktop Navigation */}
@@ -71,4 +79,5 @@ const Header = () => {
       </div>
     </header>;
 };
+
 export default Header;
