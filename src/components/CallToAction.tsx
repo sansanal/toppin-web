@@ -28,8 +28,8 @@ const CallToAction = () => {
         
         <div className="relative w-full bg-black">
           <img 
-            src="/lovable-uploads/60b75285-dcb9-44f0-8ae5-9493672a05eb.png"
-            alt="Pareja feliz usando Toppin" 
+            src="/lovable-uploads/bbaf8d18-1dc9-4f3f-8c6c-78f5e872e60a.png"
+            alt="Pareja usando Toppin" 
             className="w-full mx-auto"
           />
         </div>
