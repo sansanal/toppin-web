@@ -19,7 +19,7 @@ const HeroSection = () => {
             <Button className="candy-button">DESCARGAR APP</Button>
           </div>
           <div className="relative">
-            <div className="phone-mockup relative z-10">
+            <div className="relative z-10">
               <img src="public/lovable-uploads/20f5c9b5-8268-4be2-907f-4ff577bdb73a.png" alt="Toppin App" className="w-full" />
             </div>
             
