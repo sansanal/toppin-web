@@ -5,9 +5,9 @@ const Logo = () => {
   return (
     <div className="flex items-center h-full">
       <img 
-        src="/lovable-uploads/9fe89785-0107-4b5c-9736-732049170fba.png" 
+        src="/lovable-uploads/b80f0760-068d-4a1b-bfe7-bb5d8ae0a674.png" 
         alt="Toppin Logo" 
-        className="w-[200px] object-contain" 
+        className="h-12 object-contain" 
       />
     </div>
   );

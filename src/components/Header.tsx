@@ -13,6 +13,15 @@ const Header = () => {
   return (
     <header className="w-full py-0">
       <div className="container mx-auto flex justify-between items-center px-4">
+        {/* Logo */}
+        <div className="flex items-center h-16">
+          <img 
+            src="/lovable-uploads/b80f0760-068d-4a1b-bfe7-bb5d8ae0a674.png" 
+            alt="Toppin Logo" 
+            className="h-12 object-contain" 
+          />
+        </div>
+        
         {/* Desktop Navigation */}
         <nav className="hidden lg:flex items-center space-x-8">
           <a href="#features" className="text-gray-300 hover:text-white transition-colors">Características</a>
