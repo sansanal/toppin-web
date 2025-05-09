@@ -1,6 +1,5 @@
 
 import React, { useState } from 'react';
-import Logo from './Logo';
 import { Menu, X, ChevronDown, Globe } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
@@ -14,8 +13,6 @@ const Header = () => {
   return (
     <header className="w-full py-0">
       <div className="container mx-auto flex justify-between items-center px-4">
-        <Logo />
-        
         {/* Desktop Navigation */}
         <nav className="hidden lg:flex items-center space-x-8">
           <a href="#features" className="text-gray-300 hover:text-white transition-colors">Características</a>
@@ -47,7 +44,7 @@ const Header = () => {
         </nav>
         
         {/* Mobile menu button */}
-        <div className="lg:hidden flex items-center space-x-4">
+        <div className="lg:hidden flex items-center space-x-4 ml-auto">
           {/* Mobile Language Selector */}
           <div className="relative group">
             <Button 
