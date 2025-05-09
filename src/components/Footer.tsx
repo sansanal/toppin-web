@@ -1,8 +1,7 @@
 
 import React from 'react';
 import Logo from './Logo';
-import { Instagram, Facebook, Youtube, ChevronDown } from 'lucide-react';
-import { Button } from '@/components/ui/button';
+import { Instagram, Facebook, Youtube } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -49,27 +48,6 @@ const Footer = () => {
               <li><a href="#" className="text-gray-400 hover:text-white">Condiciones del servicio</a></li>
               <li><a href="#" className="text-gray-400 hover:text-white">Política de cookies</a></li>
             </ul>
-          </div>
-        </div>
-        
-        <div className="flex justify-center mt-16">
-          <div className="relative group">
-            <Button 
-              variant="outline" 
-              className="flex items-center gap-2 bg-transparent border border-gray-700 text-gray-300 hover:text-white hover:border-gray-500"
-            >
-              <span>🇪🇸 Español</span>
-              <ChevronDown size={16} />
-            </Button>
-            
-            <div className="absolute left-0 mt-2 w-full hidden group-hover:block">
-              <Button 
-                variant="outline" 
-                className="w-full flex items-center gap-2 bg-gray-800 border border-gray-700 text-gray-300 hover:text-white hover:border-gray-500"
-              >
-                🇬🇧 English
-              </Button>
-            </div>
           </div>
         </div>
       </div>
