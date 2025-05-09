@@ -25,7 +25,7 @@ const HeroSection = () => {
           </div>
           <div className="relative">
             <div className="phone-mockup relative z-10">
-              <img src="public/lovable-uploads/20f5c9b5-8268-4be2-907f-4ff577bdb73a.png" alt="Toppin App" className="w-full" />
+              <img src="public/lovable-uploads/b5ee4830-a908-48d1-aaa9-a0e528e9a08e.png" alt="Toppin App" className="w-full" />
             </div>
             
             {/* Candy Decorations */}
