@@ -8,15 +8,10 @@ const HeroSection = () => {
       <div className="container px-4 md:px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
           <div className="space-y-6">
-            <div className="flex items-center gap-4">
+            <div>
               <h1 className="text-4xl md:text-6xl font-bold text-gradient leading-tight">
                 La app de citas <br /> más dulce
               </h1>
-              <img 
-                src="public/lovable-uploads/238dc335-d333-46dd-a7a3-1ab2165d6417.png" 
-                alt="Toppin Logo" 
-                className="w-24 h-auto md:w-32 hidden sm:block"
-              />
             </div>
             <p className="text-lg text-gray-300 max-w-md">
               Descubre la comunidad donde encontrarás a tu medio bombón
