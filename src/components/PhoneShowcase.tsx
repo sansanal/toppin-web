@@ -24,21 +24,21 @@ const PhoneShowcase = () => {
             <div className="grid grid-cols-3 gap-4">
               <div className="phone-mockup transform rotate-[-8deg] scale-[0.8] translate-x-4 translate-y-4">
                 <img 
-                  src="public/lovable-uploads/0ef2467d-4e2e-4054-8de8-9a030b2db77e.png" 
+                  src="/lovable-uploads/0ef2467d-4e2e-4054-8de8-9a030b2db77e.png" 
                   alt="Toppin App Profile" 
                   className="w-full"
                 />
               </div>
               <div className="phone-mockup z-10 scale-[0.9]">
                 <img 
-                  src="public/lovable-uploads/9f37d599-079f-4a47-b323-b144425d0e23.png" 
+                  src="/lovable-uploads/9f37d599-079f-4a47-b323-b144425d0e23.png" 
                   alt="Toppin App Chat" 
                   className="w-full"
                 />
               </div>
               <div className="phone-mockup transform rotate-[8deg] scale-[0.8] -translate-x-4 translate-y-4">
                 <img 
-                  src="public/lovable-uploads/d04ea0bb-d67e-44e3-8e34-e21c55a2d05c.png" 
+                  src="/lovable-uploads/d04ea0bb-d67e-44e3-8e34-e21c55a2d05c.png" 
                   alt="Toppin App Match" 
                   className="w-full"
                 />
@@ -48,22 +48,13 @@ const PhoneShowcase = () => {
         </div>
       </div>
       
-      {/* Section divider image with gradient overlays for smooth transition */}
+      {/* Section divider image without gradients */}
       <div className="relative w-full mt-16">
-        {/* Top gradient fade from black to transparent */}
-        <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-black via-black/90 to-transparent z-20"></div>
-        
-        {/* Dark overlay */}
-        <div className="absolute inset-0 bg-black/60 z-10"></div>
-        
         <img 
-          src="public/lovable-uploads/97bf59f7-3690-4164-a6e5-ef49d6cecf05.png" 
+          src="/lovable-uploads/97bf59f7-3690-4164-a6e5-ef49d6cecf05.png" 
           alt="Toppin app screenshots" 
           className="w-full object-cover"
         />
-        
-        {/* Bottom gradient fade from transparent to black */}
-        <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-black via-black/90 to-transparent z-20"></div>
       </div>
     </section>
   );
