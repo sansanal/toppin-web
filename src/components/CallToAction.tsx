@@ -3,7 +3,7 @@ import React from 'react';
 
 const CallToAction = () => {
   return (
-    <section className="py-16 md:py-24 relative">
+    <section className="py-16 md:py-24 relative bg-black">
       <div className="container px-4 md:px-6 text-center">
         <h2 className="text-3xl md:text-5xl font-bold mb-16 text-toppin-pink">
           ¿Toppiteamos?
@@ -26,11 +26,11 @@ const CallToAction = () => {
           </a>
         </div>
         
-        <div className="relative">
+        <div className="relative w-full bg-black">
           <img 
             src="/lovable-uploads/60b75285-dcb9-44f0-8ae5-9493672a05eb.png"
             alt="Pareja feliz usando Toppin" 
-            className="w-full max-w-3xl mx-auto rounded-2xl"
+            className="w-full mx-auto"
           />
         </div>
       </div>
