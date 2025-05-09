@@ -12,6 +12,15 @@ const FeaturesSection = () => {
           A todo el mundo le gustan los dulces. Es por ello que a nuestros usuarios les encanta nuestra comunidad de bombones.
         </p>
         
+        {/* Section divider image */}
+        <div className="relative w-full my-12 overflow-hidden">
+          <img 
+            src="/lovable-uploads/0ed66cb4-c7ac-45db-a824-3cf79caa23e7.png" 
+            alt="Toppin app profiles" 
+            className="w-full object-cover"
+          />
+        </div>
+        
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mt-12">
           <div className="bg-secondary p-6 rounded-2xl neo-blur">
             <p className="text-gray-300 mb-4">
