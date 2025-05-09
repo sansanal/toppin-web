@@ -30,12 +30,6 @@ const GameSection = () => {
               alt="Rueda de premios Toppin" 
               className="w-full max-w-md mx-auto animate-pulse-soft"
             />
-            <div className="absolute top-0 right-0 animate-float">
-              <img src="/lovable-uploads/50ab436a-1674-4db4-8618-83d1002c974d.png" alt="Cupcake" className="w-12 h-12" />
-            </div>
-            <div className="absolute bottom-10 left-0 animate-float" style={{animationDelay: "1.2s"}}>
-              <img src="/lovable-uploads/f9da14eb-2218-4a5b-967a-7f14aaacc64d.png" alt="Gummy" className="w-12 h-12" />
-            </div>
           </div>
         </div>
       </div>
