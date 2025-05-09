@@ -1,12 +1,16 @@
 
 import React from 'react';
 import { Instagram, Facebook, Youtube } from 'lucide-react';
+import Logo from './Logo';
 
 const Footer = () => {
   return (
     <footer className="py-16 border-t border-gray-800">
       <div className="container px-4 md:px-6">
         <div className="flex flex-col md:flex-row items-center justify-center mb-10">
+          <div className="mb-6">
+            <Logo />
+          </div>
           <div className="flex space-x-4 mt-4 md:mt-0">
             <a href="#" className="text-gray-400 hover:text-white">
               <Instagram />
