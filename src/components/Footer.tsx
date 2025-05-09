@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="container px-4 md:px-6">
         <div className="flex flex-col md:flex-row items-center justify-between mb-10">
           <img 
-            src="public/lovable-uploads/75748513-d0d1-497c-90ad-fa97070f24a4.png" 
+            src="/lovable-uploads/75748513-d0d1-497c-90ad-fa97070f24a4.png" 
             alt="Toppin Logo" 
             className="w-[200px] object-contain"
           />
