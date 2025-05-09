@@ -1,6 +1,4 @@
-
 import React from 'react';
-
 const PhoneShowcase = () => {
   return <section className="py-16 md:py-24 overflow-hidden">
       <div className="container px-4 md:px-6">
@@ -24,9 +22,8 @@ const PhoneShowcase = () => {
       
       {/* Section divider image without gradients */}
       <div className="relative w-full mt-16">
-        <img src="/lovable-uploads/3b958ffc-8660-43dd-a3e9-c04efb789dd8.png" alt="Toppin app screenshots" className="w-full object-cover" />
+        <img alt="Toppin app screenshots" className="w-full object-cover" src="/lovable-uploads/c92fdecd-4ea5-4b22-b861-ea5e89f1bbfa.png" />
       </div>
     </section>;
 };
-
 export default PhoneShowcase;
