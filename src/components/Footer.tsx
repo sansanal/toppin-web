@@ -1,6 +1,5 @@
 
 import React from 'react';
-import Logo from './Logo';
 import { Instagram, Facebook, Youtube } from 'lucide-react';
 
 const Footer = () => {
@@ -8,7 +7,11 @@ const Footer = () => {
     <footer className="py-16 border-t border-gray-800">
       <div className="container px-4 md:px-6">
         <div className="flex flex-col md:flex-row items-center justify-between mb-10">
-          <Logo />
+          <img 
+            src="public/lovable-uploads/75748513-d0d1-497c-90ad-fa97070f24a4.png" 
+            alt="Toppin Logo" 
+            className="h-10"
+          />
           <div className="flex space-x-4 mt-4 md:mt-0">
             <a href="#" className="text-gray-400 hover:text-white">
               <Instagram />

@@ -1,6 +1,5 @@
 
 import React from 'react';
-import { Apple, Play } from 'lucide-react';
 
 const CallToAction = () => {
   return (
@@ -11,14 +10,20 @@ const CallToAction = () => {
         </h2>
         
         <div className="flex flex-col md:flex-row items-center justify-center gap-6 mb-16">
-          <button className="flex items-center space-x-2 candy-button bg-gray-800 hover:bg-gray-700">
-            <Apple className="w-5 h-5" />
-            <span>Descargar en App Store</span>
-          </button>
-          <button className="flex items-center space-x-2 candy-button bg-gray-800 hover:bg-gray-700">
-            <Play className="w-5 h-5" />
-            <span>Descargar en Play Store</span>
-          </button>
+          <a href="#" className="hover:opacity-80 transition-opacity">
+            <img 
+              src="public/lovable-uploads/d963eff3-2817-4219-8fb7-376b6810eb9f.png" 
+              alt="Descargar en App Store" 
+              className="h-12"
+            />
+          </a>
+          <a href="#" className="hover:opacity-80 transition-opacity">
+            <img 
+              src="public/lovable-uploads/299d0c95-7c5c-43a0-8f1a-4f0d06208293.png" 
+              alt="Descargar en Google Play" 
+              className="h-12"
+            />
+          </a>
         </div>
         
         <div className="relative">

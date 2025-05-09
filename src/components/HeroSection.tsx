@@ -13,8 +13,8 @@ const HeroSection = () => {
                 La app de citas <br /> más dulce
               </h1>
               <img 
-                src="public/lovable-uploads/89765fd0-c3cb-41d9-9371-51f2089dadb7.png" 
-                alt="Teléfono con Toppin App" 
+                src="public/lovable-uploads/238dc335-d333-46dd-a7a3-1ab2165d6417.png" 
+                alt="Toppin Logo" 
                 className="w-24 h-auto md:w-32 hidden sm:block"
               />
             </div>
@@ -25,7 +25,7 @@ const HeroSection = () => {
           </div>
           <div className="relative">
             <div className="phone-mockup relative z-10">
-              <img src="public/lovable-uploads/ae69ef5c-7ceb-4893-95b2-b007a5c7975c.png" alt="Toppin App" className="w-full" />
+              <img src="public/lovable-uploads/20f5c9b5-8268-4be2-907f-4ff577bdb73a.png" alt="Toppin App" className="w-full" />
             </div>
             
             {/* Candy Decorations */}
