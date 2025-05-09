@@ -12,7 +12,7 @@ const Header = () => {
   };
 
   return (
-    <header className="w-full py-4">
+    <header className="w-full py-0">
       <div className="container mx-auto flex justify-between items-center px-4">
         <Logo />
         
