@@ -15,7 +15,7 @@ const FeaturesSection = () => {
         {/* Section divider image */}
         <div className="relative w-full my-12 overflow-hidden">
           <img 
-            src="/lovable-uploads/0ed66cb4-c7ac-45db-a824-3cf79caa23e7.png" 
+            src="/lovable-uploads/038cbd30-4b5c-4b44-8e5f-5fcd15473426.png" 
             alt="Toppin app profiles" 
             className="w-full object-cover"
           />
