@@ -1,3 +1,4 @@
+
 import React from 'react';
 const CallToAction = () => {
   return <section className="py-16 md:py-24 relative bg-black">
@@ -18,7 +19,7 @@ const CallToAction = () => {
       
       {/* Full width image container - no bottom margin to connect with footer line */}
       <div className="w-full mb-0">
-        <img alt="Pareja usando Toppin" className="w-full object-contain" src="/lovable-uploads/261c0ff3-3331-4cb3-b7f4-259e11b24a47.png" />
+        <img alt="Pareja usando Toppin" className="w-full object-contain" src="/lovable-uploads/4d57a01d-2fc7-4779-b4fe-3f8a3ff30f05.png" />
       </div>
     </section>;
 };

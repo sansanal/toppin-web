@@ -19,7 +19,7 @@ const HeroSection = () => {
           </div>
           <div className="relative">
             <div className="relative z-10 animate-float">
-              <img alt="Toppin App" className="w-full" src="/lovable-uploads/4a67e24e-eac1-4b7c-8765-818f5ff072dd.png" />
+              <img alt="Toppin App" className="w-full" src="/lovable-uploads/e2a3d755-8303-4b61-8406-8bdc86efab55.png" />
             </div>
           </div>
         </div>
