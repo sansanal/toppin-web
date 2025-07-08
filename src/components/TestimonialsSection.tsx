@@ -1,5 +1,8 @@
+
 import React from 'react';
-import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
+import { Avatar, AvatarFallback } from '@/components/ui/avatar';
+import { User } from 'lucide-react';
+
 const TestimonialsSection = () => {
   const testimonials = [{
     text: "En otras apps no encontraba a nadie interesante o amable. La comunidad de toppin es genial.",
@@ -27,7 +30,9 @@ const TestimonialsSection = () => {
     username: "@perezm",
     image: "public/lovable-uploads/6e204e9f-f871-4c78-b1a9-515f30bacf1e.png"
   }];
-  return <section className="py-16 md:py-24">
+
+  return (
+    <section className="py-16 md:py-24">
       <div className="container px-4 md:px-6">
         <h2 className="text-3xl md:text-5xl font-bold text-center mb-16">
           Probaron <span className="text-toppin-blue">Toppin</span> <br />
@@ -35,23 +40,28 @@ const TestimonialsSection = () => {
         </h2>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {testimonials.map((testimonial, index) => <div key={index} className="bg-secondary p-6 rounded-2xl neo-blur">
+          {testimonials.map((testimonial, index) => (
+            <div key={index} className="bg-secondary p-6 rounded-2xl neo-blur">
               <p className="text-gray-300 mb-4">
                 {testimonial.text}
               </p>
               <div className="flex items-center">
                 <Avatar className="w-12 h-12 rounded-full mr-3 overflow-hidden">
-                  <AvatarImage src={testimonial.image} alt={testimonial.name} className="poner un icono de una cara hecha con IA" />
-                  <AvatarFallback className="bg-gray-600">{testimonial.name.charAt(0)}</AvatarFallback>
+                  <AvatarFallback className="bg-gray-600">
+                    <User className="w-6 h-6 text-white" />
+                  </AvatarFallback>
                 </Avatar>
                 <div>
                   <p className="font-semibold">{testimonial.name}</p>
                   <p className="text-sm text-gray-400">{testimonial.username}</p>
                 </div>
               </div>
-            </div>)}
+            </div>
+          ))}
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default TestimonialsSection;
