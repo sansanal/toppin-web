@@ -4,50 +4,76 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
 const SafetyNotices = () => {
+  const safetyData = [
+    {
+      key: "personal-safety",
+      title: "Seguridad Personal",
+      text: "Consejos fundamentales para proteger tu información personal y mantenerte seguro mientras conoces gente nueva.",
+      img: "/lovable-uploads/595ce5fe-d9cc-45dd-b702-f6a7123f733a.png"
+    },
+    {
+      key: "meeting-safety", 
+      title: "Encuentros Seguros",
+      text: "Guía completa sobre cómo planificar y realizar encuentros seguros con personas que conoces en línea.",
+      img: "/lovable-uploads/60b75285-dcb9-44f0-8ae5-9493672a05eb.png"
+    },
+    {
+      key: "digital-safety",
+      title: "Seguridad Digital", 
+      text: "Protege tus datos y privacidad en el mundo digital. Aprende sobre configuraciones de privacidad y buenas prácticas.",
+      img: "/lovable-uploads/62699fe5-dca8-42df-b095-80342f162b85.png"
+    }
+  ];
+
   return (
     <div className="min-h-screen bg-black text-white">
       <Header />
       
-      <main className="py-16">
-        <div className="container px-4 md:px-6 max-w-4xl mx-auto">
-          <h1 className="text-3xl md:text-5xl font-bold mb-8 text-toppin-pink">
-            Avisos de seguridad
-          </h1>
-          
-          <div className="space-y-6 text-gray-300">
-            <p>
-              Tu seguridad es nuestra prioridad. En Toppin, implementamos múltiples medidas 
-              para proteger a nuestros usuarios y crear un ambiente seguro para conocer gente nueva.
-            </p>
+      <main id="main-content" className="bg-gray-50">
+        <div className="container mx-auto px-4 md:px-6 max-w-6xl py-8">
+          <div className="bg-white">
+            <div className="flex flex-col items-center">
+              {/* Header Section */}
+              <div className="bg-gray-100 py-10 w-full">
+                <div className="flex justify-center">
+                  <div className="text-center w-full">
+                    <h1 className="text-4xl md:text-5xl font-bold mb-1 text-toppin-pink">
+                      Avisos de seguridad
+                    </h1>
+                  </div>
+                </div>
+              </div>
 
-            <h2 className="text-2xl font-bold text-toppin-blue mt-8 mb-4">Consejos de Seguridad</h2>
-            <ul className="space-y-2 pl-6">
-              <li>• Nunca compartas información personal sensible (dirección, datos bancarios)</li>
-              <li>• Conoce a personas nuevas en lugares públicos</li>
-              <li>• Informa a un amigo o familiar sobre tus planes</li>
-              <li>• Confía en tu instinto - si algo no se siente bien, aléjate</li>
-              <li>• Reporta cualquier comportamiento sospechoso o inapropiado</li>
-            </ul>
-
-            <h2 className="text-2xl font-bold text-toppin-blue mt-8 mb-4">Herramientas de Seguridad</h2>
-            <ul className="space-y-2 pl-6">
-              <li>• Sistema de verificación de perfiles</li>
-              <li>• Función de reporte y bloqueo</li>
-              <li>• Moderación activa de contenido</li>
-              <li>• Encriptación de mensajes</li>
-            </ul>
-
-            <h2 className="text-2xl font-bold text-toppin-blue mt-8 mb-4">Cómo Reportar</h2>
-            <p>
-              Si encuentras contenido inapropiado o comportamiento sospechoso, puedes reportarlo 
-              directamente desde la aplicación. Nuestro equipo revisa todos los reportes dentro 
-              de 24 horas.
-            </p>
-
-            <p className="mt-8">
-              Recuerda: Tu seguridad está en tus manos. Mantente alerta y disfruta conociendo 
-              gente nueva de manera segura.
-            </p>
+              {/* Content Section */}
+              <div className="bg-gray-50 py-10 w-full">
+                <div className="flex justify-center">
+                  <div className="flex flex-col space-y-6 w-full items-center">
+                    {safetyData.map((item) => (
+                      <div
+                        key={item.key}
+                        className="bg-white p-3 border border-toppin-pink rounded-3xl overflow-hidden max-w-md"
+                      >
+                        <div className="flex justify-center">
+                          <img
+                            className="rounded-md w-full h-64 object-cover"
+                            src={item.img}
+                            alt={item.key}
+                          />
+                        </div>
+                        <div className="p-6 mt-10 text-center">
+                          <h2 className="text-xl font-bold mb-4 text-toppin-pink">
+                            {item.title}
+                          </h2>
+                          <p className="text-gray-700">
+                            {item.text}
+                          </p>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </main>
