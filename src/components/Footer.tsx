@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Instagram, Facebook, Youtube } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import Logo from './Logo';
 import { Separator } from './ui/separator';
 
@@ -38,12 +39,12 @@ const Footer = () => {
           <div>
             <h3 className="font-bold text-lg mb-4">Comunidad</h3>
             <ul className="space-y-2">
-              <li><a href="#" className="text-gray-400 hover:text-white">Normas de la comunidad</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white">Avisos de seguridad</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white">Textos legales</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white">Política de privacidad</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white">Condiciones del servicio</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white">Política de cookies</a></li>
+              <li><Link to="/community-guidelines" className="text-gray-400 hover:text-white">Normas de la comunidad</Link></li>
+              <li><Link to="/safety-notices" className="text-gray-400 hover:text-white">Avisos de seguridad</Link></li>
+              <li><Link to="/legal-texts" className="text-gray-400 hover:text-white">Textos legales</Link></li>
+              <li><Link to="/privacy-policy" className="text-gray-400 hover:text-white">Política de privacidad</Link></li>
+              <li><Link to="/terms-of-service" className="text-gray-400 hover:text-white">Condiciones del servicio</Link></li>
+              <li><Link to="/cookie-policy" className="text-gray-400 hover:text-white">Política de cookies</Link></li>
             </ul>
           </div>
         </div>
