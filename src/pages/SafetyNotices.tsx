@@ -29,51 +29,54 @@ const SafetyNotices = () => {
     <div className="min-h-screen bg-black text-white">
       <Header />
       
-      <main id="main-content" className="bg-gray-50">
-        <div className="container mx-auto px-4 md:px-6 max-w-6xl py-8">
-          <div className="bg-white">
-            <div className="flex flex-col items-center">
-              {/* Header Section */}
-              <div className="bg-gray-100 py-10 w-full">
-                <div className="flex justify-center">
-                  <div className="text-center w-full">
-                    <h1 className="text-4xl md:text-5xl font-bold mb-1 text-toppin-pink">
-                      Avisos de seguridad
-                    </h1>
-                  </div>
-                </div>
-              </div>
+      <main className="py-16">
+        <div className="container px-4 md:px-6 max-w-4xl mx-auto">
+          <h1 className="text-3xl md:text-5xl font-bold mb-8 text-toppin-pink">
+            Avisos de seguridad
+          </h1>
+          
+          <div className="space-y-8 text-gray-300">
+            <p>
+              Tu seguridad es nuestra prioridad. Aquí encontrarás información importante 
+              para mantenerte seguro mientras usas Toppin y conoces nuevas personas.
+            </p>
 
-              {/* Content Section */}
-              <div className="bg-gray-50 py-10 w-full">
-                <div className="flex justify-center">
-                  <div className="flex flex-col space-y-6 w-full items-center">
-                    {safetyData.map((item) => (
-                      <div
-                        key={item.key}
-                        className="bg-white p-3 border border-toppin-pink rounded-3xl overflow-hidden max-w-md"
-                      >
-                        <div className="flex justify-center">
-                          <img
-                            className="rounded-md w-full h-64 object-cover"
-                            src={item.img}
-                            alt={item.key}
-                          />
-                        </div>
-                        <div className="p-6 mt-10 text-center">
-                          <h2 className="text-xl font-bold mb-4 text-toppin-pink">
-                            {item.title}
-                          </h2>
-                          <p className="text-gray-700">
-                            {item.text}
-                          </p>
-                        </div>
-                      </div>
-                    ))}
+            {safetyData.map((item) => (
+              <div key={item.key} className="bg-gray-800 rounded-lg p-6 border border-gray-700">
+                <div className="flex flex-col md:flex-row gap-6 items-center">
+                  <div className="md:w-1/3">
+                    <img
+                      className="rounded-lg w-full h-48 object-cover"
+                      src={item.img}
+                      alt={item.title}
+                    />
+                  </div>
+                  <div className="md:w-2/3">
+                    <h2 className="text-2xl font-bold text-toppin-blue mb-4">
+                      {item.title}
+                    </h2>
+                    <p className="text-gray-300">
+                      {item.text}
+                    </p>
                   </div>
                 </div>
               </div>
+            ))}
+
+            <div className="mt-8 p-6 bg-gray-800 rounded-lg border border-toppin-pink">
+              <h2 className="text-2xl font-bold text-toppin-pink mb-4">Recursos Adicionales</h2>
+              <ul className="space-y-2 pl-6">
+                <li>• Reporta cualquier comportamiento sospechoso inmediatamente</li>
+                <li>• Utiliza las funciones de bloqueo y reporte disponibles en la app</li>
+                <li>• Mantén actualizadas tus configuraciones de privacidad</li>
+                <li>• Confía en tu instinto - si algo no se siente bien, retírate</li>
+              </ul>
             </div>
+
+            <p className="mt-8">
+              Si necesitas ayuda inmediata o tienes preguntas sobre seguridad, 
+              contacta con nuestro equipo de soporte en seguridad@toppin.com
+            </p>
           </div>
         </div>
       </main>
