@@ -36,7 +36,7 @@ const Footer = () => {
           <div>
             <h3 className="font-bold text-lg mb-4">Ayuda</h3>
             <ul className="space-y-2">
-              <li><a href="#" className="text-gray-400 hover:text-white">FAQ</a></li>
+              <li><Link to="/faq" onClick={handleLinkClick} className="text-gray-400 hover:text-white">FAQ</Link></li>
             </ul>
           </div>
           
