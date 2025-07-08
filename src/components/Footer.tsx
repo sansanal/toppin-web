@@ -6,6 +6,10 @@ import Logo from './Logo';
 import { Separator } from './ui/separator';
 
 const Footer = () => {
+  const handleLinkClick = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
     <footer className="border-t-0 py-16">
       {/* Custom separator that connects with the image */}
@@ -39,17 +43,17 @@ const Footer = () => {
           <div>
             <h3 className="font-bold text-lg mb-4">Comunidad</h3>
             <ul className="space-y-2">
-              <li><Link to="/community-guidelines" className="text-gray-400 hover:text-white">Normas de la comunidad</Link></li>
-              <li><Link to="/safety-notices" className="text-gray-400 hover:text-white">Avisos de seguridad</Link></li>
+              <li><Link to="/community-guidelines" onClick={handleLinkClick} className="text-gray-400 hover:text-white">Normas de la comunidad</Link></li>
+              <li><Link to="/safety-notices" onClick={handleLinkClick} className="text-gray-400 hover:text-white">Avisos de seguridad</Link></li>
             </ul>
           </div>
           
           <div>
             <h3 className="font-bold text-lg mb-4">Textos legales</h3>
             <ul className="space-y-2">
-              <li><Link to="/privacy-policy" className="text-gray-400 hover:text-white">Política de privacidad</Link></li>
-              <li><Link to="/terms-of-service" className="text-gray-400 hover:text-white">Condiciones del servicio</Link></li>
-              <li><Link to="/cookie-policy" className="text-gray-400 hover:text-white">Política de cookies</Link></li>
+              <li><Link to="/privacy-policy" onClick={handleLinkClick} className="text-gray-400 hover:text-white">Política de privacidad</Link></li>
+              <li><Link to="/terms-of-service" onClick={handleLinkClick} className="text-gray-400 hover:text-white">Condiciones del servicio</Link></li>
+              <li><Link to="/cookie-policy" onClick={handleLinkClick} className="text-gray-400 hover:text-white">Política de cookies</Link></li>
             </ul>
           </div>
         </div>
