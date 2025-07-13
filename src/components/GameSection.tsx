@@ -1,6 +1,9 @@
+
 import React from 'react';
+
 const GameSection = () => {
-  return <section className="py-16 md:py-24">
+  return (
+    <section className="py-16 md:py-24">
       <div className="container px-4 md:px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <div className="space-y-6">
@@ -22,10 +25,16 @@ const GameSection = () => {
           </div>
           
           <div className="relative">
-            <img alt="Rueda de premios Toppin" className="w-full max-w-md mx-auto animate-pulse-soft" src="/lovable-uploads/3652d304-e118-4a1d-ad64-5856da9c796a.png" />
+            <img 
+              alt="Rueda de premios Toppin" 
+              className="w-full max-w-md mx-auto animate-pulse-soft" 
+              src="/lovable-uploads/81f4eac9-32d0-4135-a6f7-4802f7f2c575.png" 
+            />
           </div>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default GameSection;
