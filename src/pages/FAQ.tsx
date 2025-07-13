@@ -538,32 +538,32 @@ const FAQ = () => {
             </h2>
           </div>
 
-          <div className="space-y-6">
-            <Accordion type="multiple" className="w-full">
-              {faqSections.map((section) => (
-                <AccordionItem key={section.id} value={section.id} className="border-gray-700">
-                  <AccordionTrigger className="text-left text-toppin-blue font-semibold text-lg hover:text-toppin-pink transition-colors">
-                    {section.title}
-                  </AccordionTrigger>
-                  <AccordionContent>
-                    <div className="space-y-6 pt-4">
-                      {section.questions.map((item, index) => (
-                        <div key={index} className="space-y-3">
-                          <div className="p-4 bg-gray-900 rounded-lg border border-gray-700">
-                            <h3 className="text-gray-300 font-medium mb-2">{item.question}</h3>
-                            {item.answer && (
-                              <div className="mt-4 p-4 bg-gray-800 rounded-lg border border-gray-600">
-                                {item.answer}
-                              </div>
-                            )}
-                          </div>
-                        </div>
-                      ))}
-                    </div>
-                  </AccordionContent>
-                </AccordionItem>
-              ))}
-            </Accordion>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {faqSections.map((section) => (
+              <div key={section.id} className="space-y-4">
+                <h2 className="text-toppin-blue font-bold text-lg mb-6 text-center">
+                  {section.title}
+                </h2>
+                <Accordion type="single" collapsible className="space-y-3">
+                  {section.questions.map((item, index) => (
+                    <AccordionItem 
+                      key={`${section.id}-${index}`} 
+                      value={`${section.id}-${index}`}
+                      className="border-0 bg-gray-100/10 rounded-lg px-4 border border-gray-400/20"
+                    >
+                      <AccordionTrigger className="text-left text-gray-300 hover:text-white text-sm py-4 [&>svg]:text-toppin-blue">
+                        {item.question}
+                      </AccordionTrigger>
+                      {item.answer && (
+                        <AccordionContent className="text-gray-400 text-sm">
+                          {item.answer}
+                        </AccordionContent>
+                      )}
+                    </AccordionItem>
+                  ))}
+                </Accordion>
+              </div>
+            ))}
           </div>
         </div>
       </main>
