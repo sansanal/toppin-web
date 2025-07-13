@@ -5,9 +5,11 @@ export const useLanguage = () => {
   const { i18n, t } = useTranslation();
 
   const changeLanguage = (lng: string) => {
-    i18n.changeLanguage(lng);
-    // Cambiar también el idioma del HTML
-    document.documentElement.lang = lng;
+    if (i18n.language !== lng) {
+      i18n.changeLanguage(lng);
+      // Cambiar también el idioma del HTML
+      document.documentElement.lang = lng;
+    }
   };
 
   const currentLanguage = i18n.language;
