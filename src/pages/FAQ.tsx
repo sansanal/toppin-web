@@ -538,24 +538,24 @@ const FAQ = () => {
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {faqSections.map((section) => (
-              <div key={section.id} className="space-y-4">
-                <h2 className="text-toppin-blue font-bold text-lg mb-6 text-center">
+              <div key={section.id} className="space-y-2">
+                <h2 className="text-toppin-blue font-bold text-base mb-3 text-center">
                   {section.title}
                 </h2>
-                <Accordion type="single" collapsible className="space-y-3">
+                <Accordion type="single" collapsible className="space-y-2">
                   {section.questions.map((item, index) => (
                     <AccordionItem 
                       key={`${section.id}-${index}`} 
                       value={`${section.id}-${index}`}
-                      className="border-0 bg-gray-100/10 rounded-lg px-4 border border-gray-400/20"
+                      className="border-0 bg-gray-100/10 rounded-lg px-3 border border-gray-400/20"
                     >
-                      <AccordionTrigger className="text-left text-gray-300 hover:text-white text-sm py-4 [&>svg]:text-toppin-blue">
+                      <AccordionTrigger className="text-left text-gray-300 hover:text-white text-xs py-3 [&>svg]:text-toppin-blue [&>svg]:h-3 [&>svg]:w-3">
                         {item.question}
                       </AccordionTrigger>
                       {item.answer && (
-                        <AccordionContent className="text-gray-400 text-sm">
+                        <AccordionContent className="text-gray-400 text-xs pb-3">
                           {item.answer}
                         </AccordionContent>
                       )}
