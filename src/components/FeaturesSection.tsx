@@ -1,18 +1,20 @@
 
 import React from 'react';
+import { useLanguage } from '@/hooks/useLanguage';
 
 const FeaturesSection = () => {
+  const { t } = useLanguage();
+
   return (
     <section className="py-16 md:py-24">
       <div className="container px-4 md:px-6">
         <h2 className="text-3xl md:text-5xl font-bold mb-4 text-center">
-          ¿Qué nos hace <span className="text-gradient">Tan dulces?</span>
+          {t('features.title')} <span className="text-gradient"></span>
         </h2>
         <p className="text-gray-300 text-center max-w-3xl mx-auto mb-16">
-          A todo el mundo le gustan los dulces. Es por ello que a nuestros usuarios les encanta nuestra comunidad de bombones.
+          {t('features.subtitle')}
         </p>
         
-        {/* Section divider image */}
         <div className="relative w-full my-12 overflow-hidden">
           <img 
             src="/lovable-uploads/038cbd30-4b5c-4b44-8e5f-5fcd15473426.png" 
@@ -24,26 +26,26 @@ const FeaturesSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mt-12">
           <div className="bg-secondary p-6 rounded-2xl neo-blur">
             <p className="text-gray-300 mb-4">
-              Para experiencias más apetecibles, te animamos a verificar tu perfil. Aunque no sean los únicos, los bombones verificados son los más sabrosos de la caja!
+              {t('features.feature1')}
             </p>
           </div>
           
           <div className="bg-secondary p-6 rounded-2xl neo-blur">
             <p className="text-gray-300 mb-4">
-              No inviertas tu tiempo en gente que no vale la pena. Únete a Toppin y empieza a conocer a gente interesante desde ya.
+              {t('features.feature2')}
             </p>
           </div>
           
           <div className="bg-secondary p-6 rounded-2xl neo-blur">
             <p className="text-gray-300 mb-4">
-              Usa los Donuts, Muffins y Ositos de gominola para conseguir más citas, porque... ¿A quién no le gusta un dulce?
+              {t('features.feature3')}
             </p>
           </div>
         </div>
         
         <div className="flex justify-center mt-10">
           <button className="candy-button mt-8">
-            DESCARGAR APP
+            {t('features.downloadApp')}
           </button>
         </div>
       </div>

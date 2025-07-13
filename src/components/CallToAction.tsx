@@ -1,12 +1,15 @@
 
 import React from 'react';
+import { useLanguage } from '@/hooks/useLanguage';
 
 const CallToAction = () => {
+  const { t } = useLanguage();
+
   return (
     <section className="py-16 md:py-24 relative bg-black">
       <div className="container px-4 md:px-6 text-center mx-auto max-w-4xl">
         <h2 className="text-3xl md:text-5xl font-bold mb-16 text-toppin-pink">
-          ¿Toppiteamos?
+          {t('cta.title')}
         </h2>
         
         <div className="flex flex-col md:flex-row items-center justify-center gap-6 mb-16">
@@ -19,7 +22,6 @@ const CallToAction = () => {
         </div>
       </div>
       
-      {/* Full width image container - no bottom margin to connect with footer line */}
       <div className="w-full mb-0">
         <img alt="Pareja usando Toppin" className="w-full object-contain" src="/lovable-uploads/41d34257-9a07-4893-bb16-8b0385ea9acb.png" />
       </div>

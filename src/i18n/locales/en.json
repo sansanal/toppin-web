@@ -1,0 +1,86 @@
+
+{
+  "meta": {
+    "title": "Toppin - Discover the community where you'll find your sweet match",
+    "description": "Join Toppin, the dating app that connects you with your soulmate. Discover a vibrant community where you'll find your sweet match and live unique experiences."
+  },
+  "nav": {
+    "features": "Features",
+    "game": "Game",
+    "testimonials": "Testimonials",
+    "download": "Download"
+  },
+  "hero": {
+    "title": "The sweetest dating app",
+    "subtitle": "Discover the community where you'll find your sweet match",
+    "downloadApp": "DOWNLOAD APP"
+  },
+  "phoneShowcase": {
+    "title": "Swipe to find your sweet match",
+    "description1": "Discover Toppin and meet the best people in your city.",
+    "description2": "Join and add flavor to your life!",
+    "knowMore": "LEARN MORE"
+  },
+  "features": {
+    "title": "What makes us So sweet?",
+    "subtitle": "Everyone loves sweets. That's why our users love our community of sweet matches.",
+    "feature1": "For more appetizing experiences, we encourage you to verify your profile. Although they're not the only ones, verified sweet matches are the tastiest in the box!",
+    "feature2": "Don't waste your time on people who aren't worth it. Join Toppin and start meeting interesting people right now.",
+    "feature3": "Use Donuts, Muffins and Gummy Bears to get more dates, because... Who doesn't like a sweet treat?",
+    "downloadApp": "DOWNLOAD APP"
+  },
+  "game": {
+    "title": "Play and meet people",
+    "description1": "Discover a new way to meet people.",
+    "description2": "Play Toppin so you don't miss any dates with people in your area.",
+    "description3": "Use Donuts, Muffins and Gummy Bears to get more dates, because... Who doesn't like a sweet treat?",
+    "downloadApp": "DOWNLOAD APP"
+  },
+  "testimonials": {
+    "title": "Sweet Match",
+    "testimonial1": "On other apps I couldn't find anyone interesting or kind. The toppin community is great.",
+    "testimonial2": "I started using toppin last week and I've already had two dates.",
+    "testimonial3": "It's a great app, you get to meet people by playing. Very fun.",
+    "testimonial4": "Using Toppin I met my partner. He sent me a muffin and I couldn't resist.",
+    "testimonial5": "Before, it took me a long time to find someone to have an interesting conversation with. Now, it's very easy to find people who are worth it."
+  },
+  "cta": {
+    "title": "Ready to Toppin?"
+  },
+  "footer": {
+    "support": "Support",
+    "community": "Community",
+    "communityGuidelines": "Community guidelines",
+    "safetyNotices": "Safety notices",
+    "legal": "Legal",
+    "legalTexts": "Legal texts",
+    "privacyPolicy": "Privacy policy",
+    "termsOfService": "Terms of service",
+    "cookiePolicy": "Cookie policy (EU)",
+    "faq": "FAQ",
+    "copyright": "© 2024 Toppin Global Company, S.L. All rights reserved."
+  },
+  "pages": {
+    "communityGuidelines": {
+      "title": "Community Guidelines"
+    },
+    "safetyNotices": {
+      "title": "Safety Notices"
+    },
+    "legalTexts": {
+      "title": "Legal Texts"
+    },
+    "privacyPolicy": {
+      "title": "Privacy Policy"
+    },
+    "termsOfService": {
+      "title": "Terms of Service"
+    },
+    "cookiePolicy": {
+      "title": "Cookie Policy (EU)"
+    },
+    "faq": {
+      "title": "Frequently Asked Questions"
+    }
+  }
+}

@@ -1,0 +1,86 @@
+
+{
+  "meta": {
+    "title": "Toppin - Descubre la comunidad donde encontrarás a tu medio bombón",
+    "description": "Únete a Toppin, la app de citas que te conecta con tu media naranja. Descubre una comunidad vibrante donde encontrarás a tu medio bombón y vive experiencias únicas."
+  },
+  "nav": {
+    "features": "Características",
+    "game": "Juego",
+    "testimonials": "Testimonios",
+    "download": "Descargar"
+  },
+  "hero": {
+    "title": "La app de citas más dulce",
+    "subtitle": "Descubre la comunidad donde encontrarás a tu medio bombón",
+    "downloadApp": "DESCARGAR APP"
+  },
+  "phoneShowcase": {
+    "title": "Toppitea para encontrar tu bombón",
+    "description1": "Descubre Toppin y conoce a las mejores personas de tu ciudad.",
+    "description2": "¡Únete y ponle sabor a la vida!",
+    "knowMore": "SABER MÁS"
+  },
+  "features": {
+    "title": "¿Qué nos hace Tan dulces?",
+    "subtitle": "A todo el mundo le gustan los dulces. Es por ello que a nuestros usuarios les encanta nuestra comunidad de bombones.",
+    "feature1": "Para experiencias más apetecibles, te animamos a verificar tu perfil. Aunque no sean los únicos, los bombones verificados son los más sabrosos de la caja!",
+    "feature2": "No inviertas tu tiempo en gente que no vale la pena. Únete a Toppin y empieza a conocer a gente interesante desde ya.",
+    "feature3": "Usa los Donuts, Muffins y Ositos de gominola para conseguir más citas, porque... ¿A quién no le gusta un dulce?",
+    "downloadApp": "DESCARGAR APP"
+  },
+  "game": {
+    "title": "Juega y conoce gente",
+    "description1": "Descubre una nueva forma de conocer a personas.",
+    "description2": "Juega a Toppin para no perderte ninguna cita con gente de tu zona.",
+    "description3": "Usa los Donuts, Muffins y Ositos de gominola para conseguir más citas, porque... ¿A quién no le gusta un dulce?",
+    "downloadApp": "DESCARGAR APP"
+  },
+  "testimonials": {
+    "title": "Sweet Match",
+    "testimonial1": "En otras apps no encontraba a nadie interesante o amable. La comunidad de toppin es genial.",
+    "testimonial2": "Empecé a usar toppin la semana pasada y ya he tenido dos citas.",
+    "testimonial3": "Es una app genial, consigues conocer a gente jugando. Muy divertido.",
+    "testimonial4": "Usando Toppin conocí a mi pareja. Él me envió un muffin y no me pude resistir.",
+    "testimonial5": "Antes tardaba mucho tiempo en encontrar a alguien con quien tener una charla interesante. Ahora, es muy fácil encontrar gente que vale la pena."
+  },
+  "cta": {
+    "title": "¿Toppiteamos?"
+  },
+  "footer": {
+    "support": "Soporte",
+    "community": "Comunidad",
+    "communityGuidelines": "Normas de la comunidad",
+    "safetyNotices": "Avisos de seguridad",
+    "legal": "Legal",
+    "legalTexts": "Textos legales",
+    "privacyPolicy": "Política de privacidad",
+    "termsOfService": "Condiciones de contratación y aviso legal", 
+    "cookiePolicy": "Política de cookies (UE)",
+    "faq": "FAQ",
+    "copyright": "© 2024 Toppin Global Company, S.L. Todos los derechos reservados."
+  },
+  "pages": {
+    "communityGuidelines": {
+      "title": "Normas de la comunidad"
+    },
+    "safetyNotices": {
+      "title": "Avisos de seguridad"
+    },
+    "legalTexts": {
+      "title": "Textos legales"
+    },
+    "privacyPolicy": {
+      "title": "Política de privacidad"
+    },
+    "termsOfService": {
+      "title": "Condiciones de contratación y aviso legal"
+    },
+    "cookiePolicy": {
+      "title": "Política de cookies (UE)"
+    },
+    "faq": {
+      "title": "Preguntas frecuentes"
+    }
+  }
+}
