@@ -4,10 +4,17 @@ import { Instagram, Facebook, Youtube } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import Logo from './Logo';
 import { Separator } from './ui/separator';
+import { useLanguage } from '@/hooks/useLanguage';
 
 const Footer = () => {
+  const { t, isEnglish } = useLanguage();
+  
   const handleLinkClick = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  const getLocalizedPath = (path: string) => {
+    return isEnglish ? `/en${path}` : path;
   };
 
   return (
@@ -26,7 +33,7 @@ const Footer = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mt-10">
           <div>
-            <h3 className="font-bold text-lg mb-4">Descargas</h3>
+            <h3 className="font-bold text-lg mb-4">{t('nav.download')}</h3>
             <ul className="space-y-2">
               <li><a href="#" className="text-gray-400 hover:text-white">iOS</a></li>
               <li><a href="#" className="text-gray-400 hover:text-white">Android</a></li>
@@ -34,28 +41,32 @@ const Footer = () => {
           </div>
           
           <div>
-            <h3 className="font-bold text-lg mb-4">Ayuda</h3>
+            <h3 className="font-bold text-lg mb-4">{t('footer.support')}</h3>
             <ul className="space-y-2">
-              <li><Link to="/faq" onClick={handleLinkClick} className="text-gray-400 hover:text-white">FAQ</Link></li>
+              <li><Link to={getLocalizedPath('/faq')} onClick={handleLinkClick} className="text-gray-400 hover:text-white">{t('footer.faq')}</Link></li>
             </ul>
           </div>
           
           <div>
-            <h3 className="font-bold text-lg mb-4">Comunidad</h3>
+            <h3 className="font-bold text-lg mb-4">{t('footer.community')}</h3>
             <ul className="space-y-2">
-              <li><Link to="/community-guidelines" onClick={handleLinkClick} className="text-gray-400 hover:text-white">Normas de la comunidad</Link></li>
-              <li><Link to="/safety-notices" onClick={handleLinkClick} className="text-gray-400 hover:text-white">Avisos de seguridad</Link></li>
+              <li><Link to={getLocalizedPath('/community-guidelines')} onClick={handleLinkClick} className="text-gray-400 hover:text-white">{t('footer.communityGuidelines')}</Link></li>
+              <li><Link to={getLocalizedPath('/safety-notices')} onClick={handleLinkClick} className="text-gray-400 hover:text-white">{t('footer.safetyNotices')}</Link></li>
             </ul>
           </div>
           
           <div>
-            <h3 className="font-bold text-lg mb-4">Textos legales</h3>
+            <h3 className="font-bold text-lg mb-4">{t('footer.legal')}</h3>
             <ul className="space-y-2">
-              <li><Link to="/privacy-policy" onClick={handleLinkClick} className="text-gray-400 hover:text-white">Política de privacidad</Link></li>
-              <li><Link to="/terms-of-service" onClick={handleLinkClick} className="text-gray-400 hover:text-white">Condiciones del servicio</Link></li>
-              <li><Link to="/cookie-policy" onClick={handleLinkClick} className="text-gray-400 hover:text-white">Política de cookies</Link></li>
+              <li><Link to={getLocalizedPath('/privacy-policy')} onClick={handleLinkClick} className="text-gray-400 hover:text-white">{t('footer.privacyPolicy')}</Link></li>
+              <li><Link to={getLocalizedPath('/terms-of-service')} onClick={handleLinkClick} className="text-gray-400 hover:text-white">{t('footer.termsOfService')}</Link></li>
+              <li><Link to={getLocalizedPath('/cookie-policy')} onClick={handleLinkClick} className="text-gray-400 hover:text-white">{t('footer.cookiePolicy')}</Link></li>
             </ul>
           </div>
+        </div>
+        
+        <div className="mt-12 pt-8 border-t border-gray-800 text-center">
+          <p className="text-gray-400 text-sm">{t('footer.copyright')}</p>
         </div>
       </div>
     </footer>
