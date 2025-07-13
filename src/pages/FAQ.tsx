@@ -55,7 +55,11 @@ const FAQ = () => {
         },
         {
           question: "¿Cómo puedo editar mi perfil?",
-          answer: null
+          answer: (
+            <p className="text-gray-300">
+              Para cambiar datos o información en relación con tu perfil entra en el icono del lápiz y comienza a editar tu información. Podrás cambiar las fotos, editar tu biografía, orientación sexual, incluir tu género, añadir diferente información personal y vincular Toppin a Spotify e Instagram. ¡De esta forma las personas que te encuentres en la pantalla donde toppiteas podrán conocerte mucho más rápido y saber si les interesas!
+            </p>
+          )
         },
         {
           question: "¿Cómo puedo configurar mis preferencias de búsqueda?",
