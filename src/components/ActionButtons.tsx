@@ -3,7 +3,7 @@ import React from 'react';
 
 const ActionButtons = () => {
   return (
-    <div className="flex items-center justify-center space-x-4 my-8">
+    <div className="flex items-center justify-center space-x-4 my-4">
       <img 
         src="/lovable-uploads/9333e095-9103-4249-af69-151232671013.png" 
         alt="Action buttons" 
