@@ -9,8 +9,11 @@ import TestimonialsSection from '@/components/TestimonialsSection';
 import CallToAction from '@/components/CallToAction';
 import ActionButtons from '@/components/ActionButtons';
 import Footer from '@/components/Footer';
+import { usePageMeta } from '@/hooks/usePageMeta';
 
 const Index = () => {
+  usePageMeta();
+
   return (
     <div className="min-h-screen bg-black text-white">
       <Header />
