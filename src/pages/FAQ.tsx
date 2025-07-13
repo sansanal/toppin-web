@@ -47,7 +47,11 @@ const FAQ = () => {
         },
         {
           question: "¿Puedo registrarme sin tener una cuenta de Facebook?",
-          answer: null
+          answer: (
+            <p className="text-gray-300">
+              En Toppin disponemos de varias formas de registro, por lo que no es necesario tener Facebook para disfrutar de nuestra App. Ya que si no tienes una cuenta en Facebook puedes registrarte utilizando una cuenta de Google, una cuenta de Apple o bien tu correo electrónico. ¡Y a disfrutar!
+            </p>
+          )
         },
         {
           question: "¿Cómo puedo editar mi perfil?",
