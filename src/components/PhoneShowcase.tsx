@@ -10,8 +10,8 @@ const PhoneShowcase = () => {
       <div className="container px-4 md:px-6">
         <div className="text-center mx-auto max-w-2xl">
           <h2 className="text-3xl md:text-5xl font-bold mb-6">
-            <span className="text-primary">{t('phoneShowcase.title').split(' ')[0]}</span>{' '}
-            <span className="text-blue-500">{t('phoneShowcase.title').split(' ').slice(1).join(' ')}</span>
+            <span className="text-primary">{t('phoneShowcase.title').split(' ').slice(0, -4).join(' ')}</span>{' '}
+            <span className="text-blue-500">{t('phoneShowcase.title').split(' ').slice(-4).join(' ')}</span>
           </h2>
           <p className="text-gray-300 mb-6">
             {t('phoneShowcase.description1')}

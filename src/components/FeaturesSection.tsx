@@ -9,8 +9,8 @@ const FeaturesSection = () => {
     <section className="py-16 md:py-24">
       <div className="container px-4 md:px-6">
         <h2 className="text-3xl md:text-5xl font-bold mb-4 text-center">
-          <span className="text-primary">{t('features.title').split(' ')[0]}</span>{' '}
-          <span className="text-blue-500">{t('features.title').split(' ').slice(1).join(' ').toLowerCase()}</span>
+          <span className="text-primary">{t('features.title').split(' ').slice(0, -2).join(' ')}</span>{' '}
+          <span className="text-blue-500 lowercase">{t('features.title').split(' ').slice(-2).join(' ')}</span>
         </h2>
         <p className="text-gray-300 text-center max-w-3xl mx-auto mb-16">
           {t('features.subtitle')}
