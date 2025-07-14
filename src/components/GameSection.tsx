@@ -17,7 +17,7 @@ const GameSection = () => {
               {t('game.description1')}
             </p>
             <p className="text-gray-300 mb-4">
-              {t('game.description2')}
+              {t('game.description2').replace('Toppin', 'Toppin sweet')}
             </p>
             <p className="text-gray-300 mb-8">
               {t('game.description3')}
