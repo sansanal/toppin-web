@@ -436,19 +436,59 @@ const FAQ = () => {
       questions: [
         {
           question: "No puedo acceder a mi suscripción de Toppin por motivos de cambio de dispositivo, te ayudamos a recuperarla.",
-          answer: null
+          answer: (
+            <div className="space-y-4">
+              <p className="text-gray-300">
+                Si Toppin no reconoce una suscripción que tienes en la app, restaura la compra.
+              </p>
+              <p className="text-gray-300">
+                La función Restaurar compras te ayuda a mantener el acceso a tu suscripción cada vez que elimines y vuelvas a crear tu cuenta de Toppin, cuando te compres un teléfono nuevo, o en otras situaciones donde la aplicación no reconozca tu suscripción. Sigue los pasos siguientes para intentar restaurar tu compra.
+              </p>
+              <p className="text-gray-300">
+                Restaurar una compra hace que se mantenga el acceso a la suscripción si cambias de teléfono móvil, eliminas y te creas una nueva cuenta o cualquier otro caso en el que la app no reconozca tu suscripción activa. Estos son los pasos para restaurar la compra.
+              </p>
+            </div>
+          )
         },
         {
           question: "¿Cómo hiciste la compra? ¿Con tu Apple ID o con Google Play Store?",
-          answer: null
+          answer: (
+            <div className="space-y-4">
+              <ul className="space-y-2 text-gray-300">
+                <li>• Abre Toppin</li>
+                <li>• Toca el icono de perfil</li>
+                <li>• Dirígete a los Ajustes</li>
+                <li>• Desliza hacia abajo y para Restaurar compra</li>
+              </ul>
+              <p className="text-gray-300 mt-4 font-medium">
+                Importante: Restaurar tu compra no creará una nueva transacción; simplemente volverá a vincular la suscripción existente y activa con Toppin.
+              </p>
+            </div>
+          )
         },
         {
           question: "Problemas al desactivar el Power Sweet",
-          answer: null
+          answer: (
+            <div className="space-y-4">
+              <h4 className="text-toppin-blue font-semibold text-lg mb-3">PowerSweet</h4>
+              <p className="text-gray-300">
+                PowerSweet activación: solo tienes que abrir Toppin y pulsar en el icono con forma de bateria de color azul en la pantalla principal.
+              </p>
+              <p className="text-gray-300">
+                Si quieres saber cuántos PowerSweet te quedan toca el icono de perfil y echa un vistazo al contador en la parte inferior de la pantalla.
+              </p>
+            </div>
+          )
         },
         {
           question: "¿Problemas técnicos?",
-          answer: null
+          answer: (
+            <div className="space-y-4">
+              <p className="text-gray-300">
+                Si estás intentando utilizar cualquier función de toppin pero estás teniendo problemas, escríbenos un mensaje con los detalles exactos del problema o envíanos una captura de pantalla donde se vea claramente el problema que estás teniendo para que podamos ayudarte al correo support@toppin.es.
+              </p>
+            </div>
+          )
         }
       ]
     },
@@ -458,27 +498,93 @@ const FAQ = () => {
       questions: [
         {
           question: "Estoy teniendo problemas con la eliminación de mi cuenta",
-          answer: null
+          answer: (
+            <div className="space-y-4">
+              <p className="text-gray-300">
+                Si estás intentando eliminar tu cuenta de Toppin pero estás teniendo problemas, estos son los pasos que debes seguir para proceder a la eliminación de tu cuenta:
+              </p>
+              <ul className="space-y-2 text-gray-300">
+                <li>• Abre la app de Toppin e inicia sesión</li>
+                <li>• Toca el icono de tu perfil</li>
+                <li>• Ve hacia los Ajustes</li>
+                <li>• Desliza hacia abajo y haz clic en "Borrar cuenta"</li>
+              </ul>
+              <p className="text-gray-300">
+                Si necesitas ayuda puedes ponerte en contacto con nosotros y trataremos de ayudarte al correo support@toppin.es
+              </p>
+            </div>
+          )
         },
         {
           question: "Problemas técnicos relacionados con la eliminación de la cuenta",
-          answer: null
+          answer: (
+            <div className="space-y-4">
+              <p className="text-gray-300">
+                Si cuando intentas eliminar tu cuenta aparece un mensaje de error, comprueba tu conexión a internet. Si el problema es de la app, ten un poco de paciencia y pronto estará resuelto. Si el problema persiste durante mucho tiempo contacta con Toppin y trataremos de ayudarte lo antes posible a través del correo support@toppin.es
+              </p>
+            </div>
+          )
         },
         {
           question: "Mi cuenta está en investigación.",
-          answer: null
+          answer: (
+            <div className="space-y-4">
+              <p className="text-gray-300">
+                Si tu perfil recibe varias denuncias de diferentes usuarios de la aplicación investigaremos tu cuenta para ver cuál es el motivo o qué está sucediendo con tu perfil. Durante la investigación, buscaremos violaciones de nuestros Términos de uso o de las Normas de la comunidad.
+              </p>
+              <p className="text-gray-300">
+                Si tu perfil no ha violado ninguna de las políticas de Toppin, se te permitirá volver a acceder como siempre. Pero si alguno de tus comportamientos ha violado nuestros términos, tomaremos las medidas necesarias, una de ellas es la posibilidad de la prohibición permanente de ser miembro de Toppin o eliminación de la cuenta.
+              </p>
+              <p className="text-gray-300">
+                Si todavía no se ha completado la investigación de tu perfil, es solo cuestión de tiempo; intentaremos hacerlo lo antes posible.
+              </p>
+              <p className="text-gray-300">
+                Consulta nuestras Términos de uso o Normas de la comunidad para obtener información sobre lo que no está permitido en Toppin.
+              </p>
+            </div>
+          )
         },
         {
           question: "Problemas con la verificación de las fotos.",
-          answer: null
+          answer: (
+            <div className="space-y-4">
+              <p className="text-gray-300">
+                Si tienes problemas con una pose concreta, siempre puedes salir de la página de verificación por fotos y empezar de nuevo refrescando la página de verificación de fotografía.
+              </p>
+              <p className="text-gray-300">
+                Si necesitas más ayuda con la pose o estás teniendo algún otro problema relacionado con la verificación fotográfica, háznoslo saber poniéndote en contacto con nosotros a support@toppin.es
+              </p>
+            </div>
+          )
         },
         {
           question: "Mi nombre o edad son incorrectos.",
-          answer: null
+          answer: (
+            <div className="space-y-4">
+              <p className="text-gray-300">
+                Una vez que has creado una cuenta los detalles del nombre y la edad no podrán actualizarse ni editarse. Si has tenido un despiste y te has equivocado poniendo tu fecha de nacimiento, o si necesitas actualizar tu nombre, lo que puedes hacer es eliminar tu cuenta y comenzar de cero otra vez.
+              </p>
+              <p className="text-gray-300">
+                Ten en cuenta que si la eliminas lamentablemente perderás los Matches, los mensajes, y todos tus artículos comprados (Super Sweet, Power Sweets, etc.) y demás información enlazada a tu cuenta.
+              </p>
+            </div>
+          )
         },
         {
           question: "Sigue estos pasos para eliminar tu cuenta de Toppin:",
-          answer: null
+          answer: (
+            <div className="space-y-4">
+              <ul className="space-y-2 text-gray-300">
+                <li>• Abre Toppin</li>
+                <li>• Toca el icono de perfil</li>
+                <li>• Dirígete a los Ajustes</li>
+                <li>• Desliza hasta abajo y pulsa en Borrar cuenta</li>
+              </ul>
+              <p className="text-gray-300">
+                Si tienes una suscripción a Toppin, podrás restaurarla y volver a usarla en tu nueva cuenta. Sigue las instrucciones de cómo restaurar una compra en tu nuevo perfil.
+              </p>
+            </div>
+          )
         }
       ]
     },
