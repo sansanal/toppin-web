@@ -125,7 +125,13 @@ const FAQ = () => {
         },
         {
           question: "¿He deshecho un Match por error?",
-          answer: null
+          answer: (
+            <div className="space-y-4">
+              <p className="text-gray-300">
+                Deshacer un Match es una acción permanente y lamentablemente no se puede rehacer.
+              </p>
+            </div>
+          )
         }
       ]
     },
