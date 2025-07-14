@@ -14,7 +14,21 @@ const Footer = () => {
   };
 
   const getLocalizedPath = (path: string) => {
-    return isEnglish ? `/en${path}` : path;
+    if (isEnglish) {
+      return `/en${path}`;
+    }
+    
+    // Map English paths to Spanish paths
+    const pathMapping: { [key: string]: string } = {
+      '/faq': '/preguntas-frecuentes',
+      '/community-guidelines': '/normas-de-la-comunidad',
+      '/safety-notices': '/avisos-de-seguridad',
+      '/privacy-policy': '/politica-de-privacidad',
+      '/terms-of-service': '/terminos-de-servicio',
+      '/cookie-policy': '/politica-de-cookies'
+    };
+    
+    return pathMapping[path] || path;
   };
 
   return (
