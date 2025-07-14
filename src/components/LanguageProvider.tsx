@@ -30,20 +30,37 @@ const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) => {
     const handleLanguageChange = () => {
       const isCurrentlyOnEnglishRoute = location.pathname.startsWith('/en');
       
+      // Mapeo de rutas entre idiomas
+      const routeMapping = {
+        // Español a Inglés
+        '/': '/en',
+        '/preguntas-frecuentes': '/en/faq',
+        '/normas-de-la-comunidad': '/en/community-guidelines',
+        '/avisos-de-seguridad': '/en/safety-notices',
+        '/textos-legales': '/en/legal-texts',
+        '/politica-de-privacidad': '/en/privacy-policy',
+        '/terminos-de-servicio': '/en/terms-of-service',
+        '/politica-de-cookies': '/en/cookie-policy',
+        
+        // Inglés a Español
+        '/en': '/',
+        '/en/faq': '/preguntas-frecuentes',
+        '/en/community-guidelines': '/normas-de-la-comunidad',
+        '/en/safety-notices': '/avisos-de-seguridad',
+        '/en/legal-texts': '/textos-legales',
+        '/en/privacy-policy': '/politica-de-privacidad',
+        '/en/terms-of-service': '/terminos-de-servicio',
+        '/en/cookie-policy': '/politica-de-cookies'
+      };
+      
       if (currentLanguage === 'en' && !isCurrentlyOnEnglishRoute) {
         // Cambiar a la versión en inglés
-        if (location.pathname === '/') {
-          navigate('/en');
-        } else {
-          navigate(`/en${location.pathname}`);
-        }
+        const englishRoute = routeMapping[location.pathname as keyof typeof routeMapping];
+        navigate(englishRoute || '/en');
       } else if (currentLanguage === 'es' && isCurrentlyOnEnglishRoute) {
         // Cambiar a la versión en español
-        if (location.pathname === '/en') {
-          navigate('/');
-        } else {
-          navigate(location.pathname.replace('/en', ''));
-        }
+        const spanishRoute = routeMapping[location.pathname as keyof typeof routeMapping];
+        navigate(spanishRoute || '/');
       }
     };
 
