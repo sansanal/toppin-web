@@ -17,7 +17,7 @@ const GameSection = () => {
               {t('game.description1')}
             </p>
             <p className="text-gray-300 mb-4">
-              Toppin sweet
+              {t('game.description2')}
             </p>
             <p className="text-gray-300 mb-8">
               {t('game.description3')}
