@@ -20,7 +20,7 @@ const SafetyNotices = () => {
               <div className="bg-gray-800 rounded-lg p-6 border border-gray-700">
                 <Accordion type="single" collapsible className="w-full">
                   <AccordionItem value="safety-tips" className="border-none">
-                    <AccordionTrigger className="text-2xl font-bold text-toppin-blue hover:no-underline">
+                    <AccordionTrigger className="text-2xl font-bold text-toppin-blue hover:no-underline bg-gray-700/50 hover:bg-gray-700 rounded-lg px-4 py-3 transition-colors border border-gray-600 hover:border-toppin-blue/30">
                       Toppitea con seguridad
                     </AccordionTrigger>
                     <AccordionContent className="text-gray-300 space-y-6">
@@ -79,7 +79,7 @@ const SafetyNotices = () => {
               <div className="bg-gray-800 rounded-lg p-6 border border-gray-700">
                 <Accordion type="single" collapsible className="w-full">
                   <AccordionItem value="first-date-tips" className="border-none">
-                    <AccordionTrigger className="text-2xl font-bold text-toppin-blue hover:no-underline">
+                    <AccordionTrigger className="text-2xl font-bold text-toppin-blue hover:no-underline bg-gray-700/50 hover:bg-gray-700 rounded-lg px-4 py-3 transition-colors border border-gray-600 hover:border-toppin-blue/30">
                       Consejos para tener la primera cita perfecta
                     </AccordionTrigger>
                     <AccordionContent className="text-gray-300 space-y-6">
@@ -127,7 +127,7 @@ const SafetyNotices = () => {
               <div className="bg-gray-800 rounded-lg p-6 border border-gray-700">
                 <Accordion type="single" collapsible className="w-full">
                   <AccordionItem value="ending-match-relationship" className="border-none">
-                    <AccordionTrigger className="text-2xl font-bold text-toppin-blue hover:no-underline">
+                    <AccordionTrigger className="text-2xl font-bold text-toppin-blue hover:no-underline bg-gray-700/50 hover:bg-gray-700 rounded-lg px-4 py-3 transition-colors border border-gray-600 hover:border-toppin-blue/30">
                       Como terminar una relación de match
                     </AccordionTrigger>
                     <AccordionContent className="text-gray-300 space-y-6">
