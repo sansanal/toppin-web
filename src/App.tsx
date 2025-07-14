@@ -38,13 +38,13 @@ const App = () => (
           <Routes>
             {/* Spanish routes */}
             <Route path="/" element={<Index />} />
-            <Route path="/faq" element={<FAQ />} />
-            <Route path="/community-guidelines" element={<CommunityGuidelines />} />
-            <Route path="/safety-notices" element={<SafetyNotices />} />
-            <Route path="/legal-texts" element={<LegalTexts />} />
-            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-            <Route path="/terms-of-service" element={<TermsOfService />} />
-            <Route path="/cookie-policy" element={<CookiePolicy />} />
+            <Route path="/preguntas-frecuentes" element={<FAQ />} />
+            <Route path="/normas-de-la-comunidad" element={<CommunityGuidelines />} />
+            <Route path="/avisos-de-seguridad" element={<SafetyNotices />} />
+            <Route path="/textos-legales" element={<LegalTexts />} />
+            <Route path="/politica-de-privacidad" element={<PrivacyPolicy />} />
+            <Route path="/terminos-de-servicio" element={<TermsOfService />} />
+            <Route path="/politica-de-cookies" element={<CookiePolicy />} />
             
             {/* English routes */}
             <Route path="/en" element={<Index />} />

@@ -1,5 +1,6 @@
 
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useLanguage } from '@/hooks/useLanguage';
@@ -18,11 +19,13 @@ const Header = () => {
       <div className="container mx-auto flex justify-between items-center px-4">
         {/* Logo */}
         <div className="flex items-center h-20">
-          <img 
-            alt="Toppin Logo" 
-            className="h-20 object-contain" 
-            src="/lovable-uploads/0e235d4b-f937-42ee-b3cb-0c9c3150c732.png" 
-          />
+          <Link to="/" className="flex items-center h-20">
+            <img 
+              alt="Toppin Logo" 
+              className="h-20 object-contain hover:opacity-80 transition-opacity cursor-pointer" 
+              src="/lovable-uploads/0e235d4b-f937-42ee-b3cb-0c9c3150c732.png" 
+            />
+          </Link>
         </div>
         
         {/* Desktop Navigation */}
