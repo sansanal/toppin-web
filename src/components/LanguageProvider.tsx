@@ -34,7 +34,7 @@ const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) => {
       const routeMapping = {
         // Español a Inglés
         '/': '/en',
-        '/preguntas-frecuentes': '/en/faq',
+        '/faq': '/en/faq',
         '/normas-de-la-comunidad': '/en/community-guidelines',
         '/avisos-de-seguridad': '/en/safety-notices',
         '/textos-legales': '/en/legal-texts',
@@ -44,7 +44,7 @@ const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) => {
         
         // Inglés a Español
         '/en': '/',
-        '/en/faq': '/preguntas-frecuentes',
+        '/en/faq': '/faq',
         '/en/community-guidelines': '/normas-de-la-comunidad',
         '/en/safety-notices': '/avisos-de-seguridad',
         '/en/legal-texts': '/textos-legales',

@@ -17,7 +17,7 @@ const Footer = () => {
     // Map base paths to localized paths
     const pathMapping: { [key: string]: { es: string; en: string } } = {
       '/faq': { 
-        es: '/preguntas-frecuentes', 
+        es: '/faq', 
         en: '/en/faq' 
       },
       '/community-guidelines': { 

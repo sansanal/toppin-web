@@ -38,7 +38,7 @@ const App = () => (
           <Routes>
             {/* Spanish routes */}
             <Route path="/" element={<Index />} />
-            <Route path="/preguntas-frecuentes" element={<FAQ />} />
+            <Route path="/faq" element={<FAQ />} />
             <Route path="/normas-de-la-comunidad" element={<CommunityGuidelines />} />
             <Route path="/avisos-de-seguridad" element={<SafetyNotices />} />
             <Route path="/textos-legales" element={<LegalTexts />} />
