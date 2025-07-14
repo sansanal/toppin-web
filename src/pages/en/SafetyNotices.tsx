@@ -20,9 +20,10 @@ const SafetyNoticesEN = () => {
               <div className="bg-gray-800 rounded-lg p-6 border border-gray-700">
                 <Accordion type="single" collapsible className="w-full">
                   <AccordionItem value="safety-tips" className="border-none">
-                    <AccordionTrigger className="text-2xl font-bold text-toppin-blue hover:no-underline bg-gray-700/50 hover:bg-gray-700 rounded-lg px-4 py-3 transition-colors border border-gray-600 hover:border-toppin-blue/30">
-                      Date safely with Toppin
-                    </AccordionTrigger>
+                    <div className="flex items-center justify-between">
+                      <h2 className="text-2xl font-bold text-toppin-blue">Date safely with Toppin</h2>
+                      <AccordionTrigger className="p-2 hover:bg-gray-700 rounded-full transition-colors [&[data-state=open]>svg]:rotate-180 flex-shrink-0" />
+                    </div>
                     <AccordionContent className="text-gray-300 space-y-6">
                       <p>
                         At Toppin we know how important safety is for our users and that's why we want to help you with some tips so that your sweet adventure within Toppin is 100% safe and you only have to enjoy the sweetest moments.
@@ -79,9 +80,10 @@ const SafetyNoticesEN = () => {
               <div className="bg-gray-800 rounded-lg p-6 border border-gray-700">
                 <Accordion type="single" collapsible className="w-full">
                   <AccordionItem value="first-date-tips" className="border-none">
-                    <AccordionTrigger className="text-2xl font-bold text-toppin-blue hover:no-underline bg-gray-700/50 hover:bg-gray-700 rounded-lg px-4 py-3 transition-colors border border-gray-600 hover:border-toppin-blue/30">
-                      Tips for the perfect first date
-                    </AccordionTrigger>
+                    <div className="flex items-center justify-between">
+                      <h2 className="text-2xl font-bold text-toppin-blue">Tips for the perfect first date</h2>
+                      <AccordionTrigger className="p-2 hover:bg-gray-700 rounded-full transition-colors [&[data-state=open]>svg]:rotate-180 flex-shrink-0" />
+                    </div>
                     <AccordionContent className="text-gray-300 space-y-6">
                       <p>
                         First dates always cause us nerves, insecurities, but also excitement. That's why, from Toppin we want to give you some tips that will help you make your first date as perfect as possible. And remember, there can always be a failure, it's something natural.
@@ -127,9 +129,10 @@ const SafetyNoticesEN = () => {
               <div className="bg-gray-800 rounded-lg p-6 border border-gray-700">
                 <Accordion type="single" collapsible className="w-full">
                   <AccordionItem value="ending-match-relationship" className="border-none">
-                    <AccordionTrigger className="text-2xl font-bold text-toppin-blue hover:no-underline bg-gray-700/50 hover:bg-gray-700 rounded-lg px-4 py-3 transition-colors border border-gray-600 hover:border-toppin-blue/30">
-                      How to end a match relationship
-                    </AccordionTrigger>
+                    <div className="flex items-center justify-between">
+                      <h2 className="text-2xl font-bold text-toppin-blue">How to end a match relationship</h2>
+                      <AccordionTrigger className="p-2 hover:bg-gray-700 rounded-full transition-colors [&[data-state=open]>svg]:rotate-180 flex-shrink-0" />
+                    </div>
                     <AccordionContent className="text-gray-300 space-y-6">
                       <p>
                         Toppin is designed to meet people and enjoy every moment, to find the love of your life or meet people who make you have sweet moments. But it doesn't always happen on the first match. Therefore, from Toppin we want to teach you different ways to let that match know that we are no longer interested in them.

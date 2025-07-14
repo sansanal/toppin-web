@@ -20,9 +20,10 @@ const SafetyNotices = () => {
               <div className="bg-gray-800 rounded-lg p-6 border border-gray-700">
                 <Accordion type="single" collapsible className="w-full">
                   <AccordionItem value="safety-tips" className="border-none">
-                    <AccordionTrigger className="text-2xl font-bold text-toppin-blue hover:no-underline bg-gray-700/50 hover:bg-gray-700 rounded-lg px-4 py-3 transition-colors border border-gray-600 hover:border-toppin-blue/30">
-                      Toppitea con seguridad
-                    </AccordionTrigger>
+                    <div className="flex items-center justify-between">
+                      <h2 className="text-2xl font-bold text-toppin-blue">Toppitea con seguridad</h2>
+                      <AccordionTrigger className="p-2 hover:bg-gray-700 rounded-full transition-colors [&[data-state=open]>svg]:rotate-180 flex-shrink-0" />
+                    </div>
                     <AccordionContent className="text-gray-300 space-y-6">
                       <p>
                         Desde Toppin sabemos de la importancia que tiene la seguridad para nuestros usuarios y por ello queremos ayudaros con algunos consejos a que tu dulce aventura dentro de Toppin sea 100% segura y tu sólo tengas que disfrutar de los momentos más dulces.
@@ -79,9 +80,10 @@ const SafetyNotices = () => {
               <div className="bg-gray-800 rounded-lg p-6 border border-gray-700">
                 <Accordion type="single" collapsible className="w-full">
                   <AccordionItem value="first-date-tips" className="border-none">
-                    <AccordionTrigger className="text-2xl font-bold text-toppin-blue hover:no-underline bg-gray-700/50 hover:bg-gray-700 rounded-lg px-4 py-3 transition-colors border border-gray-600 hover:border-toppin-blue/30">
-                      Consejos para tener la primera cita perfecta
-                    </AccordionTrigger>
+                    <div className="flex items-center justify-between">
+                      <h2 className="text-2xl font-bold text-toppin-blue">Consejos para tener la primera cita perfecta</h2>
+                      <AccordionTrigger className="p-2 hover:bg-gray-700 rounded-full transition-colors [&[data-state=open]>svg]:rotate-180 flex-shrink-0" />
+                    </div>
                     <AccordionContent className="text-gray-300 space-y-6">
                       <p>
                         Las primeras citas siempre nos causan nervios, inseguridades, pero también emoción. Por ello, desde Toppin queremos daros algunos consejos que os ayudarán a que vuestra primera cita se a lo más perfecta posible. Y recuerda, siempre puede haber fallo, es algo natural.
@@ -127,9 +129,10 @@ const SafetyNotices = () => {
               <div className="bg-gray-800 rounded-lg p-6 border border-gray-700">
                 <Accordion type="single" collapsible className="w-full">
                   <AccordionItem value="ending-match-relationship" className="border-none">
-                    <AccordionTrigger className="text-2xl font-bold text-toppin-blue hover:no-underline bg-gray-700/50 hover:bg-gray-700 rounded-lg px-4 py-3 transition-colors border border-gray-600 hover:border-toppin-blue/30">
-                      Como terminar una relación de match
-                    </AccordionTrigger>
+                    <div className="flex items-center justify-between">
+                      <h2 className="text-2xl font-bold text-toppin-blue">Como terminar una relación de match</h2>
+                      <AccordionTrigger className="p-2 hover:bg-gray-700 rounded-full transition-colors [&[data-state=open]>svg]:rotate-180 flex-shrink-0" />
+                    </div>
                     <AccordionContent className="text-gray-300 space-y-6">
                       <p>
                         Toppin está pensada para conocer gente y disfrutar de cada momento, para encontrar el amor de tu vida o conocer gente que te haga pasar momentos dulces. Pero no siempre sucede al primer match. Por ello, desde Toppin queremos enseñarte diferentes formas de hacerle saber a ese match que ya no estamos interesados en ellos.
