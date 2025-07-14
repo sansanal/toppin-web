@@ -14,21 +14,40 @@ const Footer = () => {
   };
 
   const getLocalizedPath = (path: string) => {
-    if (isEnglish) {
-      return `/en${path}`;
-    }
-    
-    // Map English paths to Spanish paths
-    const pathMapping: { [key: string]: string } = {
-      '/faq': '/preguntas-frecuentes',
-      '/community-guidelines': '/normas-de-la-comunidad',
-      '/safety-notices': '/avisos-de-seguridad',
-      '/privacy-policy': '/politica-de-privacidad',
-      '/terms-of-service': '/terminos-de-servicio',
-      '/cookie-policy': '/politica-de-cookies'
+    // Map base paths to localized paths
+    const pathMapping: { [key: string]: { es: string; en: string } } = {
+      '/faq': { 
+        es: '/preguntas-frecuentes', 
+        en: '/en/faq' 
+      },
+      '/community-guidelines': { 
+        es: '/normas-de-la-comunidad', 
+        en: '/en/community-guidelines' 
+      },
+      '/safety-notices': { 
+        es: '/avisos-de-seguridad', 
+        en: '/en/safety-notices' 
+      },
+      '/privacy-policy': { 
+        es: '/politica-de-privacidad', 
+        en: '/en/privacy-policy' 
+      },
+      '/terms-of-service': { 
+        es: '/terminos-de-servicio', 
+        en: '/en/terms-of-service' 
+      },
+      '/cookie-policy': { 
+        es: '/politica-de-cookies', 
+        en: '/en/cookie-policy' 
+      }
     };
     
-    return pathMapping[path] || path;
+    const mapping = pathMapping[path];
+    if (mapping) {
+      return isEnglish ? mapping.en : mapping.es;
+    }
+    
+    return isEnglish ? `/en${path}` : path;
   };
 
   return (
