@@ -22,7 +22,7 @@ const SafetyNoticesEN = () => {
                   <AccordionItem value="safety-tips" className="border-none">
                     <div className="flex items-center justify-between">
                       <h2 className="text-2xl font-bold text-toppin-blue">Date safely with Toppin</h2>
-                      <AccordionTrigger className="p-2 hover:bg-gray-700 rounded-full transition-colors [&[data-state=open]>svg]:rotate-180 flex-shrink-0" />
+                      <AccordionTrigger className="p-3 hover:bg-gray-700 rounded-lg transition-colors [&[data-state=open]>svg]:rotate-180 flex-shrink-0 border border-gray-600 hover:border-toppin-blue/50" />
                     </div>
                     <AccordionContent className="text-gray-300 space-y-6">
                       <p>
@@ -82,7 +82,7 @@ const SafetyNoticesEN = () => {
                   <AccordionItem value="first-date-tips" className="border-none">
                     <div className="flex items-center justify-between">
                       <h2 className="text-2xl font-bold text-toppin-blue">Tips for the perfect first date</h2>
-                      <AccordionTrigger className="p-2 hover:bg-gray-700 rounded-full transition-colors [&[data-state=open]>svg]:rotate-180 flex-shrink-0" />
+                      <AccordionTrigger className="p-3 hover:bg-gray-700 rounded-lg transition-colors [&[data-state=open]>svg]:rotate-180 flex-shrink-0 border border-gray-600 hover:border-toppin-blue/50" />
                     </div>
                     <AccordionContent className="text-gray-300 space-y-6">
                       <p>
@@ -131,7 +131,7 @@ const SafetyNoticesEN = () => {
                   <AccordionItem value="ending-match-relationship" className="border-none">
                     <div className="flex items-center justify-between">
                       <h2 className="text-2xl font-bold text-toppin-blue">How to end a match relationship</h2>
-                      <AccordionTrigger className="p-2 hover:bg-gray-700 rounded-full transition-colors [&[data-state=open]>svg]:rotate-180 flex-shrink-0" />
+                      <AccordionTrigger className="p-3 hover:bg-gray-700 rounded-lg transition-colors [&[data-state=open]>svg]:rotate-180 flex-shrink-0 border border-gray-600 hover:border-toppin-blue/50" />
                     </div>
                     <AccordionContent className="text-gray-300 space-y-6">
                       <p>
