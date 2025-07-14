@@ -355,11 +355,78 @@ const FAQ = () => {
       questions: [
         {
           question: "He cancelado una suscripción pero se me ha vuelto a cobrar",
-          answer: null
+          answer: (
+            <div className="space-y-4">
+              <p className="text-gray-300">
+                Asegúrate de haber cancelado tu suscripción a Toppin correctamente. Si no quieres que se carguen más cobros en el futuro esto lo impedirá. Así se cancelan las suscripciones tanto en dispositivos iOS como en Android:
+              </p>
+              
+              <div className="mt-6">
+                <h4 className="text-toppin-blue font-semibold text-lg mb-3">IOS</h4>
+                <ul className="space-y-2 text-gray-300">
+                  <li>• En los Ajustes de tu iPhone {'>'} [tu nombre] {'>'} iTunes y App Store</li>
+                  <li>• En la parte superior de la pantalla pulsa en tu ID de Apple, y después selecciona «Ver ID de Apple» (quizá te pida que inicies sesión)</li>
+                  <li>• Desliza hacia abajo y pulsa «Suscripciones»</li>
+                  <li>• Elige cual es la suscripción que quieres gestionar</li>
+                  <li>• Pulsa «Cancelar suscripción»</li>
+                </ul>
+              </div>
+              
+              <div className="mt-6">
+                <h4 className="text-toppin-blue font-semibold text-lg mb-3">ANDROID</h4>
+                <div className="space-y-4">
+                  <div>
+                    <p className="text-gray-300 font-medium mb-2">Si te suscribiste usando tu cuenta de Google Play Store:</p>
+                    <ul className="space-y-1 text-gray-300">
+                      <li>• Ve a la web de play.google.com</li>
+                      <li>• Comprueba si has iniciado sesión en tu cuenta de Google de manera correcta.</li>
+                      <li>• En la izquierda, haz clic en «Mis suscripciones»</li>
+                      <li>• Elige cual es la suscripción que deseas cancelar.</li>
+                      <li>• Haz clic en «Gestionar» y luego en «Cancelar suscripción»</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <p className="text-gray-300 font-medium mb-2">Si te suscribiste mediante tarjeta de crédito:</p>
+                    <ul className="space-y-1 text-gray-300">
+                      <li>• Abre la app de Toppin para Android</li>
+                      <li>• Toca el icono de perfil</li>
+                      <li>• Selecciona «Administrar cuenta de pago»</li>
+                      <li>• Pulsa «Cancelar suscripción»</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          )
         },
         {
           question: "¿Cómo actualizar tus datos de facturación?",
-          answer: null
+          answer: (
+            <div className="space-y-4">
+              <p className="text-gray-300">
+                Desde la plataforma que utilizaste para suscribirte podrás actualizar tu método de pago (Apple Pay o Google Pay). Las instrucciones variarán en función de la plataforma que utilices para realizar la compra.
+              </p>
+              
+              <div className="mt-6">
+                <h4 className="text-toppin-blue font-semibold text-lg mb-3">IOS</h4>
+                <p className="text-gray-300">
+                  Si quieres actualizar tus datos de facturación desde un dispositivo iOS, dirígete a la aplicación de Ajustes, selecciona iTunes & App Store, haz clic en tu ID de Apple, y pulsa en Ver ID de Apple y Datos de facturación.
+                </p>
+              </div>
+              
+              <div className="mt-6">
+                <h4 className="text-toppin-blue font-semibold text-lg mb-3">ANDROID</h4>
+                <div className="space-y-3">
+                  <p className="text-gray-300">
+                    Si efectuaste la compra usando tu cuenta de Google Play Store, pulsa el icono de menú en Google Play Store, a continuación pulsa en Mi cuenta y selecciona «Añadir método de pago» o «Editar método de pago»
+                  </p>
+                  <p className="text-gray-300">
+                    Si efectuaste la compra mediante tarjeta de crédito en Android, entra en la app de Toppin, pulsa en el icono de perfil y selecciona Administrar cuenta de pago.
+                  </p>
+                </div>
+              </div>
+            </div>
+          )
         }
       ]
     },
