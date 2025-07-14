@@ -99,7 +99,16 @@ const FAQ = () => {
       questions: [
         {
           question: "¿Cómo cambio mis preferencias de búsqueda?",
-          answer: null
+          answer: (
+            <div className="space-y-4">
+              <p className="text-gray-300">
+                Puedes personalizar la función para descubrir nuevas personas. Ve a ajustes y decide a través de los filtros que tipo de perfiles quieres ver. Distancia, edad y género son algunos de los filtros que puedes seleccionar.
+              </p>
+              <p className="text-gray-300">
+                ¡Así tendrás más posibilidades de encajar con tu próxima cita!
+              </p>
+            </div>
+          )
         },
         {
           question: "¿Cómo administrar tus notificaciones?",
