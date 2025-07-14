@@ -8,7 +8,7 @@ import LanguageSelector from '@/components/LanguageSelector';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const { t } = useLanguage();
+  const { t, currentLanguage } = useLanguage();
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -19,7 +19,7 @@ const Header = () => {
       <div className="container mx-auto flex justify-between items-center px-4">
         {/* Logo */}
         <div className="flex items-center h-20">
-          <Link to="/" className="flex items-center h-20">
+          <Link to={currentLanguage === 'en' ? '/en' : '/'} className="flex items-center h-20">
             <img 
               alt="Toppin Logo" 
               className="h-20 object-contain hover:opacity-80 transition-opacity cursor-pointer" 
