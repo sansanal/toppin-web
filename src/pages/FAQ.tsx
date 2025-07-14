@@ -92,7 +92,13 @@ const FAQ = () => {
       questions: [
         {
           question: "¿Cómo enviar un mensaje a un Match?",
-          answer: null
+          answer: (
+            <div className="space-y-4">
+              <p className="text-gray-300">
+                Una vez hayas logrado hacer Match con otro usuario podréis comenzar a chatear. Podrás encontrar a la persona en el listado de Matches y desde ahí enviarle un mensaje.
+              </p>
+            </div>
+          )
         },
         {
           question: "¿Desmarcar Matches y enviar denuncias?",
