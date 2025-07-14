@@ -154,7 +154,13 @@ const FAQ = () => {
         },
         {
           question: "¿Cómo administrar tus notificaciones?",
-          answer: null
+          answer: (
+            <div className="space-y-4">
+              <p className="text-gray-300">
+                Si quieres administrar tus notificaciones, activarlas o desactivarlas podrás hacerlo dentro de Perfil {'>'}  Ajustes {'>'}  Notificaciones. Ahí podrás activar y desactivar las notificaciones que quieras o no recibir y todo lo relacionado con ellas.
+              </p>
+            </div>
+          )
         },
         {
           question: "¿Cómo se vincula Instagram con tu perfil?",
