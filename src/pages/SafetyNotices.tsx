@@ -125,12 +125,63 @@ const SafetyNotices = () => {
               </div>
 
               <div className="bg-gray-800 rounded-lg p-6 border border-gray-700">
-                <h2 className="text-2xl font-bold text-toppin-blue mb-4">
-                  Como terminar una relación de match
-                </h2>
-                <p className="text-gray-300">
-                  Toppin está pensada para conocer gente y disfrutar de cada momento, para encontrar el amor de tu...
-                </p>
+                <Accordion type="single" collapsible className="w-full">
+                  <AccordionItem value="ending-match-relationship" className="border-none">
+                    <AccordionTrigger className="text-2xl font-bold text-toppin-blue hover:no-underline">
+                      Como terminar una relación de match
+                    </AccordionTrigger>
+                    <AccordionContent className="text-gray-300 space-y-6">
+                      <p>
+                        Toppin está pensada para conocer gente y disfrutar de cada momento, para encontrar el amor de tu vida o conocer gente que te haga pasar momentos dulces. Pero no siempre sucede al primer match. Por ello, desde Toppin queremos enseñarte diferentes formas de hacerle saber a ese match que ya no estamos interesados en ellos.
+                      </p>
+                      <p>
+                        Es importante la forma como lo hacemos, pues con ello conseguiremos crear una comunidad sana y además, respetaremos al resto de usuarios. El Ghosting no es la única opción.
+                      </p>
+                      
+                      <div className="space-y-6">
+                        <div>
+                          <h3 className="text-lg font-semibold text-toppin-blue mb-2">1. No existe progresión en vuestra relación</h3>
+                          <p>Si llegados a un punto te das cuenta de que no estás ante la persona que endulzará tu vida, y no te gusta tanto como pensabas, no hace falta salir corriendo, simplemente puedes abordar la situación con un simple "fue un placer conocerte, lo pasamos bien, pero creo que no congeniamos lo suficiente".</p>
+                        </div>
+                        
+                        <div>
+                          <h3 className="text-lg font-semibold text-toppin-blue mb-2">2. Del amor a la amistad hay un pequeño paso</h3>
+                          <p>Puede que encontraras a alguien muy dulce toppiteando. Que vuestras primeras citas fueran increíbles pero llegados a un punto ves a esa persona más como un amigo que como el amor de tu vida.</p>
+                          <p className="mt-2">¿Cómo puedes transmitir esa idea? Lo primero que has de hacer es ser amable pero muy claro con tus intenciones. Trazar una línea de hacia donde quieres llevar la relación y que pretendes con ello.</p>
+                          <p className="mt-2">Puede que la otra persona no pretenda una amistad y corte toda relación. Se respetuoso con la decisión de los demás, al igual que querrías que lo fueran con las tuyas.</p>
+                        </div>
+                        
+                        <div>
+                          <h3 className="text-lg font-semibold text-toppin-blue mb-2">3. No tienes claro si tu match siente lo mismo que tú</h3>
+                          <p>Puede que te encuentres ante ciertas situaciones en las que puedes pensar que tú siempre das el primer paso, siempre comienzas tú la conversación o eres quien propone las citas. Ante estas situaciones es recomendable parar, ser conciso y exponer lo que quieres de la relación.</p>
+                          <p className="mt-2">Transmitir a la persona a la que estas conociendo que buscas, que necesitas y hacia donde quieres llevar la relación que se está formando es imprescindible para que tu match se convierta en algo dulce.</p>
+                        </div>
+                        
+                        <div>
+                          <h3 className="text-lg font-semibold text-toppin-blue mb-2">4. Ha sido maravilloso, pero toca a su fin</h3>
+                          <p>Conociste a alguien muy especial y vivisteis momentos inolvidables. El momento de afrontar una ruptura siempre es complicado y puede que no exista la forma perfecta de hacerlo. Pero si hay formas incorrectas y una de ellas es no hacerlo en persona.</p>
+                          <p className="mt-2">Se honesto y sincero. Puede que la ruptura se produzca por un hecho concreto o porque tus sentimientos toman otro rumbo. Se sincero con esa persona que tan buenos momentos te hizo pasar.</p>
+                        </div>
+                        
+                        <div>
+                          <h3 className="text-lg font-semibold text-toppin-blue mb-2">5. De mal en peor</h3>
+                          <p>Hiciste match con alguien, todo funcionaba a la perfección, pero sucedió algo que no puedes pasar por alto un hecho concreto o una serie de situaciones que no quieres en tu vida.</p>
+                          <p className="mt-2">Transmitir a esa persona lo que ha hecho para que decidas dejar de verlo, de manera clara y sincera es un buen punto de partida.</p>
+                        </div>
+                        
+                        <div>
+                          <h3 className="text-lg font-semibold text-toppin-blue mb-2">6. Marcar límites</h3>
+                          <p>Tras varias citas empiezas a ver ciertos comportamientos o situaciones que no quieres tener en una futura relación. Se salta todos los límites que tienes y ves con claridad que si esto sucede al principio luego puede ir a peor. En este caso te aconsejamos que bloquees al usuario y si el caso es peor, lo denuncies en la aplicación.</p>
+                        </div>
+                        
+                        <div className="mt-8 p-4 bg-gray-700 rounded-lg">
+                          <p className="font-medium text-toppin-pink">Toppin está pensada para crear momentos dulces y conocer a gente que aporte algo a tu vida, disfrutando de cada pequeño momento. Por ello, respetar a todos los usuarios de la aplicación y ser sincero y cordial ayudará a crear una comunidad sana.</p>
+                          <p className="mt-2 font-semibold text-toppin-blue">Endulza tu vida con Toppin.</p>
+                        </div>
+                      </div>
+                    </AccordionContent>
+                  </AccordionItem>
+                </Accordion>
               </div>
             </div>
           </div>
