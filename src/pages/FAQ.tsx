@@ -118,7 +118,7 @@ const FAQ = () => {
           answer: (
             <div className="space-y-4">
               <p className="text-gray-300">
-                Si quieres denunciar un perfil que te ha aparecido en la pantalla de toppitear de la app podrás hacerlo metiéndote en su perfil y deslizando hacia abajo. Te aparecerá una opción donde pone DENUNCIAR PERFIL
+                Si quieres denunciar un perfil que te ha aparecido en la pantalla de toppitear de la app podrás hacerlo metiéndote en su perfil y deslizando hacia abajo. Te aparecerá una opción donde pone DENUNCIAR PERFIL.
               </p>
             </div>
           )
