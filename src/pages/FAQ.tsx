@@ -275,23 +275,77 @@ const FAQ = () => {
       questions: [
         {
           question: "No puedo restaurar mi compra.",
-          answer: null
+          answer: (
+            <div className="space-y-4">
+              <p className="text-gray-300">
+                Las suscripciones podrán asociarse con una sola cuenta de Toppin a la vez.
+              </p>
+              <p className="text-gray-300">
+                Si ves un mensaje de error que pone: «Tu suscripción está actualmente vinculada a una cuenta ya existente», eso significará que ya tienes una suscripción activa y que no es con la cuenta que has iniciado sesión actualmente.
+              </p>
+              <p className="text-gray-300">
+                Si quieres usar un suscripción en una nueva cuenta de Toppin, primero tendrás que eliminar tu anterior cuenta de Toppin. Si borras tu cuenta supondrá eliminar definitivamente todos tus Matches, los mensajes y toda la información asociada a esta cuenta.
+              </p>
+              <div className="mt-4">
+                <ul className="space-y-1 text-gray-300">
+                  <li>• Inicia sesión en la cuenta que deseas borrar.</li>
+                  <li>• Toca el icono de perfil</li>
+                  <li>• Dirígete a los Ajustes</li>
+                  <li>• Desplázate hacia abajo y selecciona Borrar cuenta.</li>
+                </ul>
+                <p className="text-gray-300 mt-3">
+                  Una vez esta cuenta esté eliminada ya podrás comprar la suscripción con tu nueva cuenta sin que haya ningún error.
+                </p>
+              </div>
+            </div>
+          )
         },
         {
           question: "¿Hace poco que has cambiado de dispositivo?",
-          answer: null
+          answer: (
+            <div className="space-y-4">
+              <p className="text-gray-300">
+                Si has cambiado de plataforma móvil, es decir, pasando de iOS a Android o viceversa, te recomendamos que canceles tu suscripción actual y te suscribas de nuevo en tu nuevo dispositivo móvil. Te resultará más fácil gestionar la suscripción.
+              </p>
+            </div>
+          )
         },
         {
           question: "¿Sigues teniendo problemas?",
-          answer: null
+          answer: (
+            <div className="space-y-4">
+              <p className="text-gray-300">
+                Si aún así sigue sin funcionar puedes escribirnos al soporte de Toppin y trataremos de ayudarte lo más rápido posible. Envíanos una captura con el mensaje de error que te aparezca e intentaremos darte una solución lo más rápido posible.
+              </p>
+            </div>
+          )
         },
         {
           question: "¿Cómo puedo cancelar la suscripción?",
-          answer: null
+          answer: (
+            <div className="space-y-4">
+              <p className="text-gray-300">
+                Debes tener en cuenta los siguientes aspectos:
+              </p>
+              <div className="mt-4">
+                <ul className="space-y-2 text-gray-300">
+                  <li>• Eliminar Toppin de tu móvil no hará que se cancele tu suscripción, por lo que tendrás que seguir los siguientes pasos si quieres para evitar que se realicen más cobros en el futuro.</li>
+                  <li>• Aunque canceles tu suscripción podrás disfrutar de todas sus ventajas hasta que terminen los días abonados que te falten por terminar.</li>
+                  <li>• Aunque canceles tu suscripción esto no significa que se emita un reembolso de los pagos y tasas ya pagadas anteriormente.</li>
+                </ul>
+              </div>
+            </div>
+          )
         },
         {
           question: "¿Cómo cancelar?",
-          answer: null
+          answer: (
+            <div className="space-y-4">
+              <p className="text-gray-300">
+                Dependiendo de la plataforma que hayas utilizado para suscribirte deberás seguir unos pasos u otros.
+              </p>
+            </div>
+          )
         }
       ]
     },
