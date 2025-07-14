@@ -229,7 +229,13 @@ const FAQ = () => {
       questions: [
         {
           question: "¿Puedo restaurar mis compras de Toppin?",
-          answer: null
+          answer: (
+            <div className="space-y-4">
+              <p className="text-gray-300">
+                Sí, aunque cambies de teléfono podrás recuperar tus compras con tu cuenta de App Store o Google Play. Por lo que no tendrás que empezar de cero el proceso de compra.
+              </p>
+            </div>
+          )
         },
         {
           question: "¿Cómo puedo actualizar mi suscripción actual a Toppin?",
