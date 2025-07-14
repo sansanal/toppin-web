@@ -630,23 +630,59 @@ const FAQ = () => {
       questions: [
         {
           question: "¿Cómo funcionan los filtros?",
-          answer: null
+          answer: (
+            <div className="space-y-4">
+              <p className="text-gray-300">
+                Esta función te permitirá ver diferentes perfiles de personas basadas en tus filtros de búsqueda y seleccionar los perfiles que más te gusten deslizando la imagen a la izquierda o derecha según tu elección. En Toppin podrás elegir si quieres que te vean o no y aún así podrás seguir usando la función de filtros.
+              </p>
+            </div>
+          )
         },
         {
           question: "¿Puedo buscar a una persona específica en Toppin?",
-          answer: null
+          answer: (
+            <div className="space-y-4">
+              <p className="text-gray-300">
+                No se pueden buscar personas específicas dentro de la app a menos que hayas tenido un Match previamente con esa persona. Podrás buscarla en tu lista de Matches y escribir su nombre en el buscador.
+              </p>
+            </div>
+          )
         },
         {
           question: "¿Cómo puedo enviarle un mensaje a alguien?",
-          answer: null
+          answer: (
+            <div className="space-y-4">
+              <p className="text-gray-300">
+                Para poder chatear con otros usuarios de Toppin has de haber tenido un Match previo, es decir, que ambos hayáis dicho que gustéis mutuamente.
+              </p>
+            </div>
+          )
         },
         {
           question: "¿Cómo denunciar un perfil?",
-          answer: null
+          answer: (
+            <div className="space-y-4">
+              <p className="text-gray-300">
+                Desde Toppin nos preocupamos por la seguridad de nuestros usuarios y por ello ponemos a tu disposición la posibilidad de denunciar un perfil si esta persona ha violado alguna de nuestras políticas o crees que está haciendo un mal uso de la aplicación.
+              </p>
+              <p className="text-gray-300">
+                Bajo la biografía de cada persona podrás encontrar un botón de Denunciar, revisaremos uno a uno todos los perfiles denunciados con el fin de proporcionar seguridad a todos los usuarios de Toppin.
+              </p>
+            </div>
+          )
         },
         {
           question: "¿Cómo puedo deshacer un \"Me gusta\" o un \"No me gusta\"?",
-          answer: null
+          answer: (
+            <div className="space-y-4">
+              <p className="text-gray-300">
+                ¿Te arrepientes de haber dado un Match o te ha pasado justo lo contrario y quieres dar 'me gusta' a un perfil que ya habías descartado? Para ello ponemos a tu disposición la función vuelve atrás.
+              </p>
+              <p className="text-gray-300">
+                Esta función la tendrás disponible si te suscribes a nuestro plan Premium. Con ella podrás deshacer un "Me gusta" o un "No me gusta".
+              </p>
+            </div>
+          )
         }
       ]
     },
