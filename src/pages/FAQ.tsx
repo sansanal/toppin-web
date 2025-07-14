@@ -164,11 +164,29 @@ const FAQ = () => {
         },
         {
           question: "¿Cómo se vincula Instagram con tu perfil?",
-          answer: null
+          answer: (
+            <div className="space-y-4">
+              <p className="text-gray-300">
+                Si quieres vincular tu perfil de Instagram con el de Toppin simplemente tendrás que entrar en los ajustes dentro de la app y hacer click en vincular tu cuenta de Instagram.
+              </p>
+              <p className="text-gray-300">
+                Una vez vinculada los otros usuarios podrán ver tus fotografías de Instagram. De este modo podrán conocerte mejor.
+              </p>
+            </div>
+          )
         },
         {
           question: "¿Se puede conectar Spotify a tu perfil de Toppin?",
-          answer: null
+          answer: (
+            <div className="space-y-4">
+              <p className="text-gray-300">
+                Si quieres vincular tu perfil de Spotify con el de Toppin simplemente tendrás que entrar en los ajustes dentro de la app y hacer click en vincular tu cuenta de Spotify.
+              </p>
+              <p className="text-gray-300">
+                Una vez vinculada los otros usuarios podrán ver tu música favorita de Spotify. De este modo podrán conocerte mejor.
+              </p>
+            </div>
+          )
         },
         {
           question: "¿Sin cuenta de Spotify puedo vincular música a mi perfil?",
