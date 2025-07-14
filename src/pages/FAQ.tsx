@@ -67,7 +67,13 @@ const FAQ = () => {
         },
         {
           question: "¿Qué pasa si me han restringido en Toppin por la edad?",
-          answer: null
+          answer: (
+            <div className="space-y-4">
+              <p className="text-gray-300">
+                No están permitidos los perfiles de menos de 18 años de edad. Por lo que no puedes registrarte en Toppin si eres menor de 18 años. Si todavía no llegas a esta edad no te preocupes, ¡estaremos encantados de verte en cuándo los cumplas!
+              </p>
+            </div>
+          )
         }
       ]
     },
