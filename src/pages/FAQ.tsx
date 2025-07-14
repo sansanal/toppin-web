@@ -66,10 +66,10 @@ const FAQ = () => {
           answer: (
             <div className="space-y-4">
               <p className="text-gray-300">
-                Puedes personalizar la función para descubrir nuevas personas. Ve a ajustes y decide a través de los filtros que tipo de perfiles quieres ver. Distancia, edad y género son algunos de los filtros que puedes seleccionar.
+                Si quieres cambiar los filtros para encontrar personas más afines a ti podrás hacerlo desde la pantalla de toppitear. Si sigues la siguiente ruta – Icono de la parte superior derecha, icono de Filtros – Podrás definir cuáles son tus preferencias por radio de distancia, edad, sexo, gustos, etc.
               </p>
               <p className="text-gray-300">
-                ¡Así tendrás más posibilidades de encajar con tu próxima cita!
+                ¡A conocer gente se ha dicho!
               </p>
             </div>
           )
