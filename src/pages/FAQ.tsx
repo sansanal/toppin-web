@@ -190,15 +190,36 @@ const FAQ = () => {
         },
         {
           question: "¿Sin cuenta de Spotify puedo vincular música a mi perfil?",
-          answer: null
+          answer: (
+            <div className="space-y-4">
+              <p className="text-gray-300">
+                No, lamentablemente el único modo de compartir la música que te gusta en tu perfil es a través de Spotify.
+              </p>
+            </div>
+          )
         },
         {
           question: "¿Qué quiere decir que un perfil es verificado?",
-          answer: null
+          answer: (
+            <div className="space-y-4">
+              <p className="text-gray-300">
+                Un perfil verificado es un perfil que ha pasado exitosamente nuestro método de verificación de identidad. Aparecerá una marca que hará que quien visite tu perfil sepa que eres tú realmente la persona que está utilizando la cuenta.
+              </p>
+            </div>
+          )
         },
         {
           question: "¿Cómo puedo pedir un perfil verificado?",
-          answer: null
+          answer: (
+            <div className="space-y-4">
+              <p className="text-gray-300">
+                Si quieres solicitar la verificación de tu perfil de Toppin simplemente tendrás que entrar en los ajustes dentro de la app y hacer click en solicitar verificación.
+              </p>
+              <p className="text-gray-300">
+                Una vez enviada la solicitud, nuestro equipo revisará tu cuenta y te notificaremos el resultado del proceso de verificación.
+              </p>
+            </div>
+          )
         }
       ]
     },
