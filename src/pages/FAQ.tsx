@@ -102,7 +102,16 @@ const FAQ = () => {
         },
         {
           question: "¿Desmarcar Matches y enviar denuncias?",
-          answer: null
+          answer: (
+            <div className="space-y-4">
+              <p className="text-gray-300">
+                Si quieres deshacer un Match puedes hacerlo abriendo el chat con esa persona y en la parte superior de la página del chat verás tres puntitos, al hacer click se abrirá un menú en el que te saldrá la opción "Deshacer Match".
+              </p>
+              <p className="text-gray-300">
+                Si lo que quieres hacer es denunciar un Match puedes hacerlo abriendo el chat con esa persona y en la parte superior de la página del chat verás tres puntitos, al hacer click se abrirá un menú en el que te saldrá la opción "Denunciar".
+              </p>
+            </div>
+          )
         },
         {
           question: "¿Cómo denuncio un perfil?",
