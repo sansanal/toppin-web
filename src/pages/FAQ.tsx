@@ -239,15 +239,33 @@ const FAQ = () => {
         },
         {
           question: "¿Cómo puedo actualizar mi suscripción actual a Toppin?",
-          answer: null
+          answer: (
+            <div className="space-y-4">
+              <p className="text-gray-300">
+                Si quieres actualizar tu suscripción de Toppin por otra diferente podrás actualizar o mejorar el tipo de suscripción que tienes simplemente tendrás que comprar la que desees tener ahora y se reemplazará por la antigua.
+              </p>
+            </div>
+          )
         },
         {
           question: "¿Cuáles son los métodos de pago aceptados?",
-          answer: null
+          answer: (
+            <div className="space-y-4">
+              <p className="text-gray-300">
+                Si quieres hacerte con alguna de nuestras suscripciones Premium o Supreme para poder optar a más funciones dentro de la app podrás pagar a través de tu cuenta de Apple Pay y Google Pay.
+              </p>
+            </div>
+          )
         },
         {
           question: "¿Puedo pasar mi suscripción a Toppin Premium y Toppin Supreme?",
-          answer: null
+          answer: (
+            <div className="space-y-4">
+              <p className="text-gray-300">
+                Sí, puedes pasar de Premium a Supreme siempre que quieras a través de una nueva compra. No se cargarán más importes por la antigua suscripción.
+              </p>
+            </div>
+          )
         }
       ]
     },
