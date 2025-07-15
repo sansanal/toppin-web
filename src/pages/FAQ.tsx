@@ -765,11 +765,44 @@ const FAQ = () => {
       questions: [
         {
           question: "Suscripción Premium",
-          answer: null
+          answer: (
+            <div className="space-y-4">
+              <p className="text-gray-300">
+                En Toppin disponemos de la suscripción Premium que harán que tu experiencia en la app vaya un paso más allá. En algunos casos también ayudarán a que se agilice el proceso de encontrar Matches.
+              </p>
+              <p className="text-gray-300">Las funciones ampliadas con Premium son las siguientes:</p>
+              <ul className="space-y-2 text-gray-300">
+                <li>• Likes ilimitados.</li>
+                <li>• Descubre a quién le gustas.</li>
+                <li>• Acceso ilimitado a los Vip Toppins.</li>
+                <li>• 5 Súper Sweet gratis cada semana.</li>
+                <li>• 1 Power Sweet gratis al mes.</li>
+                <li>• Filtros avanzados</li>
+                <li>• Elige quién te ve y oculta tu perfil a quién tú elijas</li>
+                <li>• Destination: Endulzate en tus destinos y haz tus viajes inolvidables</li>
+                <li>• Vuelve atrás todas las veces que quieras</li>
+                <li>• Desactiva anuncios.</li>
+              </ul>
+              <p className="text-gray-300 font-semibold">*Esta suscripción es de pago</p>
+            </div>
+          )
         },
         {
           question: "Suscripción Supreme",
-          answer: null
+          answer: (
+            <div className="space-y-4">
+              <p className="text-gray-300">
+                Además de las las funciones de la suscripción Premium tienes también la opción de hacerte con el pack Supreme, que incluye:
+              </p>
+              <ul className="space-y-2 text-gray-300">
+                <li>• Sugar Sweet: Acompaña tu Super Sweet con un mensaje dulce.</li>
+                <li>• Confirmación de mensajes leídos.</li>
+                <li>• Prioridad para tus "Me gusta"</li>
+                <li>• Incluye las funciones Premium.</li>
+              </ul>
+              <p className="text-gray-300 font-semibold">*Esta suscripción es de pago</p>
+            </div>
+          )
         }
       ]
     },
