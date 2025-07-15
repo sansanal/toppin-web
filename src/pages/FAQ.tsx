@@ -930,13 +930,17 @@ const FAQ = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {faqSections.map((section) => (
+            {faqSections
+              .filter(section => section.questions.some(q => q.answer !== null))
+              .map((section) => (
               <div key={section.id} className="space-y-2">
                 <h2 className="text-toppin-blue font-bold text-base mb-3 text-center">
                   {section.title}
                 </h2>
                 <Accordion type="single" collapsible className="w-full space-y-2">
-                  {section.questions.map((item, index) => (
+                  {section.questions
+                    .filter(item => item.answer !== null)
+                    .map((item, index) => (
                     <AccordionItem 
                       key={`${section.id}-${index}`} 
                       value={`${section.id}-${index}`}
@@ -945,11 +949,9 @@ const FAQ = () => {
                       <AccordionTrigger className="text-left text-gray-300 hover:text-white text-xs py-3 [&>svg]:text-toppin-blue [&>svg]:h-3 [&>svg]:w-3">
                         {item.question}
                       </AccordionTrigger>
-                      {item.answer && (
-                        <AccordionContent className="text-gray-400 text-xs pb-3">
-                          {item.answer}
-                        </AccordionContent>
-                      )}
+                      <AccordionContent className="text-gray-400 text-xs pb-3">
+                        {item.answer}
+                      </AccordionContent>
                     </AccordionItem>
                   ))}
                 </Accordion>
