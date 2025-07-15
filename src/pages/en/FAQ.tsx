@@ -392,7 +392,6 @@ const FAQ = () => {
                       <li>• Tap the menu icon {'>'} Subscriptions.</li>
                       <li>• Select the subscription you want to cancel.</li>
                       <li>• Tap Cancel subscription.</li>
-                      <li>• Follow the instructions.</li>
                     </ul>
                   </div>
                 </div>
@@ -401,34 +400,570 @@ const FAQ = () => {
           )
         },
         {
-          question: "Is my information secure?",
+          question: "How can I update my billing information?",
           answer: (
             <div className="space-y-4">
               <p className="text-gray-300">
-                We do not store your information. Apple or Google store it directly on their platforms. For both companies, financial security is one of their main priorities.
+                From the platform you used to subscribe you can update your payment method (Apple Pay or Google Pay). Instructions will vary depending on the platform you use to make the purchase.
+              </p>
+              
+              <div className="mt-6">
+                <h4 className="text-toppin-blue font-semibold text-lg mb-3">IOS</h4>
+                <p className="text-gray-300">
+                  If you want to update your billing information from an iOS device, go to the Settings app, select iTunes & App Store, click on your Apple ID, and tap View Apple ID and Billing Information.
+                </p>
+              </div>
+              
+              <div className="mt-6">
+                <h4 className="text-toppin-blue font-semibold text-lg mb-3">ANDROID</h4>
+                <div className="space-y-3">
+                  <p className="text-gray-300">
+                    If you made the purchase using your Google Play Store account, tap the menu icon in Google Play Store, then tap My account and select "Add payment method" or "Edit payment method"
+                  </p>
+                  <p className="text-gray-300">
+                    If you made the purchase by credit card on Android, enter the Toppin app, tap the profile icon and select Manage payment account.
+                  </p>
+                </div>
+              </div>
+            </div>
+          )
+        }
+      ]
+    },
+    {
+      id: "payment-functions",
+      title: "PROBLEMS WITH PAYMENT FUNCTIONS",
+      questions: [
+        {
+          question: "I cannot access my Toppin subscription due to device change, we help you recover it.",
+          answer: (
+            <div className="space-y-4">
+              <p className="text-gray-300">
+                If Toppin doesn't recognize a subscription you have in the app, restore the purchase.
+              </p>
+              <p className="text-gray-300">
+                The Restore purchases function helps you maintain access to your subscription every time you delete and recreate your Toppin account, when you buy a new phone, or in other situations where the app doesn't recognize your subscription. Follow the steps below to try to restore your purchase.
+              </p>
+              <p className="text-gray-300">
+                Restoring a purchase keeps access to the subscription if you change phones, delete and create a new account or any other case where the app doesn't recognize your active subscription. These are the steps to restore the purchase.
               </p>
             </div>
           )
         },
         {
-          question: "My billing problems",
+          question: "How did you make the purchase? With your Apple ID or with Google Play Store?",
+          answer: (
+            <div className="space-y-4">
+              <ul className="space-y-2 text-gray-300">
+                <li>• Open Toppin</li>
+                <li>• Tap the profile icon</li>
+                <li>• Go to Settings</li>
+                <li>• Scroll down and tap Restore purchase</li>
+              </ul>
+              <p className="text-gray-300 mt-4 font-medium">
+                Important: Restoring your purchase will not create a new transaction; it will simply relink the existing and active subscription with Toppin.
+              </p>
+            </div>
+          )
+        },
+        {
+          question: "Problems deactivating Power Sweet",
+          answer: (
+            <div className="space-y-4">
+              <h4 className="text-toppin-blue font-semibold text-lg mb-3">PowerSweet</h4>
+              <p className="text-gray-300">
+                PowerSweet activation: just open Toppin and tap the blue battery-shaped icon on the main screen.
+              </p>
+              <p className="text-gray-300">
+                If you want to know how many PowerSweets you have left, tap the profile icon and take a look at the counter at the bottom of the screen.
+              </p>
+            </div>
+          )
+        },
+        {
+          question: "Technical problems?",
           answer: (
             <div className="space-y-4">
               <p className="text-gray-300">
-                If you think you have been charged incorrectly, here's what you can do:
+                If you are trying to use any toppin function but are having problems, write us a message with the exact details of the problem or send us a screenshot where the problem you are having is clearly visible so we can help you at support@toppin.es.
               </p>
-              <div className="mt-4">
-                <h4 className="text-toppin-blue font-semibold text-lg mb-3">IOS</h4>
-                <p className="text-gray-300">
-                  If your phone is an iPhone, you can contact Apple technical support and inform them of what happened. Transactions are handled directly by Apple, including refunds.
-                </p>
-              </div>
-              <div className="mt-6">
-                <h4 className="text-toppin-blue font-semibold text-lg mb-3">ANDROID</h4>
-                <p className="text-gray-300">
-                  Does your order number start with "GPA"? Then it was processed through Google Play where the purchase was made. We recommend that you contact Google Play technical support to inform them of this problem.
-                </p>
-              </div>
+            </div>
+          )
+        }
+      ]
+    },
+    {
+      id: "profile-settings",
+      title: "PROBLEMS WITH MY PROFILE AND SETTINGS",
+      questions: [
+        {
+          question: "I'm having problems deleting my account",
+          answer: (
+            <div className="space-y-4">
+              <p className="text-gray-300">
+                If you are trying to delete your Toppin account but are having problems, these are the steps you must follow to proceed with deleting your account:
+              </p>
+              <ul className="space-y-2 text-gray-300">
+                <li>• Open the Toppin app and log in</li>
+                <li>• Tap your profile icon</li>
+                <li>• Go to Settings</li>
+                <li>• Scroll down and click "Delete account"</li>
+              </ul>
+              <p className="text-gray-300">
+                If you need help you can contact us and we will try to help you at support@toppin.es
+              </p>
+            </div>
+          )
+        },
+        {
+          question: "Technical problems related to account deletion",
+          answer: (
+            <div className="space-y-4">
+              <p className="text-gray-300">
+                If an error message appears when you try to delete your account, check your internet connection. If the problem is with the app, be patient and it will be resolved soon. If the problem persists for a long time, contact Toppin and we will try to help you as soon as possible through support@toppin.es
+              </p>
+            </div>
+          )
+        },
+        {
+          question: "My account is under investigation.",
+          answer: (
+            <div className="space-y-4">
+              <p className="text-gray-300">
+                If your profile receives several reports from different users of the application, we will investigate your account to see what the reason is or what is happening with your profile. During the investigation, we will look for violations of our Terms of use or Community guidelines.
+              </p>
+              <p className="text-gray-300">
+                If your profile has not violated any of Toppin's policies, you will be allowed to access as usual. But if any of your behaviors has violated our terms, we will take the necessary measures, one of them is the possibility of permanent prohibition from being a member of Toppin or deletion of the account.
+              </p>
+              <p className="text-gray-300">
+                If your profile investigation has not yet been completed, it's just a matter of time; we will try to do it as soon as possible.
+              </p>
+              <p className="text-gray-300">
+                Check our Terms of use or Community guidelines for information about what is not allowed on Toppin.
+              </p>
+            </div>
+          )
+        },
+        {
+          question: "Problems with photo verification.",
+          answer: (
+            <div className="space-y-4">
+              <p className="text-gray-300">
+                If you have problems with a specific pose, you can always exit the photo verification page and start over by refreshing the photo verification page.
+              </p>
+              <p className="text-gray-300">
+                If you need more help with the pose or are having any other problem related to photo verification, let us know by contacting us at support@toppin.es
+              </p>
+            </div>
+          )
+        },
+        {
+          question: "My name or age are incorrect.",
+          answer: (
+            <div className="space-y-4">
+              <p className="text-gray-300">
+                Once you have created an account, the name and age details cannot be updated or edited. If you made a mistake and entered your date of birth incorrectly, or if you need to update your name, what you can do is delete your account and start over again.
+              </p>
+              <p className="text-gray-300">
+                Keep in mind that if you delete it, you will unfortunately lose your Matches, messages, and all your purchased items (Super Sweet, Power Sweets, etc.) and other information linked to your account.
+              </p>
+            </div>
+          )
+        },
+        {
+          question: "Follow these steps to delete your Toppin account:",
+          answer: (
+            <div className="space-y-4">
+              <ul className="space-y-2 text-gray-300">
+                <li>• Open Toppin</li>
+                <li>• Tap the profile icon</li>
+                <li>• Go to Settings</li>
+                <li>• Scroll down and tap Delete account</li>
+              </ul>
+              <p className="text-gray-300">
+                If you have a Toppin subscription, you can restore it and use it again on your new account. Follow the instructions on how to restore a purchase on your new profile.
+              </p>
+            </div>
+          )
+        }
+      ]
+    },
+    {
+      id: "edit-profile",
+      title: "PROBLEMS EDITING PROFILE",
+      questions: [
+        {
+          question: "No profile appears on the swiping screen",
+          answer: (
+            <div className="space-y-4">
+              <p className="text-gray-300">
+                To get more potential Matches on your edit profile page try increasing your search preferences. Adjust the edit profile settings with these steps:
+              </p>
+              <ul className="space-y-2 text-gray-300">
+                <li>• Open Toppin</li>
+                <li>• Tap the profile icon</li>
+                <li>• Go to Settings</li>
+                <li>• In "Profile settings" you can change the distance ratio or age range.</li>
+              </ul>
+            </div>
+          )
+        },
+        {
+          question: "Are you having technical problems?",
+          answer: (
+            <div className="space-y-4">
+              <p className="text-gray-300">
+                Make sure your Internet connection is working properly. If it is, try deleting and uninstalling the app. This will update the app to the latest version and also update your Toppin experience, so things should work normally.
+              </p>
+            </div>
+          )
+        },
+        {
+          question: "I'm seeing profiles I've seen before.",
+          answer: (
+            <div className="space-y-4">
+              <p className="text-gray-300">
+                If a profile you had seen before has appeared on the swiping page, it's likely that the person has deleted their previous account and opened a new one or has purchased a Power Sweet subscription to have greater visibility and that's why you may see it repeated. You may also see a profile again if when you were swiping in the app you had a bad connection.
+              </p>
+            </div>
+          )
+        }
+      ]
+    },
+    {
+      id: "matches-messages-problems",
+      title: "PROBLEMS WITH MATCHES AND MESSAGES",
+      questions: [
+        {
+          question: "All my Matches have disappeared",
+          answer: null
+        },
+        {
+          question: "No profile appears on the swiping screen",
+          answer: null
+        },
+        {
+          question: "I have no new Matches.",
+          answer: null
+        }
+      ]
+    },
+    {
+      id: "filters",
+      title: "FILTERS AND SEARCH PARAMETERS",
+      questions: [
+        {
+          question: "How do filters work?",
+          answer: (
+            <div className="space-y-4">
+              <p className="text-gray-300">
+                This function will allow you to see different profiles of people based on your search filters and select the profiles you like best by swiping the image left or right according to your choice. In Toppin you can choose whether you want to be seen or not and still be able to use the filters function.
+              </p>
+            </div>
+          )
+        },
+        {
+          question: "Can I search for a specific person on Toppin?",
+          answer: (
+            <div className="space-y-4">
+              <p className="text-gray-300">
+                You cannot search for specific people within the app unless you have previously had a Match with that person. You can search for them in your Match list and type their name in the search engine.
+              </p>
+            </div>
+          )
+        },
+        {
+          question: "How can I send someone a message?",
+          answer: (
+            <div className="space-y-4">
+              <p className="text-gray-300">
+                To be able to chat with other Toppin users you must have had a previous Match, that is, you both must have said you liked each other.
+              </p>
+            </div>
+          )
+        },
+        {
+          question: "How to report a profile?",
+          answer: (
+            <div className="space-y-4">
+              <p className="text-gray-300">
+                At Toppin we care about the safety of our users and therefore we make it possible for you to report a profile if this person has violated any of our policies or you think they are misusing the application.
+              </p>
+              <p className="text-gray-300">
+                Under each person's biography you can find a Report button, we will review all reported profiles one by one in order to provide security to all Toppin users.
+              </p>
+            </div>
+          )
+        },
+        {
+          question: "How can I undo a \"Like\" or \"Dislike\"?",
+          answer: (
+            <div className="space-y-4">
+              <p className="text-gray-300">
+                Do you regret having given a Match or the opposite has happened to you and you want to "like" a profile that you had already discarded? For this we provide you with the go back function.
+              </p>
+              <p className="text-gray-300">
+                You will have this function available if you subscribe to our Premium plan. With it you can undo a "Like" or "Dislike".
+              </p>
+            </div>
+          )
+        }
+      ]
+    },
+    {
+      id: "profile-account",
+      title: "PROFILE AND ACCOUNT SETTINGS",
+      questions: [
+        {
+          question: "Selfie verification, how does it work?",
+          answer: (
+            <div className="space-y-4">
+              <p className="text-gray-300">
+                You will have to take a selfie making a hand gesture, the same one that appears on your mobile screen. We will ask you for this in order to verify your profile and know that you are really the one using your account.
+              </p>
+            </div>
+          )
+        },
+        {
+          question: "How can you edit your profile?",
+          answer: (
+            <div className="space-y-4">
+              <p className="text-gray-300">
+                If you want to edit any data or photo of your account you can do it within your profile in the app. There you will find a pencil icon, and by clicking there all your profile options available for editing will open.
+              </p>
+              <p className="text-gray-300">
+                You can edit it as many times as you want!
+              </p>
+            </div>
+          )
+        },
+        {
+          question: "How can I delete my account?",
+          answer: (
+            <div className="space-y-4">
+              <p className="text-gray-300">
+                If you unfortunately want to delete your Toppin account you will have to access Your profile – access Settings – Delete account.
+              </p>
+            </div>
+          )
+        },
+        {
+          question: "What is photogenic verification?",
+          answer: (
+            <div className="space-y-4">
+              <p className="text-gray-300">
+                Photo verification allows you to verify your profile, thus demonstrating to potential Matches that you are really the one who appears in the photos. This is done in order to provide security to all app users.
+              </p>
+            </div>
+          )
+        }
+      ]
+    },
+    {
+      id: "subscriptions",
+      title: "PREMIUM AND SUPREME SUBSCRIPTIONS",
+      questions: [
+        {
+          question: "Premium Subscription",
+          answer: (
+            <div className="space-y-4">
+              <p className="text-gray-300">
+                At Toppin we have the Premium subscription that will make your experience in the app go a step further. In some cases they will also help speed up the process of finding Matches.
+              </p>
+              <p className="text-gray-300">The extended functions with Premium are the following:</p>
+              <ul className="space-y-2 text-gray-300">
+                <li>• Unlimited likes.</li>
+                <li>• Discover who likes you.</li>
+                <li>• Unlimited access to Vip Toppins.</li>
+                <li>• 5 free Super Sweet every week.</li>
+                <li>• 1 free Power Sweet per month.</li>
+                <li>• Advanced filters</li>
+                <li>• Choose who sees you and hide your profile from whoever you choose</li>
+                <li>• Destination: Sweeten your destinations and make your trips unforgettable</li>
+                <li>• Go back as many times as you want</li>
+                <li>• Disable ads.</li>
+              </ul>
+              <p className="text-gray-300 font-semibold">*This subscription is paid</p>
+            </div>
+          )
+        },
+        {
+          question: "Supreme Subscription",
+          answer: (
+            <div className="space-y-4">
+              <p className="text-gray-300">
+                In addition to the Premium subscription functions you also have the option of getting the Supreme pack, which includes:
+              </p>
+              <ul className="space-y-2 text-gray-300">
+                <li>• Sugar Sweet: Accompany your Super Sweet with a sweet message.</li>
+                <li>• Read message confirmation.</li>
+                <li>• Priority for your "Likes"</li>
+                <li>• Includes Premium features.</li>
+              </ul>
+              <p className="text-gray-300 font-semibold">*This subscription is paid</p>
+            </div>
+          )
+        }
+      ]
+    },
+    {
+      id: "functions",
+      title: "SOME TOPPIN FUNCTIONS",
+      questions: [
+        {
+          question: "Toppin Sweet",
+          answer: (
+            <div className="space-y-4">
+              <p className="text-gray-300">
+                Haven't you tried Toppin Sweet yet? Play roulette and win prizes that you can spend within Toppin and that will help you find your ideal match.
+              </p>
+              <p className="text-gray-300">
+                The first roll is free.
+              </p>
+              <p className="text-gray-300">
+                You can buy Toppin Sweet within the app.
+              </p>
+            </div>
+          )
+        },
+        {
+          question: "Super Sweet",
+          answer: (
+            <div className="space-y-4">
+              <p className="text-gray-300">
+                Send a Super Sweet to the profile you like the most, this way they will receive a notification of your match and you won't have to wait for your profile to appear.
+              </p>
+              <p className="text-gray-300">
+                And if they like your profile and give you a like, you'll have the perfect match!
+              </p>
+              <p className="text-gray-300">
+                You can buy Super Sweet within the app.
+              </p>
+            </div>
+          )
+        },
+        {
+          question: "Power Sweet",
+          answer: (
+            <div className="space-y-4">
+              <p className="text-gray-300">
+                Increase your chances of matching by becoming the most appealing sweet and shine with your matches for 30 minutes.
+              </p>
+              <p className="text-gray-300">
+                You can buy Power Sweet within the app.
+              </p>
+            </div>
+          )
+        },
+        {
+          question: "Destination",
+          answer: (
+            <div className="space-y-4">
+              <p className="text-gray-300">
+                With the Destination function you can geolocate your searches in different geographic areas.
+              </p>
+              <p className="text-gray-300">
+                A new way to meet people during your holidays!
+              </p>
+            </div>
+          )
+        },
+        {
+          question: "Go back",
+          answer: (
+            <div className="space-y-4">
+              <p className="text-gray-300">
+                Regret a match? Did you want to see a discarded profile again?
+              </p>
+              <p className="text-gray-300">
+                With this option you can make the decision to match or not again.
+              </p>
+            </div>
+          )
+        },
+        {
+          question: "Unlimited Likes",
+          answer: (
+            <div className="space-y-4">
+              <p className="text-gray-300">
+                With your premium or supreme subscription you can give unlimited likes per month as long as you remain subscribed to one of the two options.
+              </p>
+              <p className="text-gray-300">
+                If you don't have any premium or supreme subscription you can have unlimited likes by purchasing one of the two subscriptions and you can continue swiping without limits.
+              </p>
+            </div>
+          )
+        }
+      ]
+    },
+    {
+      id: "troubleshooting",
+      title: "TROUBLESHOOTING",
+      questions: [
+        {
+          question: "I can't sign in to my account.",
+          answer: (
+            <div className="space-y-4">
+              <p className="text-gray-300">
+                If you are having difficulty signing in to the app, these troubleshooting steps usually help with sign-in problems:
+              </p>
+              <ul className="space-y-2 text-gray-300">
+                <li>• Check if you have a good Internet connection, or switch from Wi-Fi to mobile data or vice versa to determine if the problem is related to your connection</li>
+                <li>• Delete and reinstall the app. This will not only update you to the latest version of Toppin, but will also update your app experience, which should make things work as they should.</li>
+                <li>• If the problem persists, we want to know about it. Contact us through our email support@toppin.es and describe your problem in as much detail as possible, so we can analyze and resolve it.</li>
+              </ul>
+            </div>
+          )
+        },
+        {
+          question: "My account has been disabled.",
+          answer: (
+            <div className="space-y-4">
+              <p className="text-gray-300">
+                If your Toppin account has been closed, you will see a message warning you when you try to log in. At Toppin we close accounts when we detect activities that violate our terms of use. If you think it's an error you can contact us through our email support@toppin.es and we will try to solve it.
+              </p>
+            </div>
+          )
+        },
+        {
+          question: "I want to update the email address associated with my account.",
+          answer: (
+            <div className="space-y-4">
+              <p className="text-gray-300">
+                Follow these steps to update the email address associated with your Toppin account:
+              </p>
+              <ul className="space-y-2 text-gray-300">
+                <li>• Open the Toppin app</li>
+                <li>• Go to the profile icon</li>
+                <li>• Go to Settings</li>
+                <li>• Select Email notifications</li>
+                <li>• Update your email address</li>
+              </ul>
+            </div>
+          )
+        },
+        {
+          question: "The app crashes.",
+          answer: (
+            <div className="space-y-4">
+              <p className="text-gray-300">
+                This can be a bit exhausting sometimes, we know. But we're going to help you! Maybe it's for one of the following reasons:
+              </p>
+              <ul className="space-y-2 text-gray-300">
+                <li>• First make sure you have a good Internet connection, or switch from Wi-Fi to mobile data or vice versa to determine if the problem is related to your connection.</li>
+                <li>• If the above doesn't work, try deleting and reinstalling the app. In addition to updating to the latest version of Toppin, it will also update your app experience, this should make it work as it should.</li>
+                <li>• If it's a technical problem, we're probably already working on solving it. It's a matter of waiting!</li>
+              </ul>
+            </div>
+          )
+        },
+        {
+          question: "How can I know what email address is associated with the account?",
+          answer: (
+            <div className="space-y-4">
+              <p className="text-gray-300">
+                If you have forgotten or want to know what email address is associated with your Toppin account you can find it within Settings {'>'} Notifications {'>'} Email. The email you registered with will appear there.
+              </p>
             </div>
           )
         }
