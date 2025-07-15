@@ -42,6 +42,9 @@ const Header = () => {
           <a href="#download" className="text-gray-300 hover:text-white transition-colors">
             {t('nav.download')}
           </a>
+          <Link to={currentLanguage === 'en' ? '/en/faq' : '/faq'} className="text-gray-300 hover:text-white transition-colors">
+            FAQ
+          </Link>
           
           {/* Language Selector */}
           <LanguageSelector />
@@ -73,6 +76,9 @@ const Header = () => {
               <a href="#download" className="text-gray-300 hover:text-white transition-colors">
                 {t('nav.download')}
               </a>
+              <Link to={currentLanguage === 'en' ? '/en/faq' : '/faq'} className="text-gray-300 hover:text-white transition-colors">
+                FAQ
+              </Link>
             </nav>
           </div>
         )}
