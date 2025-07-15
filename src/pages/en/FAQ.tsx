@@ -11,89 +11,74 @@ import {
 const FAQ = () => {
   const faqSections = [
     {
-      title: "TOPPIN FEATURES",
-      id: "toppin-features",
+      id: "registration",
+      title: "REGISTRATION AND FIRST STEPS",
       questions: [
         {
-          question: "Toppin Sweet",
+          question: "How to create an account on Toppin?",
           answer: (
             <div className="space-y-4">
               <p className="text-gray-300">
-                Haven't tried Toppin Sweet yet? Play the roulette and win prizes that you can spend within Toppin and that will help you find your ideal match.
+                Welcome to Toppin. To start enjoying this app you need to create an account. We explain below all the possible ways for you to start matching.
+              </p>
+              
+              <div className="mt-6">
+                <h4 className="text-toppin-blue font-semibold text-lg mb-3">IOS</h4>
+                <ul className="space-y-2 text-gray-300">
+                  <li>• Download the Toppin App for iOS</li>
+                  <li>• Create an account through Facebook, Apple or sign up with your email</li>
+                  <li>• Set up your profile</li>
+                  <li>• Grant all required permissions</li>
+                </ul>
+              </div>
+              
+              <div className="mt-6">
+                <h4 className="text-toppin-blue font-semibold text-lg mb-3">ANDROID</h4>
+                <ul className="space-y-2 text-gray-300">
+                  <li>• Download the Toppin App for Android</li>
+                  <li>• Create an account through Facebook, Google or sign up with your email</li>
+                  <li>• Set up your profile</li>
+                  <li>• Grant all required permissions</li>
+                </ul>
+              </div>
+            </div>
+          )
+        },
+        {
+          question: "Can I register without having a Facebook account?",
+          answer: (
+            <p className="text-gray-300">
+              At Toppin we have several registration methods, so it's not necessary to have Facebook to enjoy our App. If you don't have a Facebook account you can register using a Google account, an Apple account or your email address. Let's enjoy!
+            </p>
+          )
+        },
+        {
+          question: "How can I edit my profile?",
+          answer: (
+            <p className="text-gray-300">
+              To change data or information related to your profile, enter the pencil icon and start editing your information. You can change photos, edit your biography, sexual orientation, include your gender, add different personal information and link Toppin to Spotify and Instagram. This way people you meet on the swiping screen will be able to get to know you much faster and know if they're interested in you!
+            </p>
+          )
+        },
+        {
+          question: "How can I configure my search preferences?",
+          answer: (
+            <div className="space-y-4">
+              <p className="text-gray-300">
+                If you want to change the filters to find people more similar to you, you can do so from the swiping screen. If you follow this path – Top right icon, Filters icon – You can define your preferences by distance radius, age, gender, interests, etc.
               </p>
               <p className="text-gray-300">
-                The first spin is free.
-              </p>
-              <p className="text-gray-300">
-                You can buy Toppin Sweet within the app.
+                Let's meet people!
               </p>
             </div>
           )
         },
         {
-          question: "Super Sweet",
+          question: "What happens if I've been restricted on Toppin because of age?",
           answer: (
             <div className="space-y-4">
               <p className="text-gray-300">
-                Send a Super Sweet to the profile you like the most, this way they'll receive a notification of your match and you won't have to wait for your profile to appear to them.
-              </p>
-              <p className="text-gray-300">
-                And if they like your profile and give you a like, you'll have the perfect match!
-              </p>
-              <p className="text-gray-300">
-                You can buy Super Sweet within the app.
-              </p>
-            </div>
-          )
-        },
-        {
-          question: "Power Sweet",
-          answer: (
-            <div className="space-y-4">
-              <p className="text-gray-300">
-                Increase your chances of matching by becoming the most appetizing sweet and shine with your matches for 30 minutes.
-              </p>
-              <p className="text-gray-300">
-                You can buy Power Sweet within the app.
-              </p>
-            </div>
-          )
-        },
-        {
-          question: "Destination",
-          answer: (
-            <div className="space-y-4">
-              <p className="text-gray-300">
-                With the Destination function you can geolocate your searches in different geographic areas.
-              </p>
-              <p className="text-gray-300">
-                A new way to meet people during your vacations!
-              </p>
-            </div>
-          )
-        },
-        {
-          question: "Go Back",
-          answer: (
-            <div className="space-y-4">
-              <p className="text-gray-300">
-                Regret a match? Did you want to see a discarded profile again?
-              </p>
-              <p className="text-gray-300">
-                With this option you can make the decision again whether to match or not.
-              </p>
-            </div>
-          )
-        },
-        {
-          question: "Unlimited Likes",
-          answer: (
-            <div className="space-y-4">
-              <p className="text-gray-300">
-                With your premium or supreme subscription you can give unlimited likes per month while you remain subscribed to one of the two options.
-              </p>
-              <p className="text-gray-300">
-                If you don't have any premium or supreme subscription you can have unlimited likes by purchasing one of the two subscriptions and you can continue topping without limits.
+                Profiles under 18 years of age are not allowed. So you cannot register on Toppin if you are under 18 years old. If you haven't reached this age yet, don't worry, we'll be happy to see you when you turn 18!
               </p>
             </div>
           )
@@ -101,160 +86,48 @@ const FAQ = () => {
       ]
     },
     {
-      title: "TROUBLESHOOTING",
-      id: "troubleshooting",
+      id: "matches",
+      title: "MATCHES AND MESSAGES",
       questions: [
         {
-          question: "I can't log into my account.",
+          question: "How to send a message to a Match?",
           answer: (
             <div className="space-y-4">
               <p className="text-gray-300">
-                If you're having difficulty logging into the app, these troubleshooting steps usually help with login issues:
-              </p>
-              <p className="text-gray-300">
-                Check if you have a good internet connection, or switch from Wi-Fi to mobile data or vice versa to determine if the problem is related to your connection.
-              </p>
-              <p className="text-gray-300">
-                Delete and reinstall the application. This will not only update you to the latest version of Toppin, but will also update your app experience, which should make things work as they should again.
-              </p>
-              <p className="text-gray-300">
-                If the problem persists, we want to know about it. Contact us through our email support@toppin.es and describe your problem with as much detail as possible, so we can analyze and resolve it.
+                Once you have managed to match with another user you can start chatting. You can find the person in the Matches list and from there send them a message.
               </p>
             </div>
           )
         },
         {
-          question: "My account has been disabled.",
+          question: "Unmatch and send reports?",
           answer: (
             <div className="space-y-4">
               <p className="text-gray-300">
-                If your Toppin account has been closed, you'll see a message notifying you when you try to log in. At Toppin we close accounts when we detect activities that violate our terms of use. If you think it's an error you can contact us through our email support@toppin.es and we'll try to solve it.
+                If you want to undo a Match you can do so by opening the chat with that person and at the top of the chat page you will see three dots, when you click it a menu will open with the "Undo Match" option.
+              </p>
+              <p className="text-gray-300">
+                If what you want to do is report a Match you can do so by opening the chat with that person and at the top of the chat page you will see three dots, when you click it a menu will open with the "Report" option.
               </p>
             </div>
           )
         },
         {
-          question: "I want to update the email address associated with my account.",
+          question: "How do I report a profile?",
           answer: (
             <div className="space-y-4">
               <p className="text-gray-300">
-                Follow these steps to update the email address associated with your Toppin account:
-              </p>
-              <p className="text-gray-300">
-                Open the Toppin app<br/>
-                Go to the profile icon<br/>
-                Open the Toppin app<br/>
-                Go to the profile icon<br/>
-                Open the Toppin app
+                If you want to report a profile that has appeared on the app's swiping screen you can do so by going into their profile and scrolling down. You will see an option that says REPORT PROFILE.
               </p>
             </div>
           )
         },
         {
-          question: "The app crashes.",
+          question: "I undid a Match by mistake?",
           answer: (
             <div className="space-y-4">
               <p className="text-gray-300">
-                This can be a bit exhausting sometimes, we know. But we're going to help you! It might be due to one of the following reasons:
-              </p>
-              <p className="text-gray-300">
-                First make sure if you have a good internet connection, or switch from Wi-Fi to mobile data or vice versa to determine if the problem is related to your connection.
-              </p>
-              <p className="text-gray-300">
-                If the above doesn't work try to Delete and Reinstall the application. In addition to updating to the latest version of Toppin, it will also update your app experience, this should make it work as it should.
-              </p>
-              <p className="text-gray-300">
-                If it's a technical problem we're probably already working on fixing it. It's a matter of waiting!
-              </p>
-            </div>
-          )
-        },
-        {
-          question: "How can I know which email address is associated with the account?",
-          answer: (
-            <div className="space-y-4">
-              <p className="text-gray-300">
-                If you've forgotten or want to know which email address is associated with your Toppin account you can find it within Settings {'>'} Notifications {'>'} Email. There you'll see the email you registered with.
-              </p>
-            </div>
-          )
-        },
-        {
-          question: "In case it's from an iPhone device",
-          answer: (
-            <div className="space-y-4">
-              <p className="text-gray-300">
-                Opening your iPhone Settings<br/>
-                Tap on your name, and then in the "Subscriptions" section<br/>
-                Select the subscription you want to cancel<br/>
-                Tap "Cancel subscription"
-              </p>
-            </div>
-          )
-        },
-        {
-          question: "In case it's from an Android device:",
-          answer: (
-            <div className="space-y-4">
-              <p className="text-gray-300">
-                If you paid for the subscription using your Google Play Store account:
-              </p>
-              <p className="text-gray-300">
-                On your Android phone open the Google Play Store app.<br/>
-                Then tap on the "Menu" icon and go to "Subscriptions"<br/>
-                Choose the subscription you want to cancel<br/>
-                Tap "Cancel subscription"
-              </p>
-              <p className="text-gray-300">
-                If your subscription payment method was with a credit card:
-              </p>
-              <p className="text-gray-300">
-                Open the Toppin app for Android<br/>
-                Tap the profile icon<br/>
-                Select "Manage payment account"<br/>
-                Tap "Cancel subscription".
-              </p>
-            </div>
-          )
-        },
-        {
-          question: "I have problems canceling my subscription.",
-          answer: (
-            <div className="space-y-4">
-              <p className="text-gray-300">
-                Depending on the platform the steps will vary, so you'll have to make sure to follow the corresponding steps.
-              </p>
-              <p className="text-gray-300">
-                Enter your App Store or Play Store account – Profile – In the "Subscriptions" section you can manage the subscriptions you have. If you have a subscription in Toppin you'll see a button that says "Cancel subscription".
-              </p>
-              <p className="text-gray-300">
-                From there nothing should be charged again, although you'll be able to continue enjoying the benefits of your subscription until the end of the cycle.
-              </p>
-            </div>
-          )
-        },
-        {
-          question: "I have duplicate or incorrect charges.",
-          answer: (
-            <div className="space-y-4">
-              <p className="text-gray-300">
-                <strong>iOS</strong>
-              </p>
-              <p className="text-gray-300">
-                If your phone is an iPhone, you can contact Apple technical support and inform them of what happened.
-              </p>
-              <p className="text-gray-300">
-                Transactions are handled directly by Apple, including refunds.
-              </p>
-              <p className="text-gray-300">
-                <strong>Android</strong>
-              </p>
-              <p className="text-gray-300">
-                Does your order number start with "GPA"?<br/>
-                Then it was processed through Google Play where the purchase was made.
-              </p>
-              <p className="text-gray-300">
-                We recommend that you contact Google Play technical support to inform them of this problem.
+                Undoing a Match is a permanent action and unfortunately cannot be redone.
               </p>
             </div>
           )
@@ -262,356 +135,300 @@ const FAQ = () => {
       ]
     },
     {
-      title: "THE PAYMENT METHOD I'M TRYING TO USE DOESN'T WORK",
-      id: "payment-issues",
+      id: "interests",
+      title: "INTERESTS",
       questions: [
         {
-          question: "These are the most common problems with payment methods",
+          question: "How do I change my search preferences?",
           answer: (
             <div className="space-y-4">
               <p className="text-gray-300">
-                Typographical errors: Keep in mind that all letters, numbers and any digit you use must be identical to those on your credit/debit card.
+                You can customize the function to discover new people. Go to settings and decide through the filters what type of profiles you want to see. Distance, age and gender are some of the filters you can select.
               </p>
               <p className="text-gray-300">
-                Use of gift cards, prepaid cards and certain debit cards: If you acquire a subscription, gift cards, prepaid cards and certain debit cards may not accept recurring payments.
-              </p>
-              <p className="text-gray-300">
-                If you have problems with the billing address: Have you moved recently? Do you need to update your billing information? Check that the data entered regarding the billing address is correct.
+                This way you'll have more chances to match with your next date!
               </p>
             </div>
           )
         },
         {
-          question: "View payment history.",
+          question: "How to manage your notifications?",
           answer: (
             <div className="space-y-4">
               <p className="text-gray-300">
-                If you want to see your payment history you can do so in your iOS or Android account within your profile of either of these two platforms. Depending on which one you used to pay for your purchases you can locate it in one or the other.
+                If you want to manage your notifications, activate or deactivate them you can do so within Profile {'>'} Settings {'>'} Notifications. There you can activate and deactivate the notifications you want or don't want to receive and everything related to them.
               </p>
             </div>
           )
         },
         {
-          question: "If you made a purchase using your Apple ID, you can find your payment history by following these steps:",
+          question: "How is Instagram linked to your profile?",
           answer: (
             <div className="space-y-4">
               <p className="text-gray-300">
-                Open iTunes on your computer<br/>
-                Sign in with your Apple ID click on your name, in the upper right corner of the iTunes window<br/>
-                Select Account Details in the dropdown menu<br/>
-                Scroll down until you reach Purchase History {'>'} View all<br/>
-                Click on the arrow that appears to the left of the purchase date and you can see the details of a purchase.
+                If you want to link your Instagram profile with Toppin you simply have to enter the settings within the app and click on link your Instagram account.
+              </p>
+              <p className="text-gray-300">
+                Once linked, other users will be able to see your Instagram photos. This way they can get to know you better.
               </p>
             </div>
           )
         },
         {
-          question: "If you made the purchase from a Google Play account, you can see your payment history by following these steps:",
+          question: "Can Spotify be connected to your Toppin profile?",
           answer: (
             <div className="space-y-4">
               <p className="text-gray-300">
-                Go to pay.google.com website and sign in using your Google Play account<br/>
-                Find Other purchase activities<br/>
-                Select View purchases<br/>
-                Choose a specific order and you can see its receipt
+                If you want to link your Spotify profile with Toppin you simply have to enter the settings within the app and click on link your Spotify account.
+              </p>
+              <p className="text-gray-300">
+                Once linked, other users will be able to see your favorite music from Spotify. This way they can get to know you better.
               </p>
             </div>
           )
         },
         {
-          question: "I have a Toppin subscription and haven't received my monthly PowerSweet.",
+          question: "Without a Spotify account can I link music to my profile?",
           answer: (
             <div className="space-y-4">
               <p className="text-gray-300">
-                If you recently renewed your Toppin subscription, it won't affect your waiting period to receive the next PowerSweet. The 30-day waiting period is based on the last time you used your free monthly PowerSweet, not on renewing or restoring a subscription.
-              </p>
-              <p className="text-gray-300">
-                When you use your free PowerSweet, you'll have to wait 30 days to use your next free PowerSweet, unless you decide to buy a batch of additional PowerSweets.
+                No, unfortunately the only way to share the music you like on your profile is through Spotify.
               </p>
             </div>
           )
         },
         {
-          question: "I used a SuperSweet but didn't get any mutual \"Match\".",
+          question: "What does it mean that a profile is verified?",
           answer: (
             <div className="space-y-4">
               <p className="text-gray-300">
-                SuperSweets are there just for that, to give that boost that every profile needs. You'll appear to people in your area much faster. You'll increase the chances of finding that connection you're waiting for so much!
-              </p>
-              <p className="text-gray-300">
-                The number of times your profile will appear will increase by up to 10 times more with a SuperSweet.
-              </p>
-              <p className="text-gray-300">
-                Although the SuperSweet as such cannot guarantee a Match, they are very very effective in helping you have one. Even after it's finished you'll know you got a Match thanks to the SuperSweet because a yellow star will appear indicating it.
+                A verified profile is a profile that has successfully passed our identity verification method. A mark will appear that will let whoever visits your profile know that you are really the person using the account.
               </p>
             </div>
           )
         },
         {
-          question: "Super Sweets, PowerSweet, read receipts etc... Will they disappear if I create a new account?",
+          question: "How can I request a verified profile?",
           answer: (
             <div className="space-y-4">
               <p className="text-gray-300">
-                Unfortunately purchases of items as well as subscriptions cannot be transferred from one account to another. If you delete an account where you had purchased items and create a new one, they will be lost.
+                If you want to request verification of your Toppin profile you simply have to enter the settings within the app and click on request verification.
+              </p>
+              <p className="text-gray-300">
+                Once the request is sent, our team will review your account and notify you of the result of the verification process.
+              </p>
+            </div>
+          )
+        }
+      ]
+    },
+    {
+      id: "billing",
+      title: "BILLING AND PAYMENT",
+      questions: [
+        {
+          question: "Can I restore my Toppin purchases?",
+          answer: (
+            <div className="space-y-4">
+              <p className="text-gray-300">
+                Yes, even if you change phones you can recover your purchases with your App Store or Google Play account. So you won't have to start the purchase process from scratch.
               </p>
             </div>
           )
         },
         {
-          question: "I received a notification that someone sent me a Super Sweet but I don't see it in the app.",
+          question: "How can I upgrade my current Toppin subscription?",
           answer: (
             <div className="space-y-4">
               <p className="text-gray-300">
-                If you received a notification about a Super Sweet, open Toppin and go to messages, in the new matches section, to discover who is the person who gave you that Super Sweet or a match. Their profile might not appear first, but it will eventually appear with a yellow star icon.
-              </p>
-              <p className="text-gray-300">
-                If you subscribe to Toppin Premium or Toppin Supreme, you can discover who gave you that Super Sweet.
-              </p>
-              <p className="text-gray-300">
-                Keep in mind that sometimes, a Super Sweet can be sent by mistake (it can happen to anyone), if the person who sent it uses the go back function they can undo it. Therefore this could be one of the reasons why you don't see the Super Sweet you received the notification for.
+                If you want to upgrade your Toppin subscription to a different one you can upgrade or improve the type of subscription you have simply by purchasing the one you want to have now and it will replace the old one.
               </p>
             </div>
           )
         },
         {
-          question: "I can't change my location with Destination.",
+          question: "What payment methods are accepted?",
           answer: (
             <div className="space-y-4">
               <p className="text-gray-300">
-                If you're trying to change your location and can't, try checking your mobile phone's internet connection. If that's not the problem try again in a while. If the problem persists contact us through the email support@toppin.es.
+                If you want to get one of our Premium or Supreme subscriptions to be able to access more functions within the app you can pay through your Apple Pay and Google Pay account.
               </p>
             </div>
           )
         },
         {
-          question: "I can't update my profile.",
+          question: "Can I switch my subscription to Toppin Premium and Toppin Supreme?",
           answer: (
             <div className="space-y-4">
               <p className="text-gray-300">
-                Are you changing information or data from your profile like photos, songs or biography and they don't save? Check if it could be a problem with your internet connection and if that's not the case delete and reinstall Toppin.
+                Yes, you can switch from Premium to Supreme whenever you want through a new purchase. No more charges will be made for the old subscription.
+              </p>
+            </div>
+          )
+        }
+      ]
+    },
+    {
+      id: "payment-problems",
+      title: "PROBLEMS WITH PAYMENTS OR BILLING",
+      questions: [
+        {
+          question: "I cannot restore my purchase.",
+          answer: (
+            <div className="space-y-4">
+              <p className="text-gray-300">
+                Subscriptions can be associated with only one Toppin account at a time.
               </p>
               <p className="text-gray-300">
-                This will also update to the latest version of the application. So it should work as usual again.
+                If you see an error message that says: "Your subscription is currently linked to an existing account", that will mean you already have an active subscription and it's not with the account you're currently logged into.
               </p>
               <p className="text-gray-300">
-                If it still doesn't work contact us and inform us of what happened. Tell us your problem in detail so we can take care of your case as soon as possible at the email support@toppin.es.
+                If you want to use a subscription on a new Toppin account, you'll first have to delete your previous Toppin account. If you delete your account it will mean permanently deleting all your Matches, messages and all information associated with this account.
+              </p>
+              <div className="mt-4">
+                <ul className="space-y-1 text-gray-300">
+                  <li>• Log into the account you want to delete.</li>
+                  <li>• Tap the profile icon</li>
+                  <li>• Go to Settings</li>
+                  <li>• Scroll down and select Delete account.</li>
+                </ul>
+                <p className="text-gray-300 mt-3">
+                  Once this account is deleted you can purchase the subscription with your new account without any errors.
+                </p>
+              </div>
+            </div>
+          )
+        },
+        {
+          question: "Have you recently changed devices?",
+          answer: (
+            <div className="space-y-4">
+              <p className="text-gray-300">
+                If you have changed mobile platforms, that is, going from iOS to Android or vice versa, we recommend that you cancel your current subscription and subscribe again on your new mobile device. It will be easier for you to manage the subscription.
               </p>
             </div>
           )
         },
         {
-          question: "I can't upload photos to my profile.",
+          question: "Are you still having problems?",
           answer: (
             <div className="space-y-4">
               <p className="text-gray-300">
-                If you're trying to upload a photo from your mobile phone, make sure you've given Toppin access to your device's photos. If you haven't done so yet you can enable access from your mobile settings.
-              </p>
-              <p className="text-gray-300">
-                Try again later if you see that the problem continues.
+                If it still doesn't work you can write to Toppin support and we will try to help you as quickly as possible. Send us a screenshot with the error message that appears and we will try to give you a solution as quickly as possible.
               </p>
             </div>
           )
         },
         {
-          question: "Why was my photo removed from Toppin?",
+          question: "How can I cancel the subscription?",
           answer: (
             <div className="space-y-4">
               <p className="text-gray-300">
-                There are occasions when we remove content from Toppin to make the experience as pleasant as possible for everyone. If you see that a photo from your profile has been removed, it will mean that a violation of our Terms of use has been detected. We ask all users to be respectful. Please review our Community guidelines so you can keep them in mind every time you upload content to your profile.
+                You should take into account the following aspects:
               </p>
+              <div className="mt-4">
+                <ul className="space-y-2 text-gray-300">
+                  <li>• Removing Toppin from your mobile will not cancel your subscription, so you will have to follow the next steps to avoid future charges.</li>
+                  <li>• Even if you cancel your subscription you can enjoy all its benefits until the paid days you have left are finished.</li>
+                  <li>• Even if you cancel your subscription this does not mean that a refund of payments and fees already paid previously will be issued.</li>
+                </ul>
+              </div>
+            </div>
+          )
+        },
+        {
+          question: "How to cancel?",
+          answer: (
+            <div className="space-y-4">
               <p className="text-gray-300">
-                Thanks to you, Toppin is a safer place!
+                Depending on the platform you used to subscribe you will have to follow different steps.
+              </p>
+            </div>
+          )
+        }
+      ]
+    },
+    {
+      id: "mobile-billing",
+      title: "BILLING ON IOS AND ANDROID",
+      questions: [
+        {
+          question: "I cancelled a subscription but was charged again",
+          answer: (
+            <div className="space-y-4">
+              <p className="text-gray-300">
+                Make sure you have correctly cancelled your Toppin subscription. If you don't want future charges this will prevent them. This is how subscriptions are cancelled on both iOS and Android devices:
+              </p>
+              
+              <div className="mt-6">
+                <h4 className="text-toppin-blue font-semibold text-lg mb-3">IOS</h4>
+                <ul className="space-y-2 text-gray-300">
+                  <li>• In your iPhone Settings {'>'} [your name] {'>'} iTunes and App Store</li>
+                  <li>• At the top of the screen tap your Apple ID, then select "View Apple ID" (you may need to sign in)</li>
+                  <li>• Scroll down and tap "Subscriptions"</li>
+                  <li>• Choose which subscription you want to manage</li>
+                  <li>• Tap "Cancel Subscription"</li>
+                </ul>
+              </div>
+              
+              <div className="mt-6">
+                <h4 className="text-toppin-blue font-semibold text-lg mb-3">ANDROID</h4>
+                <div className="space-y-4">
+                  <div>
+                    <p className="text-gray-300 font-medium mb-2">If you subscribed using your Google Play Store account:</p>
+                    <ul className="space-y-1 text-gray-300">
+                      <li>• Go to play.google.com</li>
+                      <li>• Check if you have correctly logged into your Google account.</li>
+                      <li>• On the left, click My subscriptions.</li>
+                      <li>• Find the Toppin subscription you want to cancel.</li>
+                      <li>• Click Manage {'>'} Cancel Subscription.</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <p className="text-gray-300 font-medium mb-2">You can also do it from your Android device by following these steps:</p>
+                    <ul className="space-y-1 text-gray-300">
+                      <li>• Open the Google Play Store app.</li>
+                      <li>• Check if you're signed in to the correct Google Account.</li>
+                      <li>• Tap the menu icon {'>'} Subscriptions.</li>
+                      <li>• Select the subscription you want to cancel.</li>
+                      <li>• Tap Cancel subscription.</li>
+                      <li>• Follow the instructions.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          )
+        },
+        {
+          question: "Is my information secure?",
+          answer: (
+            <div className="space-y-4">
+              <p className="text-gray-300">
+                We do not store your information. Apple or Google store it directly on their platforms. For both companies, financial security is one of their main priorities.
               </p>
             </div>
           )
         },
         {
-          question: "My work and/or education information doesn't update.",
+          question: "My billing problems",
           answer: (
             <div className="space-y-4">
               <p className="text-gray-300">
-                From the app you can directly edit and update information related to your work and education center.
+                If you think you have been charged incorrectly, here's what you can do:
               </p>
-              <p className="text-gray-300">
-                Tap the profile icon in the upper right corner of the main screen<br/>
-                Select Edit information<br/>
-                Scroll down to the Current job or Education center sections
-              </p>
-            </div>
-          )
-        },
-        {
-          question: "I don't receive any push notifications.",
-          answer: (
-            <div className="space-y-4">
-              <p className="text-gray-300">
-                If you've stopped receiving our push notifications it's probably a temporary problem.
-              </p>
-              <p className="text-gray-300">
-                Just in case we recommend that you verify that you have notifications correctly enabled within your device Settings – Notifications.
-              </p>
-            </div>
-          )
-        },
-        {
-          question: "How to enable push notifications on your device?",
-          answer: (
-            <div className="space-y-4">
-              <p className="text-gray-300">
-                On iOS devices: Open the iOS Settings app, select Notifications and then Toppin.
-              </p>
-              <p className="text-gray-300">
-                On Android devices: Go to device settings, select Notifications, then App notifications and Toppin
-              </p>
-            </div>
-          )
-        },
-        {
-          question: "Enable notifications in Toppin",
-          answer: (
-            <div className="space-y-4">
-              <p className="text-gray-300">
-                Open the Toppin app<br/>
-                Tap the profile icon<br/>
-                Select Settings<br/>
-                Scroll down to Notifications, there you can enable them if you don't have them.
-              </p>
-            </div>
-          )
-        },
-        {
-          question: "The profiles I see are very far away.",
-          answer: (
-            <div className="space-y-4">
-              <p className="text-gray-300">
-                If only some of your potential Matches are far away, this could be happening for several reasons:
-              </p>
-              <p className="text-gray-300">
-                Destination: There may be people who have this action activated to find Matches in your location. If you recently visit a city you may continue to appear in the location where you've been up to 24 hours after you've left. Only Toppin subscribers can edit their location.
-              </p>
-              <p className="text-gray-300">
-                Destination Settings: You can check and edit your distance preferences. And thus decide at what radius of kilometers you want or don't want to find people. You simply have to tap the profile icon {'>'} Settings {'>'} Go down to Destination and there you can see and change the maximum distance you have configured. If you think it could be more of a technical problem you can try to follow these steps to try to solve it:
-              </p>
-              <p className="text-gray-300">
-                Log out and log in: tap the profile icon {'>'} Settings {'>'} scroll down and tap the "Log out" button.<br/>
-                Delete Toppin and reinstall it.
-              </p>
-            </div>
-          )
-        },
-        {
-          question: "The profiles don't match my gender or age preferences.",
-          answer: (
-            <div className="space-y-4">
-              <p className="text-gray-300">
-                If this has started suddenly, check that you have configured your search preferences to your liking.
-              </p>
-              <p className="text-gray-300">
-                Open Toppin<br/>
-                Tap the profile icon<br/>
-                Go to your Settings<br/>
-                Scroll down to Profile settings. If everything is configured correctly, close your Toppin session and start it again.
-              </p>
-            </div>
-          )
-        },
-        {
-          question: "I have denied Toppin access to my location",
-          answer: (
-            <div className="space-y-4">
-              <p className="text-gray-300">
-                At least while you're using Toppin it will be necessary for you to give us access to your mobile phone's location.
-              </p>
-            </div>
-          )
-        },
-        {
-          question: "Location on iOS",
-          answer: (
-            <div className="space-y-4">
-              <p className="text-gray-300">
-                Go to your iOS settings {'>'} Toppin {'>'} Location
-              </p>
-            </div>
-          )
-        },
-        {
-          question: "Location on Android",
-          answer: (
-            <div className="space-y-4">
-              <p className="text-gray-300">
-                Go to your phone settings {'>'} Apps {'>'} Toppin {'>'} Permissions {'>'} Location
-              </p>
-            </div>
-          )
-        },
-        {
-          question: "My Matches keep loading all the time.",
-          answer: (
-            <div className="space-y-4">
-              <p className="text-gray-300">
-                Try to follow these steps if you see that your Matches don't load or take too long to load:
-              </p>
-              <p className="text-gray-300">
-                Check if you have a good internet connection, you can try switching from mobile data to Wi-Fi, and vice versa, maybe the problem is related to your connection.
-              </p>
-              <p className="text-gray-300">
-                Delete and install the application. This will not only update you to the latest version of Toppin, but will also update your app experience, which should make things work as they should. This should solve the problem. If not, then it's very likely that our system has crashed and we're already working to fix it. We will appreciate your wait.
-              </p>
-            </div>
-          )
-        },
-        {
-          question: "My messages are not being sent.",
-          answer: (
-            <div className="space-y-4">
-              <p className="text-gray-300">
-                We know that chat-related problems can be frustrating. But they usually last a short time. As soon as we notice them we fix them. Meanwhile, there are some steps you can follow to try to solve it:
-              </p>
-              <p className="text-gray-300">
-                Check the internet connection and switch from Wi-Fi to mobile data or vice versa, maybe the problem is related to the connection.
-              </p>
-              <p className="text-gray-300">
-                Delete and install the application. Toppin will be updated to the latest version, and will also update your app experience, after this it should work without problems again.
-              </p>
-              <p className="text-gray-300">
-                Once you're inside the app again, resend the message.
-              </p>
-              <p className="text-gray-300">
-                ○ On iOS: Tap the red exclamation mark next to the message that failed.
-              </p>
-              <p className="text-gray-300">
-                ○ On Android: Tap the message to try sending it again.
-              </p>
-              <p className="text-gray-300">
-                If you wish to contact us write to support@toppin.es
-              </p>
-            </div>
-          )
-        },
-        {
-          question: "I undid a Match by mistake.",
-          answer: (
-            <div className="space-y-4">
-              <p className="text-gray-300">
-                It can happen that you accidentally undo a Match without realizing it. But whether you or your Match undoes it, it will be a permanent action that unfortunately cannot be undone and will no longer appear in either profile's list
-              </p>
-            </div>
-          )
-        },
-        {
-          question: "My Matches' photos don't load.",
-          answer: (
-            <div className="space-y-4">
-              <p className="text-gray-300">
-                You can try closing and opening a session if you see that your Matches' photos don't load despite having been there for a while.
-              </p>
-              <p className="text-gray-300">
-                To close session: go inside your profile and if you scroll down you'll see the "Log out" button.
-              </p>
-              <p className="text-gray-300">
-                Now you just have to log in again and check if their photos now load.
-              </p>
+              <div className="mt-4">
+                <h4 className="text-toppin-blue font-semibold text-lg mb-3">IOS</h4>
+                <p className="text-gray-300">
+                  If your phone is an iPhone, you can contact Apple technical support and inform them of what happened. Transactions are handled directly by Apple, including refunds.
+                </p>
+              </div>
+              <div className="mt-6">
+                <h4 className="text-toppin-blue font-semibold text-lg mb-3">ANDROID</h4>
+                <p className="text-gray-300">
+                  Does your order number start with "GPA"? Then it was processed through Google Play where the purchase was made. We recommend that you contact Google Play technical support to inform them of this problem.
+                </p>
+              </div>
             </div>
           )
         }
@@ -620,60 +437,36 @@ const FAQ = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-black text-white">
+    <div className="min-h-screen bg-black">
       <Header />
-      
-      <main className="py-16">
-        <div className="container px-4 md:px-6 max-w-4xl mx-auto">
-          <h1 className="text-3xl md:text-5xl font-bold mb-8 text-toppin-pink">
-            Frequently Asked Questions
-          </h1>
-          
-          <div className="space-y-6 text-gray-300">
-            <p className="text-lg mb-8">
-              Find answers to the most common questions about Toppin. If you can't find what you're looking for, 
-              feel free to contact our support team.
-            </p>
-
-            <div className="space-y-8">
-              {faqSections.map((section) => (
-                <div key={section.id} className="space-y-4">
-                  <h2 className="text-2xl font-bold text-toppin-blue border-b border-gray-700 pb-2">
-                    {section.title}
-                  </h2>
-                  <Accordion type="single" collapsible className="w-full space-y-4">
-                    {section.questions.map((faq, index) => (
-                      <AccordionItem 
-                        key={`${section.id}-${index}`} 
-                        value={`${section.id}-item-${index}`} 
-                        className="border border-gray-700 rounded-lg px-6"
-                      >
-                        <AccordionTrigger className="text-left text-white hover:text-toppin-pink">
-                          {faq.question}
-                        </AccordionTrigger>
-                        <AccordionContent className="text-gray-300 pb-4">
-                          {faq.answer}
-                        </AccordionContent>
-                      </AccordionItem>
-                    ))}
-                  </Accordion>
-                </div>
-              ))}
+      <div className="container mx-auto px-4 py-8">
+        <h1 className="text-4xl font-bold text-center text-white mb-8">
+          Frequently Asked Questions
+        </h1>
+        
+        <div className="max-w-4xl mx-auto space-y-8">
+          {faqSections.map((section) => (
+            <div key={section.id} className="space-y-4">
+              <h2 className="text-2xl font-bold text-toppin-blue mb-6">
+                {section.title}
+              </h2>
+              
+              <Accordion type="single" collapsible className="w-full">
+                {section.questions.map((item, index) => (
+                  <AccordionItem key={index} value={`${section.id}-${index}`}>
+                    <AccordionTrigger className="text-left text-white hover:text-toppin-blue transition-colors">
+                      {item.question}
+                    </AccordionTrigger>
+                    <AccordionContent className="text-gray-300">
+                      {item.answer}
+                    </AccordionContent>
+                  </AccordionItem>
+                ))}
+              </Accordion>
             </div>
-
-            <div className="mt-12 p-6 bg-gray-800 rounded-lg border border-gray-700">
-              <h3 className="text-xl font-bold text-toppin-blue mb-4">Still have questions?</h3>
-              <p className="text-gray-300 mb-4">
-                If you couldn't find the answer you were looking for, our support team is here to help.
-              </p>
-              <p className="text-gray-300">
-                Contact us at: <a href="mailto:support@toppin.es" className="text-toppin-pink hover:underline">support@toppin.es</a>
-              </p>
-            </div>
-          </div>
+          ))}
         </div>
-      </main>
-      
+      </div>
       <Footer />
     </div>
   );
