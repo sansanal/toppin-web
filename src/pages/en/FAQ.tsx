@@ -437,36 +437,52 @@ const FAQ = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-black">
+    <div className="min-h-screen bg-black text-white">
       <Header />
-      <div className="container mx-auto px-4 py-8">
-        <h1 className="text-4xl font-bold text-center text-white mb-8">
-          Frequently Asked Questions
-        </h1>
-        
-        <div className="max-w-4xl mx-auto space-y-8">
-          {faqSections.map((section) => (
-            <div key={section.id} className="space-y-4">
-              <h2 className="text-2xl font-bold text-toppin-blue mb-6">
-                {section.title}
-              </h2>
-              
-              <Accordion type="single" collapsible className="w-full">
-                {section.questions.map((item, index) => (
-                  <AccordionItem key={index} value={`${section.id}-${index}`}>
-                    <AccordionTrigger className="text-left text-white hover:text-toppin-blue transition-colors">
-                      {item.question}
-                    </AccordionTrigger>
-                    <AccordionContent className="text-gray-300">
-                      {item.answer}
-                    </AccordionContent>
-                  </AccordionItem>
-                ))}
-              </Accordion>
-            </div>
-          ))}
+      
+      <main className="py-16">
+        <div className="container px-4 md:px-6 max-w-4xl mx-auto">
+          <div className="text-center mb-12">
+            <h1 className="text-3xl md:text-5xl font-bold mb-4 text-toppin-pink">
+              Don't hesitate, ask us and we'll help you
+            </h1>
+            <h2 className="text-2xl md:text-3xl font-semibold text-toppin-blue">
+              FAQ
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            {faqSections
+              .filter(section => section.questions.some(q => q.answer !== null))
+              .map((section) => (
+              <div key={section.id} className="space-y-2">
+                <h2 className="text-toppin-blue font-bold text-base mb-3 text-center">
+                  {section.title}
+                </h2>
+                <Accordion type="single" collapsible className="w-full space-y-2">
+                  {section.questions
+                    .filter(item => item.answer !== null)
+                    .map((item, index) => (
+                    <AccordionItem 
+                      key={`${section.id}-${index}`} 
+                      value={`${section.id}-${index}`}
+                      className="border-0 bg-gray-100/10 rounded-lg px-3 border border-gray-400/20"
+                    >
+                      <AccordionTrigger className="text-left text-gray-300 hover:text-white text-xs py-3 [&>svg]:text-toppin-blue [&>svg]:h-3 [&>svg]:w-3">
+                        {item.question}
+                      </AccordionTrigger>
+                      <AccordionContent className="text-gray-400 text-xs pb-3">
+                        {item.answer}
+                      </AccordionContent>
+                    </AccordionItem>
+                  ))}
+                </Accordion>
+              </div>
+            ))}
+          </div>
         </div>
-      </div>
+      </main>
+      
       <Footer />
     </div>
   );
