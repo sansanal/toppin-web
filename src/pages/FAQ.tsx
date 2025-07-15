@@ -902,39 +902,144 @@ const FAQ = () => {
       questions: [
         {
           question: "No puedo iniciar sesión en mi cuenta.",
-          answer: null
+          answer: (
+            <div className="space-y-4">
+              <p className="text-gray-300">
+                Si se está dificultando tu inicio de sesión dentro de la app estos pasos de resolución de problemas suelen ayudar con los problemas de inicio de sesión:
+              </p>
+              <ul className="space-y-2 text-gray-300">
+                <li>• Comprueba si tienes una buena conexión a Internet, o cambia de Wi-Fi a datos móviles o viceversa para determinar si el problema está relacionado con tu conexión</li>
+                <li>• Elimina y reinstala la aplicación. Esto no solo te actualizará a la última versión de Toppin, sino que también actualizará tu experiencia en la aplicación, lo que debería hacer que las cosas vuelvan a funcionar como deben.</li>
+                <li>• Si el problema persiste, queremos saberlo. Ponte en contacto con nosotros a través de nuestro correo support@toppin.es y descríbenos tu problema con el mayor detalle posible, para que podamos analizarlo y resolverlo.</li>
+              </ul>
+            </div>
+          )
         },
         {
           question: "Mi cuenta ha sido deshabilitada.",
-          answer: null
+          answer: (
+            <div className="space-y-4">
+              <p className="text-gray-300">
+                Si tu cuenta de Toppin se ha cerrado, verás un mensaje que te avisará de ello cuando intentes iniciar sesión. En Toppin cerramos las cuentas cuando detectamos actividades que violan nuestros términos de uso. Si crees que se trata de un error puedes ponerte en contacto a través de nuestro correo suport@toppin.es con nosotros y trataremos de solucionarlo.
+              </p>
+            </div>
+          )
         },
         {
           question: "Quiero actualizar la dirección de correo electrónico asociada a mi cuenta.",
-          answer: null
+          answer: (
+            <div className="space-y-4">
+              <p className="text-gray-300">
+                Sigue estos pasos para actualizar la dirección de correo electrónico asociada a tu cuenta de Toppin:
+              </p>
+              <ul className="space-y-2 text-gray-300">
+                <li>• Abre la app de Toppin</li>
+                <li>• Ve al icono de perfil</li>
+                <li>• Abre la app de Toppin</li>
+                <li>• Ve al icono de perfil</li>
+                <li>• Abre la app de Toppin</li>
+              </ul>
+            </div>
+          )
         },
         {
           question: "La app se bloquea.",
-          answer: null
+          answer: (
+            <div className="space-y-4">
+              <p className="text-gray-300">
+                Esto puede resultar un poco agotador en algunas ocasiones, lo sabemos. Pero, ¡te vamos a ayudar! Quizá sea por alguno de los siguientes motivos:
+              </p>
+              <ul className="space-y-2 text-gray-300">
+                <li>• Primero asegúrate de si tienes una buena conexión a Internet, o cambia de Wi-Fi a datos móviles o viceversa para determinar si el problema está relacionado con tu conexión.</li>
+                <li>• Si lo anterior no funciona prueba a Eliminar y Reinstalar la aplicación. Además de actualizar a la última versión de Toppin, también actualizará tu experiencia en la aplicación, esto debería conseguir que ya funcionase como corresponde.</li>
+                <li>• Si se trata de un problema técnico seguramente ya estemos manos a la obra tratando de resolverlo. ¡Es cuestión de esperar!</li>
+              </ul>
+            </div>
+          )
         },
         {
           question: "¿Cómo puedo saber cuál es la dirección de correo electrónico asociada a la cuenta?",
-          answer: null
+          answer: (
+            <div className="space-y-4">
+              <p className="text-gray-300">
+                Si has olvidado o quieres saber cuál es la dirección de correo electrónico asociada a tu cuenta de Toppin podrás encontrarla dentro de Ajustes {'>'}  Notificaciones {'>'} Correo electrónico. Ahí aparecerá el correo con el que te registraste.
+              </p>
+            </div>
+          )
         },
         {
           question: "En caso de ser desde un dispositivo iPhone",
-          answer: null
+          answer: (
+            <div className="space-y-4">
+              <ul className="space-y-2 text-gray-300">
+                <li>• Abriendo los Ajustes de tu iPhone</li>
+                <li>• Pulsas sobre tu nombre, y después en el apartado "Suscripciones"</li>
+                <li>• Seleccione la suscripción que deseas cancelar</li>
+                <li>• Pulsa «Cancelar suscripción»</li>
+              </ul>
+            </div>
+          )
         },
         {
           question: "En caso de ser desde un dispositivo Android:",
-          answer: null
+          answer: (
+            <div className="space-y-4">
+              <p className="text-gray-300">Si la suscripción la pagaste utilizando tu cuenta de Google Play Store:</p>
+              <ul className="space-y-2 text-gray-300">
+                <li>• En tu teléfono Android abre la app de Google Play Store.</li>
+                <li>• Después pulsa sobre el icono de "Menú" y ve a "Suscripciones"</li>
+                <li>• Elige la suscripción que deseas cancelar</li>
+                <li>• Pulsa «Cancelar suscripción»</li>
+              </ul>
+              <p className="text-gray-300">Si tu método de pago de la suscripción fue con tarjeta de crédito:</p>
+              <ul className="space-y-2 text-gray-300">
+                <li>• Abre la app de Toppin para Android</li>
+                <li>• Toca el icono de perfil</li>
+                <li>• Selecciona «Administrar cuenta de pago»</li>
+                <li>• Pulsa en «Cancelar suscripción».</li>
+              </ul>
+            </div>
+          )
         },
         {
           question: "Tengo problemas para cancelar mi suscripción.",
-          answer: null
+          answer: (
+            <div className="space-y-4">
+              <p className="text-gray-300">
+                Dependiendo de la plataforma los pasos variarán, por lo que tendrás que asegurarte de seguir los pasos correspondientes.
+              </p>
+              <p className="text-gray-300">
+                Entra en tu cuenta de App Store o de Play Store – Perfil – En el apartado "Suscripciones" podrás gestionar las suscripciones que tengas. Si tienes una suscripción en Toppin te aparecerá un botón que pone "Cancelar suscripción".
+              </p>
+              <p className="text-gray-300">
+                A partir de ahí no se debería de volver a cobrar nada, aunque podrás seguir disfrutando de las ventajas de tu suscripción hasta final de ciclo.
+              </p>
+            </div>
+          )
         },
         {
           question: "Tengo cargos duplicados o incorrectos.",
-          answer: null
+          answer: (
+            <div className="space-y-4">
+              <p className="text-gray-300 font-semibold">IOS</p>
+              <p className="text-gray-300">
+                Si tu teléfono es un iPhone, puedes ponerte en contacto con el soporte técnico de Apple e informarles de lo sucedido.
+              </p>
+              <p className="text-gray-300">
+                Las transacciones las gestiona directamente Apple, incluyéndose los reembolsos.
+              </p>
+              <p className="text-gray-300 font-semibold">Android</p>
+              <p className="text-gray-300">
+                ¿El número de tu pedido empieza por «GPA»?
+              </p>
+              <p className="text-gray-300">
+                Entonces fue a través de Google Play desde donde se procesó la compra.
+              </p>
+              <p className="text-gray-300">
+                Te recomendamos que te pongas en contacto con el soporte técnico de Google Play para informarles de este problema.
+              </p>
+            </div>
+          )
         }
       ]
     },
