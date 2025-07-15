@@ -716,19 +716,46 @@ const FAQ = () => {
       questions: [
         {
           question: "Verificación por selfie, ¿Cómo funciona?",
-          answer: null
+          answer: (
+            <div className="space-y-4">
+              <p className="text-gray-300">
+                Tendrás que hacerte una selfie haciendo un gesto con la mano, el mismo que te aparezca en la pantalla de tu móvil. Te pediremos esto con el fin de verificar tu perfil y saber que eres tú quien realmente está utilizando tu cuenta.
+              </p>
+            </div>
+          )
         },
         {
           question: "¿Cómo puedes editar tu perfil?",
-          answer: null
+          answer: (
+            <div className="space-y-4">
+              <p className="text-gray-300">
+                Si quieres editar algún dato o foto de tu cuenta podrás hacerlo dentro de tu perfil en la app. Ahí encontrarás un icono de un lápiz, y al hacer clic ahí se abrirán todas las opciones de tu perfil disponibles para editar.
+              </p>
+              <p className="text-gray-300">
+                ¡Puedes editarlo tantas veces como quieras!
+              </p>
+            </div>
+          )
         },
         {
           question: "¿Cómo puedo borrar mi cuenta?",
-          answer: null
+          answer: (
+            <div className="space-y-4">
+              <p className="text-gray-300">
+                Si lamentablemente quieres eliminar tu cuenta de Toppin tendrás de acceder a Tu perfil – acceder a los Ajustes – Borrar cuenta.
+              </p>
+            </div>
+          )
         },
         {
           question: "¿Qué es la verificación fotogénica?",
-          answer: null
+          answer: (
+            <div className="space-y-4">
+              <p className="text-gray-300">
+                La verificación con foto te permite verificar tu perfil, demostrando así a los posibles Matches que eres tú de realmente quién aparece en las fotos. Esto se hace con el fin de proporcionar seguridad a todos los usuarios de la app.
+              </p>
+            </div>
+          )
         }
       ]
     },
