@@ -594,15 +594,39 @@ const FAQ = () => {
       questions: [
         {
           question: "No me sale ningún perfil en la pantalla donde toppiteas",
-          answer: null
+          answer: (
+            <div className="space-y-4">
+              <p className="text-gray-300">
+                Para conseguir más Matches potenciales en tu página de editar perfil intenta aumentar tus preferencias de búsqueda. Ajusta la configuración de editar perfil con estos pasos:
+              </p>
+              <ul className="space-y-2 text-gray-300">
+                <li>• Abre Toppin</li>
+                <li>• Toca el icono de perfil</li>
+                <li>• Dirígete a los Ajustes</li>
+                <li>• En "Ajustes de perfil" podrás cambiar el ratio de distancia o el intervalo de edades.</li>
+              </ul>
+            </div>
+          )
         },
         {
           question: "¿Estás teniendo problemas técnicos?",
-          answer: null
+          answer: (
+            <div className="space-y-4">
+              <p className="text-gray-300">
+                Asegúrate si tu conexión a Internet está funcionando correctamente. Sí sí que lo está haciendo prueba a borrar y desinstalar la aplicación. Esto actualizará a la app a la última versión de y también actualizará tu experiencia en Toppin, por lo que deberían de funcionar las cosas con normalidad.
+              </p>
+            </div>
+          )
         },
         {
           question: "Estoy viendo perfiles que ya he visto antes.",
-          answer: null
+          answer: (
+            <div className="space-y-4">
+              <p className="text-gray-300">
+                Si en la página donde toppiteas te ha aparecido un perfil que ya habías visto antes es probable que la persona haya eliminado su anterior cuenta y se haya abierto una nueva o que haya comprado una suscripción de Power Sweet para tener mayor visibilidad y por ello puede que lo veas repetido. También puede que te vuelva a salir un perfil de nuevo si cuando deslizabas en la app tenías mala conexión.
+              </p>
+            </div>
+          )
         }
       ]
     },
