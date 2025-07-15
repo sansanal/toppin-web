@@ -21,7 +21,7 @@ import EnLegalTexts from "./pages/en/LegalTexts";
 import EnPrivacyPolicy from "./pages/en/PrivacyPolicy";
 import EnTermsOfService from "./pages/en/TermsOfService";
 import EnCookiePolicy from "./pages/en/CookiePolicy";
-import EnFAQ from "./pages/en/FAQ";
+
 
 import LanguageProvider from "./components/LanguageProvider";
 import "./i18n/config";
@@ -48,7 +48,6 @@ const App = () => (
             
             {/* English routes */}
             <Route path="/en" element={<Index />} />
-            <Route path="/en/faq" element={<EnFAQ />} />
             <Route path="/en/community-guidelines" element={<EnCommunityGuidelines />} />
             <Route path="/en/safety-notices" element={<EnSafetyNotices />} />
             <Route path="/en/legal-texts" element={<EnLegalTexts />} />
