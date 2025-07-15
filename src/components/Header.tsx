@@ -30,20 +30,17 @@ const Header = () => {
         
         {/* Desktop Navigation */}
         <nav className="hidden lg:flex items-center space-x-8">
-          <a href="#features" className="text-gray-300 hover:text-white transition-colors">
+          <Link to={currentLanguage === 'en' ? '/en' : '/'} className="text-gray-300 hover:text-white transition-colors">
             {t('nav.features')}
-          </a>
-          <a href="#game" className="text-gray-300 hover:text-white transition-colors">
+          </Link>
+          <Link to={currentLanguage === 'en' ? '/en' : '/'} className="text-gray-300 hover:text-white transition-colors">
             {t('nav.game')}
-          </a>
-          <a href="#testimonials" className="text-gray-300 hover:text-white transition-colors">
+          </Link>
+          <Link to={currentLanguage === 'en' ? '/en' : '/'} className="text-gray-300 hover:text-white transition-colors">
             {t('nav.testimonials')}
-          </a>
-          <a href="#download" className="text-gray-300 hover:text-white transition-colors">
+          </Link>
+          <Link to={currentLanguage === 'en' ? '/en' : '/'} className="text-gray-300 hover:text-white transition-colors">
             {t('nav.download')}
-          </a>
-          <Link to={currentLanguage === 'en' ? '/en/faq' : '/faq'} className="text-gray-300 hover:text-white transition-colors">
-            FAQ
           </Link>
           
           {/* Language Selector */}
@@ -64,20 +61,17 @@ const Header = () => {
         {isMenuOpen && (
           <div className="lg:hidden absolute top-20 left-0 right-0 bg-black/90 backdrop-blur-lg border-t border-gray-800 z-50">
             <nav className="flex flex-col items-center py-4 space-y-4">
-              <a href="#features" className="text-gray-300 hover:text-white transition-colors">
+              <Link to={currentLanguage === 'en' ? '/en' : '/'} className="text-gray-300 hover:text-white transition-colors">
                 {t('nav.features')}
-              </a>
-              <a href="#game" className="text-gray-300 hover:text-white transition-colors">
+              </Link>
+              <Link to={currentLanguage === 'en' ? '/en' : '/'} className="text-gray-300 hover:text-white transition-colors">
                 {t('nav.game')}
-              </a>
-              <a href="#testimonials" className="text-gray-300 hover:text-white transition-colors">
+              </Link>
+              <Link to={currentLanguage === 'en' ? '/en' : '/'} className="text-gray-300 hover:text-white transition-colors">
                 {t('nav.testimonials')}
-              </a>
-              <a href="#download" className="text-gray-300 hover:text-white transition-colors">
+              </Link>
+              <Link to={currentLanguage === 'en' ? '/en' : '/'} className="text-gray-300 hover:text-white transition-colors">
                 {t('nav.download')}
-              </a>
-              <Link to={currentLanguage === 'en' ? '/en/faq' : '/faq'} className="text-gray-300 hover:text-white transition-colors">
-                FAQ
               </Link>
             </nav>
           </div>
