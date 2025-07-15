@@ -15,6 +15,7 @@ import CookiePolicy from "./pages/CookiePolicy";
 import NotFound from "./pages/NotFound";
 
 // English pages
+import EnFAQ from "./pages/en/FAQ";
 import EnCommunityGuidelines from "./pages/en/CommunityGuidelines";
 import EnSafetyNotices from "./pages/en/SafetyNotices";
 import EnLegalTexts from "./pages/en/LegalTexts";
@@ -48,6 +49,7 @@ const App = () => (
             
             {/* English routes */}
             <Route path="/en" element={<Index />} />
+            <Route path="/en/faq" element={<EnFAQ />} />
             <Route path="/en/community-guidelines" element={<EnCommunityGuidelines />} />
             <Route path="/en/safety-notices" element={<EnSafetyNotices />} />
             <Route path="/en/legal-texts" element={<EnLegalTexts />} />
