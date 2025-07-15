@@ -812,27 +812,87 @@ const FAQ = () => {
       questions: [
         {
           question: "Toppin Sweet",
-          answer: null
+          answer: (
+            <div className="space-y-4">
+              <p className="text-gray-300">
+                ¿Aún no has provado Toppin Sweet? Juega a la ruleta y gana premios que podrás gastar dentro de Toppin y que te ayudarán a encontrar tu match ideal.
+              </p>
+              <p className="text-gray-300">
+                La primera tirada es gratuita.
+              </p>
+              <p className="text-gray-300">
+                Puedes comprar Toppin Sweet dentro de la app.
+              </p>
+            </div>
+          )
         },
         {
           question: "Super Sweet",
-          answer: null
+          answer: (
+            <div className="space-y-4">
+              <p className="text-gray-300">
+                Envia un Super Sweet al perfil que más te gusta, de este modo le llegará una notificación de tu match y no tendrás que esperar a que le aparezca tu perfil.
+              </p>
+              <p className="text-gray-300">
+                ¡Y si le gusta tu perfil y te da un like, tendrás el macth perfecto!
+              </p>
+              <p className="text-gray-300">
+                Puedes comprar Super Sweet dentro de la app.
+              </p>
+            </div>
+          )
         },
         {
           question: "Power Sweet",
-          answer: null
+          answer: (
+            <div className="space-y-4">
+              <p className="text-gray-300">
+                Aumenta tus posibilidades de hacer match consiguiendo ser el dulce más apetecible y brilla con tus matches durante 30 minutos.
+              </p>
+              <p className="text-gray-300">
+                Puedes comprar Power Sweet dentro de la app Puedes comprar Power
+              </p>
+            </div>
+          )
         },
         {
           question: "Destination",
-          answer: null
+          answer: (
+            <div className="space-y-4">
+              <p className="text-gray-300">
+                Con la función Destination podrás geolocalizar tus búsquedas en diferentes zonas geográficas.
+              </p>
+              <p className="text-gray-300">
+                ¡Una nueva forma de conocer gente en durante tus vacaciones!
+              </p>
+            </div>
+          )
         },
         {
           question: "Vuelve atrás",
-          answer: null
+          answer: (
+            <div className="space-y-4">
+              <p className="text-gray-300">
+                ¿Arrepentido de un match? ¿Te quedaste con las ganas volver a ver un perfil descartado?
+              </p>
+              <p className="text-gray-300">
+                Con esta opción podrás volver a tomar la decisión de dar o no match.
+              </p>
+            </div>
+          )
         },
         {
           question: "Likes Ilimitados",
-          answer: null
+          answer: (
+            <div className="space-y-4">
+              <p className="text-gray-300">
+                Con tu suscripción premium o supreme podrás dar likes ilimitados al mes mientras sigas suscrito a una de las dos opciones.
+              </p>
+              <p className="text-gray-300">
+                Si no tienes ninguna suscripción premium o supreme podrás tener likes ilimitados comprando una de las dos suscripciones y podrás seguir toppeteando sin limites.
+              </p>
+            </div>
+          )
         }
       ]
     },
