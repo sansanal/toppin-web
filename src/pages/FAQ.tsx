@@ -1160,6 +1160,338 @@ const FAQ = () => {
           answer: null
         }
       ]
+    },
+    {
+      id: "metodo-pago-no-funciona",
+      title: "EL MÉTODO DE PAGO QUE ESTOY INTENTANDO UTILIZAR NO FUNCIONA",
+      questions: [
+        {
+          question: "Estos son los problemas más habituales con los métodos de pago",
+          answer: (
+            <div className="space-y-4">
+              <ul className="space-y-3 text-gray-300">
+                <li><strong>Errores tipográficos:</strong> Ten en cuenta que todas las letras, números y cualquier dígito que utilices debe ser idéntico a los de tu tarjeta de crédito/débito.</li>
+                <li><strong>Uso de tarjetas regalo, tarjetas de prepago y ciertas tarjetas de débito:</strong> Si adquieres una suscripción, puede que las tarjetas regalo, las tarjetas de prepago y ciertas tarjetas de débito no acepten los pagos recurrentes.</li>
+                <li><strong>Si tienes problemas con la dirección de facturación:</strong> ¿Has cambiado de casa recientemente? ¿Tienes que actualizar la información de facturación? Comprueba que los datos introducidos respecto a la dirección de facturación sean los correctos.</li>
+              </ul>
+            </div>
+          )
+        },
+        {
+          question: "Ver historial de pagos.",
+          answer: (
+            <p className="text-gray-300">
+              Si quieres ver tu historial de pagos podrás hacerlo en tu cuenta de iOS o de Android dentro de tu perfil de cualquiera de estas dos plataformas. Según cual hayas utilizado para pagar tus compras lo podrás localizar en una o en otra.
+            </p>
+          )
+        },
+        {
+          question: "Si has realizado una compra usando tu ID de Apple, podrás encontrar tu historial de pagos siguiendo estos pasos:",
+          answer: (
+            <div className="space-y-4">
+              <ul className="space-y-2 text-gray-300">
+                <li>• Abre iTunes en tu ordenador</li>
+                <li>• Inicia sesión con tu ID de Apple clica en tu nombre, en la esquina superior derecha de la ventana de iTunes</li>
+                <li>• Selecciona Detalles de la cuenta en el menú que se despliega</li>
+                <li>• Desliza hasta abajo hasta que llegues a Historial de compras {'>'} Ver todo</li>
+                <li>• Pulsa en la flecha que aparece a la izquierda de la fecha de compra y podrás ver los detalles de una compra.</li>
+              </ul>
+            </div>
+          )
+        },
+        {
+          question: "Si la compra la has efectuado desde una cuenta de Google Play, podrás ver tu historial de pagos siguiendo estos pasos:",
+          answer: (
+            <div className="space-y-4">
+              <ul className="space-y-2 text-gray-300">
+                <li>• Entra en la web de pay.google.com e inicia sesión usando tu cuenta de Google Play</li>
+                <li>• Encuentra Otras actividades de compra</li>
+                <li>• Selecciona Ver compras</li>
+                <li>• Elige un pedido concreto y podrás ver su recibo</li>
+              </ul>
+            </div>
+          )
+        },
+        {
+          question: "Tengo una suscripción a Toppin y no he recibido mi PowerSweet mensual.",
+          answer: (
+            <div className="space-y-4">
+              <p className="text-gray-300">
+                Si hace poco que has renovado tu suscripción a Toppin, no afectará a tu periodo de espera para recibir el siguiente PowerSweet. El periodo de espera de 30 días se basa en la última vez que usaste tu PowerSweet mensual gratuito, no en la renovación o restauración de una suscripción.
+              </p>
+              <p className="text-gray-300">
+                Cuando uses tu PowerSweet gratuito, tendrás que esperar 30 días para usar tu siguiente PowerSweet gratuito, a menos que decidas comprar un lote de PowerSweet adicionales.
+              </p>
+            </div>
+          )
+        },
+        {
+          question: "He usado un SuperSweet pero no he conseguido ningún \"Match\" mutuo.",
+          answer: (
+            <div className="space-y-4">
+              <p className="text-gray-300">
+                Los SuperSweet están ahí justo para eso, para dar ese impulso que todo perfil necesita. Aparecerás a las personas de tu área mucho más rápido. ¡Aumentarás las posibilidades de encontrar esa conexión que tanto esperas!
+              </p>
+              <p className="text-gray-300">
+                La cantidad de veces que aparecerá tu perfil aumentará en hasta 10 veces más con un SuperSweet.
+              </p>
+              <p className="text-gray-300">
+                Aunque el Superweet como tal no puede garantizar un Match, son muy muy eficaces a la hora de ayudarte a tenerlo. Incluso después de que se haya terminado Sabrás que has conseguido un Match gracias al SuperSweet porque aparecerá una Estrella amarilla indicándolo.
+              </p>
+            </div>
+          )
+        },
+        {
+          question: "Los Super Sweets, PowerSweet, confirmaciones de lectura etc… ¿Desaparecerán si me creo una cuenta nueva?",
+          answer: (
+            <p className="text-gray-300">
+              Lamentablemente las compras de artículos así como suscripciones no se pueden transferir de una cuenta a otra. Si eliminas una cuenta en la que tenías artículos comprados y te creas una nueva, se perderán.
+            </p>
+          )
+        },
+        {
+          question: "He recibido una notificación de que alguien me envió un Super Sweet pero no lo veo en la app.",
+          answer: (
+            <div className="space-y-4">
+              <p className="text-gray-300">
+                Si recibiste una notificación acerca de un Super Sweet, abre Toppin y entra en mensajes, en el apartado de nuevos matches, para descubrir quién es la persona que te dio ese Super Sweet o un match. Puede que su perfil no te aparezca el primero, pero al final aparecerá con un ícono de estrella amarilla.
+              </p>
+              <p className="text-gray-300">
+                Si te suscribes a Toppin Premium o Toppin Supreme, podrás descubrir quién te ha dado ese Super Sweet.
+              </p>
+              <p className="text-gray-300">
+                Ten en cuenta que a veces, puede enviarse por error un Super Sweet (a cualquiera puede sucederle), si la persona que lo ha enviado utiliza la función vuelta atrás podrá deshacerlo. Por lo tanto este podría ser uno de los motivos por el cual no veas el Super Sweet del cual has recibido la notificación.
+              </p>
+            </div>
+          )
+        },
+        {
+          question: "No puedo cambiar mi ubicación con Destination.",
+          answer: (
+            <p className="text-gray-300">
+              Si estás intentando cambiar tu ubicación y no puedes, intenta comprobar la conexión de tu teléfono móvil a Internet. Si no es este el problema inténtalo de nuevo en un rato. Si el problema persiste ponte en contacto con nosotros a través del correo support@toppin.es.
+            </p>
+          )
+        },
+        {
+          question: "No puedo actualizar mi perfil.",
+          answer: (
+            <div className="space-y-4">
+              <p className="text-gray-300">
+                ¿Estás cambiando información o datos de tu perfil como fotos, canciones o biografía y no se guardan? Revisa si puede ser problema de tu conexión a internet y si no es el caso borra y reinstala Toppin.
+              </p>
+              <p className="text-gray-300">
+                Esto también hará que se actualice a la última versión de la aplicación. Por lo que debería volver a funcionar como siempre.
+              </p>
+              <p className="text-gray-300">
+                Si sigue sin funcionar ponte en contacto con nosotros e infórmanos de lo sucedido. Detállanos tu problema para que podamos encargarnos de tu caso cuanto antes al correo support@toppin.es.
+              </p>
+            </div>
+          )
+        },
+        {
+          question: "No puedo subir fotos a mi perfil.",
+          answer: (
+            <div className="space-y-4">
+              <p className="text-gray-300">
+                Si estás intentando subir una foto desde tu teléfono móvil, asegúrate de haber dado acceso a Toppin a las fotos de tu dispositivo. Si aún no lo has hecho puedes habilitar el acceso desde los ajustes de tu móvil.
+              </p>
+              <p className="text-gray-300">
+                Prueba a intentarlo más tarde si ves que el problema sigue.
+              </p>
+            </div>
+          )
+        },
+        {
+          question: "¿Por qué se ha eliminado mi foto de Toppin?",
+          answer: (
+            <div className="space-y-4">
+              <p className="text-gray-300">
+                Hay ocasiones en las que eliminamos contenido de Toppin para que la experiencia sea lo más agradable posible para todos. Si ves que una foto de tu perfil se ha eliminado, significará que se ha detectado una violación de nuestros Términos de uso. Pedimos a todos los usuarios que sean respetuosos. Por favor, revisa nuestras Normas de la comunidad así podrás tenerla en cuenta cada vez que vayas a subir contenido a tu perfil.
+              </p>
+              <p className="text-gray-300">
+                ¡Gracias a ti, Toppin es un lugar más seguro!
+              </p>
+            </div>
+          )
+        },
+        {
+          question: "La información de mi trabajo y/o centro de estudios no se actualiza.",
+          answer: (
+            <div className="space-y-4">
+              <p className="text-gray-300">Desde la app puedes editar y actualizar directamente la información relacionada con tu trabajo y centro de estudios.</p>
+              <ul className="space-y-2 text-gray-300">
+                <li>• Toca el icono del perfil en la esquina superior derecha de la pantalla principal</li>
+                <li>• Selecciona Editar información</li>
+                <li>• Desplázate hasta las secciones Trabajo actual o Centro de estudios</li>
+              </ul>
+            </div>
+          )
+        },
+        {
+          question: "No recibo ninguna notificación push.",
+          answer: (
+            <div className="space-y-4">
+              <p className="text-gray-300">
+                Si has dejado de recibir nuestras notificaciones push es probable que sea un problema temporal.
+              </p>
+              <p className="text-gray-300">
+                Por si acaso te recomendamos que verifiques que tienes las notificaciones correctamente habilitadas dentro de los Ajustes de tu dispositivo – Notificaciones.
+              </p>
+            </div>
+          )
+        },
+        {
+          question: "¿Cómo habilitar las notificaciones push en tu dispositivo?",
+          answer: (
+            <div className="space-y-4">
+              <ul className="space-y-2 text-gray-300">
+                <li><strong>En dispositivos iOS:</strong> Abre la app de Ajustes iOS, selecciona Notificaciones y luego Toppin.</li>
+                <li><strong>En dispositivos Android:</strong> Dirígete a los ajustes del dispositivo, selecciona Notificaciones, luego Notificaciones de aplicaciones y Toppin</li>
+              </ul>
+            </div>
+          )
+        },
+        {
+          question: "Habilitar las notificaciones en Toppin",
+          answer: (
+            <div className="space-y-4">
+              <ul className="space-y-2 text-gray-300">
+                <li>• Abre la app de Toppin</li>
+                <li>• Toca el icono de perfil</li>
+                <li>• Selecciona los Ajustes</li>
+                <li>• Desplázate hasta Notificaciones, ahí podrás habilitarlas en caso de no tenerlas.</li>
+              </ul>
+            </div>
+          )
+        },
+        {
+          question: "Los perfiles que veo están muy lejos.",
+          answer: (
+            <div className="space-y-4">
+              <p className="text-gray-300">
+                Si sólo algunos de tus Matches potenciales están lejos, esto podría estar sucediendo por varias razones:
+              </p>
+              <div className="space-y-4">
+                <p className="text-gray-300">
+                  <strong>Destination:</strong> Puede que haya personas que tengan esta acción activada para encontrar Matches en tu ubicación. Si visitas recientemente una ciudad puede que sigas apareciendo en la ubicación de donde has estado hasta 24 horas después de haberte marchado. Solo los suscriptores de Toppin pueden editar su ubicación.
+                </p>
+                <p className="text-gray-300">
+                  <strong>Ajustes de Destination:</strong> Puedes comprobar y editar tus preferencias de distancia. Y así decidir a qué radio de kilómetros quieres o no encontrar personas. Simplemente tienes que tocar el icono del perfil {'>'} Ajustes {'>'} Baja hasta Destination y ahí podrás ver y cambiar la distancia máxima que tienes configurada.
+                </p>
+              </div>
+              <p className="text-gray-300">
+                Si piensas que puede ser un problema más bien técnico puedes probar a seguir estos pasos para tratar de solucionarlo:
+              </p>
+              <ul className="space-y-2 text-gray-300">
+                <li>• Sal e inicia sesión: toca el icono de perfil {'>'} Ajustes {'>'} desliza hacia abajo y toca en el botón "Cerrar sesión".</li>
+                <li>• Borra Toppin y vuelve a instalarla.</li>
+              </ul>
+            </div>
+          )
+        },
+        {
+          question: "Los perfiles no concuerdan con mis preferencias de género o edad.",
+          answer: (
+            <div className="space-y-4">
+              <p className="text-gray-300">
+                Si esto ha empezado de repente, comprueba que hayas configurado a tu gusto las preferencias de búsqueda.
+              </p>
+              <ul className="space-y-2 text-gray-300">
+                <li>• Abre Toppin</li>
+                <li>• Toca el icono de perfil</li>
+                <li>• Ve a tus Ajustes</li>
+                <li>• Desplázate hasta Ajustes de perfil. Si todo está configurado correctamente, cierra tu sesión de Toppin y vuelve a iniciarla.</li>
+              </ul>
+            </div>
+          )
+        },
+        {
+          question: "He denegado el acceso a Toppin a mi ubicación",
+          answer: (
+            <p className="text-gray-300">
+              Al menos mientras estés utilizando Toppin será necesario que nos des acceso a la ubicación de tu teléfono móvil.
+            </p>
+          )
+        },
+        {
+          question: "Ubicación en iOS",
+          answer: (
+            <p className="text-gray-300">
+              Ve a tus ajustes de iOS {'>'} Toppin {'>'} Ubicación
+            </p>
+          )
+        },
+        {
+          question: "Ubicación en Android",
+          answer: (
+            <p className="text-gray-300">
+              Ve a los ajustes de tu teléfono {'>'} Apps {'>'} Toppin {'>'} Permisos {'>'} Ubicación
+            </p>
+          )
+        },
+        {
+          question: "Mis Matches se quedan cargando todo el rato.",
+          answer: (
+            <div className="space-y-4">
+              <p className="text-gray-300">
+                Prueba a seguir estos pasos si ves que tus Matches no cargan o tardan demasiado tiempo en cargarse:
+              </p>
+              <ul className="space-y-2 text-gray-300">
+                <li>• Revisa si tienes buena conexión a Internet, puedes probar a cambiar de datos móviles a Wi-Fi, y al revés, quizá el problema esté relacionado con tu conexión.</li>
+                <li>• Elimina e instala la aplicación. Esto no solo te actualizará a la última versión de Toppin, sino que también actualizará tu experiencia en la aplicación, lo que debería hacer que las cosas vuelvan a funcionar como deberían.</li>
+              </ul>
+              <p className="text-gray-300">
+                Con esto debería estar resuelto el problema. En caso de no ser así entonces es muy probable que se nos haya caído el sistema y ya estemos trabajando por solucionarlo. Agradeceremos tu espera.
+              </p>
+            </div>
+          )
+        },
+        {
+          question: "Mis mensajes no se están enviando.",
+          answer: (
+            <div className="space-y-4">
+              <p className="text-gray-300">
+                Sabemos que pueden ser desesperantes los problemas relacionados con el chat. Pero suelen durar poco tiempo. En cuanto nos damos cuenta los solucionamos. Mientras tanto, hay algunos pasos que puedes seguir para intentar resolverlo:
+              </p>
+              <ul className="space-y-2 text-gray-300">
+                <li>• Revisa la conexión a internet y cambia de Wi-Fi a datos móviles o viceversa, quizá el problema esté relacionado con la conexión.</li>
+                <li>• Elimina e instala la aplicación. Se te actualizará Toppin a la última versión, y también actualizará tu experiencia en la app, después de esto debería volver a funcionar sin problemas.</li>
+                <li>• Una vez estés dentro de la app de nuevo, vuelve a enviar el mensaje.</li>
+                <li>○ En iOS: Toca el signo de exclamación rojo al lado del mensaje que ha dado fallo.</li>
+                <li>○ En Android: Toca el mensaje para intentar enviarlo de nuevo.</li>
+              </ul>
+              <p className="text-gray-300">
+                Si deseas contactarnos escríbenos a support@toppin.es
+              </p>
+            </div>
+          )
+        },
+        {
+          question: "He deshecho un Match por error.",
+          answer: (
+            <p className="text-gray-300">
+              Puede pasar que sin querer le des a deshacer Match sin darte cuenta. Pero tanto si tú, como tu Match deshace lo deshace será una acción permanente que lamentablemente no se puede rehacer y ya no aparecerá en la lista de ninguno de los dos perfiles
+            </p>
+          )
+        },
+        {
+          question: "Las fotos de mis Matches no se cargan.",
+          answer: (
+            <div className="space-y-4">
+              <p className="text-gray-300">
+                Puedes probar a cerrar y abrir sesión si ves que las fotos de tus Matches no se cargan a pesar de que ya llevan un buen rato.
+              </p>
+              <p className="text-gray-300">
+                Para cerrar sesión: ve dentro de tu perfil y si deslizas hacia abajo verás el botón de "Cerrar sesión".
+              </p>
+              <p className="text-gray-300">
+                Ahora sólo tendrás que volver a iniciar sesión y comprobar si ahora cargan sus fotos.
+              </p>
+            </div>
+          )
+        }
+      ]
     }
   ];
 
